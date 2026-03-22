@@ -13,7 +13,7 @@
 			"item_quality"		"normal"
 			"propername"		"1"
 
-			"item_class"		"#TF_Weapon_Minigun"
+			"item_class"		"tf_weapon_minigun"
 			"item_slot"			"primary"
 			"used_by_classes"
 			{
@@ -30,7 +30,6 @@
 				"damage bonus"				"1.5"
 				"fire rate penalty"			"1.15"
 				"bullets per shot bonus"	"0.25"
-				"projectile penetration heavy" "1"
 			}
 			"visuals"
 			{
