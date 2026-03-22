@@ -1,0 +1,37 @@
+//Bastion Borer
+
+"Weapon_BBore.Shoot"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/bastion_shoot.wav"
+}
+"Weapon_BBore.ShootCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/bastion_shoot_crit.wav"
+}
+"Weapon_BBore.special1"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/bastion_wind_up.wav"
+}
+"Weapon_BBore.special2"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/bastion_wind_down.wav"
+}
+"Weapon_BBore.special3"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/bastion_spin.wav"
+}

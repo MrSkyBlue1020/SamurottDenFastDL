@@ -1,0 +1,48 @@
+#base "items_game.txt"
+
+"items_game"
+{
+	"items"
+	{		
+		"20001" // Bastion Borer
+		{
+			"name"				"TF_WEAPON_BBORE"
+			"item_name"			"Bastion Borer"
+			"item_type_name"	"High Caliber Gun"
+			"item_description"	"Engineer said I need more gun. I get more gun."
+			"item_quality"		"normal"
+			"propername"		"1"
+
+			"item_class"		"#TF_Weapon_Minigun"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"heavy"			"1"
+			}
+
+			"model_world"		"models/weapons/c_models/c_bastion_borer.mdl"
+			"model_player"		"models/weapons/c_models/c_bastion_borer.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"
+				"damage bonus"				"1.5"
+				"fire rate penalty"			"1.15"
+				"bullets per shot bonus"	"0.25"
+				"projectile penetration heavy"
+				"penetration damage penalty"	"1.2"
+			}
+			"visuals"
+			{
+				"sound_double_shot"			"Weapon_BBore.Shoot"
+				"sound_burst"				"Weapon_BBore.ShootCrit"
+				"sound_special1"			"Weapon_BBore.special1"
+				"sound_special2"			"Weapon_BBore.special2"
+				"sound_special3"			"Weapon_BBore.special3"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_bastion_borer"
+		}
+	}
+}
