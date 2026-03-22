@@ -30,8 +30,7 @@
 				"damage bonus"				"1.5"
 				"fire rate penalty"			"1.15"
 				"bullets per shot bonus"	"0.25"
-				"projectile penetration heavy"
-				"penetration damage penalty"	"1.2"
+				"projectile penetration heavy" "1"
 			}
 			"visuals"
 			{
