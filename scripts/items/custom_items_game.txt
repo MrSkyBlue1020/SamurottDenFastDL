@@ -41,7 +41,7 @@
 				"sound_special3"			"Weapon_BBore.special3"
 			}
 
-			"image_inventory"		"backpack/weapons/w_models/w_bastion_borer"
+			"image_inventory"		"backpack/weapons/c_models/c_bastion_borer"
 		}
 	}
 }
