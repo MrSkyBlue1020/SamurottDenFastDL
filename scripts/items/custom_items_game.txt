@@ -82,11 +82,6 @@
 			}
 			"attributes"
 			{
-				"sandman info TEXT"
-				{
-					"attribute_class	"DISPLAY_ONLY"
-					"value"				"1"
-				}
 				"max health additive penalty"
 				{
 					"attribute_class"	"add_maxhealth"
@@ -1720,59 +1715,6 @@ Weapon from: New Old Weapons Pack"
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		
-		// SkyBlue Customs
-		
-		"30021" // Bastion Borer
-		{
-			"name"				"TF_WEAPON_BASTION_BORER"
-			"item_name"			"Bastion Borer"
-			"item_type_name"	"#TF_Weapon_Minigun"
-			"item_description"	"A Cold War classic, built to solve any problem loudly and repeatedly..."
-			"item_quality"		"unique"
-			"propername"		"1"
-
-			"item_class"		"tf_weapon_minigun"
-			"item_slot"			"primary"
-			"used_by_classes"
-			{
-				"heavy"			"1"
-			}
-
-			"model_world"		"models/weapons/c_models/c_bastion_borer.mdl"
-			"model_player"		"models/weapons/c_models/c_bastion_borer.mdl"
-			"anim_slot"			"primary"
-			"attach_to_hands"	"1"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"		"10 0 -10"
-				"damage bonus"				"1.75"
-				"fire rate penalty"			"1.25"
-			}
-			"attributes"
-			{
-				"minigun accuracy"	
-				{
-					"attribute_class"	"mult_spread_scale"
-					"value"				"0.1"
-				}
-				"minigun bullets penalty"	
-				{
-					"attribute_class"	"mult_bullets_per_shot"
-					"value"				"0.25"
-				}
-			}
-			"visuals"
-			{
-				"sound_double_shot"			"Weapon_Gatling.Fire"
-				"sound_burst"				"Weapon_Gatling.FireCrit"
-				"sound_special1"			"Weapon_Gatling.WindUp"
-				"sound_special2"			"Weapon_Gatling.WindDown"
-				"sound_special3"			"Weapon_Gatling.Spin"
-			}
-
-			"image_inventory"		"backpack/weapons/w_models/c_bastion_borer"
-	    }
 	}
 	"attributes"
 	{
@@ -1921,27 +1863,6 @@ Weapon from: New Old Weapons Pack"
 			"description_string"	"Stickybombs don't stick to surfaces"
 			"description_format"	"value_is_additive"
 			"effect_type"			"neutral"
-		}
-		"100017"
-		{
-			"name"					"sandman positive TEXT"
-			"description_string"	"Alt Fire: Launch a ball that slows opponents"
-			"description_format"	"value_is_additive"
-			"effect_type"			"neutral"
-		}
-		"10018"
-		{
-			"name"					"minigun bullets penalty"
-			"attribute_class"		"mult_bullets_per_shot"
-			"description_format"	"value_is_percentage"
-			"effect_type"			"negative"
-		}
-		"10019"
-		{
-			"name"					"minigun accuracy"
-			"attribute_class"		"mult_spread_scale"
-			"description_format"	"value_is_percentage"
-			"effect_type"			"positive"
 		}
 	}
 }
