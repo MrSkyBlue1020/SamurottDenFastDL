@@ -84,7 +84,7 @@
 			{
 				"sandman info TEXT"
 				{
-					"attribute_class	"dummy"
+					"attribute_class	"DISPLAY_ONLY"
 					"value"				"1"
 				}
 				"max health additive penalty"
@@ -1747,9 +1747,20 @@ Weapon from: New Old Weapons Pack"
 			{
 				"min_viewmodel_offset"		"10 0 -10"
 				"damage bonus"				"1.75"
-				"minigun accuracy"			"0.1"
 				"fire rate penalty"			"1.25"
-				"minigun bullets penalty"	"0.25"
+			}
+			"attributes"
+			{
+				"minigun accuracy"	
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"0.1"
+				}
+				"minigun bullets penalty"	
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value"				"0.25"
+				}
 			}
 			"visuals"
 			{
@@ -1762,7 +1773,6 @@ Weapon from: New Old Weapons Pack"
 
 			"image_inventory"		"backpack/weapons/w_models/c_bastion_borer"
 	    }
-		
 	}
 	"attributes"
 	{
