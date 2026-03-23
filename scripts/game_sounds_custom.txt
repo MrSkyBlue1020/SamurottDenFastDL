@@ -1,37 +1,219 @@
-//Bastion Borer
+// ------------------------------------------------------------------------------------ //
+// Burgess
+// ------------------------------------------------------------------------------------ //
 
-"Weapon_BBore.Shoot"
+"Weapon_Burgess.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/burgess_shoot.wav"
+}
+
+"Weapon_Burgess.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/burgess_shoot_crit.wav"
+}
+
+"Weapon_Burgess.WorldReload"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/burgess_insertshell2.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// Bastion Borer
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Bastion.Single"
 {
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
 	"wave"		")weapons/bastion_shoot.wav"
 }
-"Weapon_BBore.ShootCrit"
+
+"Weapon_Bastion.SingleCrit"
 {
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
 	"wave"		")weapons/bastion_shoot_crit.wav"
 }
-"Weapon_BBore.special1"
+
+"Weapon_Bastion.Spin"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/bastion_spin.wav"
+}
+
+"Weapon_Bastion.WindUp"
 {
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
 	"wave"		")weapons/bastion_wind_up.wav"
 }
-"Weapon_BBore.special2"
+
+"Weapon_Bastion.WindDown"
 {
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
 	"wave"		")weapons/bastion_wind_down.wav"
 }
-"Weapon_BBore.special3"
+
+// ------------------------------------------------------------------------------------ //
+// NOMAD DECISION
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_NomadDecision.Single"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"1"
+	"wave"		"weapons/csgo_awp_shoot.wav"
+}
+
+"Weapon_NomadDecision.SingleCrit"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"1"
+	"wave"		"weapons/csgo_awp_shoot_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// REBEL ACTION ROUSER
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Rouser.Single"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"1"
+	"wave"		"weapons/rouser_shoot.wav"
+}
+
+"Weapon_Rouser.SingleCrit"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"1"
+	"wave"		"weapons/rouser_shoot_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// The Serbu Compact
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_SC.Single"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"1"
+	"wave"		"weapons/tf2_backshot_shotty.wav"
+}
+
+"Weapon_SC.SingleCrit"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"1"
+	"wave"		"weapons/tf2_backshot_shotty_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// P90
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_P90.Single"
+{
+	"channel"	"CHAN_AUTO"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".5"
+	"wave"		"weapons/p90_shoot.wav"
+}
+
+"Weapon_P90.SingleCrit"
+{
+	"channel"	"CHAN_AUTO"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".5"
+	"wave"		"weapons/p90_shoot_crit.wav"
+}
+
+"Weapon_P90.Reload"
+{
+	"channel"	"CHAN_AUTO"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".5"
+	"wave"		"weapons/p90_worldreload.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// MP40
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_MP40.Single"
 {
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
-	"wave"		")weapons/bastion_spin.wav"
+	"wave"		")weapons/mp40_shoot.wav"
+}
+
+"Weapon_MP40.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/mp40_shoot_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// Welrod
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Welrod.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/welrod_shoot.wav"
+}
+
+"Weapon_Welrod.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/welrod_shoot_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// Westerner's Wildcard
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_WW.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/wildcard_shoot.wav"
+}
+
+"Weapon_WW.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/wildcard_shoot_crit.wav"
 }

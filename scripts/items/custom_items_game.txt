@@ -4,12 +4,76 @@
 {
 	"items"
 	{		
-		"20001" // Bastion Borer
+		"20001" // Whisper Shatterer
 		{
-			"name"				"TF_WEAPON_BBORE"
+			"name"				"TF_WEAPON_TYPE79"
+			"item_name"			"Whisper Shatterer"
+			"item_type_name"	"#TF_Weapon_SMG"
+			"item_description"	"The beauty of China revealed in a single gun!"
+			"item_quality"		"normal"
+			"propername"		"1"
+
+			"item_class"		"tf_weapon_smg"
+			"item_slot"			"secondary"
+			"used_by_classes"
+			{
+				"scout"			"1"
+				"sniper"		"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_type79.mdl"
+			"model_player"		"models/weapons/v_models/v_type79.mdl"
+			"anim_slot"			"secondary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"
+				"fire rate bonus"			"0.8"
+				"weapon spread bonus"		"0.6"
+				"damage bonus"				"1.5"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_type79"
+		}
+		
+		"20002" // Whisper Shatterer
+		{
+			"name"				"TF_WEAPON_TYPE79_MEDIC"
+			"item_name"			"Whisper Shatterer"
+			"item_type_name"	"#TF_Weapon_SMG"
+			"item_description"	"The beauty of China revealed in a single gun!"
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_smg"
+			"item_slot"			"primary"
+			"bucket"			"0"
+			"used_by_classes"
+			{
+				"medic"			"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_type79.mdl"
+			"model_player"		"models/weapons/v_models/v_type79.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"
+				"fire rate bonus"			"0.8"
+				"weapon spread bonus"		"0.6"
+				"damage bonus"				"1.5"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_type79"
+		}
+		
+		"20003" // Bastion Borer
+		{
+			"name"				"TF_WEAPON_BASTION_BORER"
 			"item_name"			"Bastion Borer"
-			"item_type_name"	"High Caliber Gun"
-			"item_description"	"Engineer said I need more gun. I get more gun."
+			"item_type_name"	"#TF_Weapon_Minigun"
+			"item_description"	"A Cold War classic, built to solve any problem loudly and repeatedly..."
 			"item_quality"		"normal"
 			"propername"		"1"
 
@@ -27,20 +91,736 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 0 -10"
-				"damage bonus"				"1.5"
+				"damage bonus"				"1.25"
 				"fire rate penalty"			"1.15"
-				"bullets per shot bonus"	"0.25"
 			}
 			"visuals"
 			{
-				"sound_double_shot"			"Weapon_BBore.Shoot"
-				"sound_burst"				"Weapon_BBore.ShootCrit"
-				"sound_special1"			"Weapon_BBore.special1"
-				"sound_special2"			"Weapon_BBore.special2"
-				"sound_special3"			"Weapon_BBore.special3"
+				"sound_double_shot"			"Weapon_Bastion.Single"
+				"sound_burst"				"Weapon_Bastion.SingleCrit"
+				"sound_special1"			"Weapon_Bastion.WindUp"
+				"sound_special2"			"Weapon_Bastion.WindDown"
+				"sound_special3"			"Weapon_Bastion.Spin"
 			}
 
 			"image_inventory"		"backpack/weapons/c_models/c_bastion_borer"
 		}
+		
+		"20004" // Sod-Off
+		{
+			"name"				"TF_WEAPON_SOD_OFF"
+			"item_name"			"Sod-Off"
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_description"	"The more you saw it, the less accurate it is."
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_shotgun_primary"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+				"medic"			"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_sod_off.mdl"
+			"model_player"		"models/weapons/v_models/v_sod_off.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"
+				"minicritboost on kill"		"5"
+				"damage bonus"				"1.2"
+				"clip size bonus"			"1.2"
+				"spread penalty"			"1.5"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_shotgun"
+		}
+		
+		"20005" // The Kiska Special
+		{
+			"name"				"TF_WEAPON_NAMBU_14"
+			"item_name"			"Kiska Special"
+			"item_type_name"	"#TF_Weapon_Pistol"
+			"item_description"	"A relic of the second world war refurbished for modern use!"
+			"item_quality"		"normal"
+			"propername"		"1"
+
+			"item_class"		"tf_weapon_pistol"
+			"item_slot"			"secondary"
+			"used_by_classes"
+			{
+				"scout"			"1"
+				"engineer"		"1"
+				"civilian"		"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_kiska_special.mdl"
+			"model_player"		"models/weapons/v_models/v_kiska_special_scout.mdl"
+			"anim_slot"			"secondary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"
+				"critboost on kill"			"10"
+				"damage penalty"			"0.63"
+			}
+			"model_player_per_class"
+			{
+				"scout"			"models/weapons/v_models/v_kiska_special_scout.mdl"
+				"engineer"		"models/weapons/v_models/v_kiska_special_engineer.mdl"
+			}
+
+			"image_inventory"		"backpack/weapons/c_models/c_kiska"
+		}
+		
+		"20006" // Nomad Decision
+		{
+			"name"				"TF_WEAPON_NOMAD_DECISION"
+			"item_name"			"Nomad Decision"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_description"	"A bit old, but capable of doing a good job."
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_sniperrifle"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"sniper"			"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_nomad_decision.mdl"
+			"model_player"		"models/weapons/v_models/v_nomad_decision.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+				"maxammo primary increased"				"1.25"
+				"sniper penetrate players when charged"	"1"
+				"damage penalty on bodyshot"			"0.75"
+			}
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_NomadDecision.Single"
+				"sound_burst"				"Weapon_NomadDecision.SingleCrit"
+			}
+
+			"image_inventory"		"backpack/weapons/c_models/c_csgo_awp"
+		}
+		
+		"20007" // Rebel Action Rouser
+		{
+			"name"				"TF_WEAPON_ROUSER"
+			"item_name"			"Rebel Action Rouser"
+			"item_type_name"	"Rifle"
+			"item_description"	"Authority is temporary. Lever actions are permanent"
+			"item_quality"		"normal"
+			"propername"		"1"
+			"item_iconname"		"Rebel Action Rouser"
+
+			"item_class"		"tf_weapon_shotgun_primary"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"soldier"		"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_rebel_action_rouser.mdl"
+			"model_player"		"models/weapons/v_models/v_rebel_action_rouser.mdl"
+			"anim_slot"			"secondary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				// Actual Stats
+				"min_viewmodel_offset"			"10 0 -10"
+				"move speed bonus"				"1.25"
+				"max health additive penalty"	"-25"
+				
+				
+				// Converts a Shotgun to a Rifle
+				"hidden separator"				"1"
+				"damage bonus"					"10"
+				"can headshot"					"1"
+				"punch angle is constant"		"1"
+				"punch angle mod mult hidden"	"0"
+				"bullets per shot bonus"		"0.1"
+//				"weapon spread bonus"			"0.01"
+			}
+			"visuals"
+			{
+				"sound_single_shot"				"Weapon_Rouser.Single"
+				"sound_burst"					"Weapon_Rouser.SingleCrit"
+				"tracer_effect"					"bullet_hunting_revolver_tracer01"
+			}
+
+			"image_inventory"		"backpack/weapons/c_models/c_trenchgun"
+		}
+		
+		"20008" // P90 for Medic
+		{
+			"name"				"TF_WEAPON_P90"
+			"item_name"			"FN Herstal"
+			"item_type_name"	"#TF_Weapon_SMG"
+			"item_description"	"Now let's do ze hurting!"
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_smg"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+
+			"model_world"		"models/weapons/c_models/c_leechgun.mdl"
+			"model_player"		"models/weapons/c_models/c_leechgun.mdl"
+			"anim_slot"			"primary"
+			"bucket"			"0"
+			"attach_to_hands"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+				"damage bonus"					"1.62"
+				"clip size bonus"				"2"
+				"maxammo secondary increased"	"2"
+//				"health drain medic"			"12"
+			}
+			"attributes"
+			{
+				"health drain medic"
+				{	
+					"attribute_class"		"add_health_regen"
+					"value"					"-10"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_P90.Single"
+				"sound_burst"				"Weapon_P90.SingleCrit"
+				"sound_reload"				"Weapon_P90.Reload"
+			}
+
+			"image_inventory"		"backpack/weapons/c_models/c_leechgun"
+		}
+		
+		"20009" // MP40
+		{
+			"name"				"TF_WEAPON_MP40"
+			"item_name"			"Burping Blaster"
+			"item_type_name"	"#TF_Weapon_SMG"
+			"item_description"	"Dubbed the 'burp gun' by many."
+			"item_quality"		"normal"
+			"propername"		"1"
+
+			"item_class"		"tf_weapon_smg"
+			"item_slot"			"primary"
+			"bucket"			"0"
+			"used_by_classes"
+			{
+				"medic"			"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_mp40.mdl"
+			"model_player"		"models/weapons/v_models/v_mp40.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+				"damage bonus"					"1.6"
+				"clip size bonus"				"1.2"
+				"fire rate penalty"				"1.25"
+			}
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_MP40.Single"
+				"sound_burst"				"Weapon_MP40.SingleCrit"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_smg"
+		}
+		
+		"20010" // Welrod
+		{
+			"name"				"TF_WEAPON_WELROD"
+			"item_name"			"Welrod"
+			"item_type_name"	"#TF_Weapon_Pistol"
+			"item_description"	"Stealth is the name. Spy is the game.
+			Stats are compared to the Revolver."
+			"item_quality"		"normal"
+			"propername"		"1"
+
+			"item_class"		"tf_weapon_revolver"
+			"item_slot"			"secondary"
+			"used_by_classes"
+			{
+				"spy"			"1"
+			}
+
+			"model_world"		"models/weapons/c_models/c_welrod.mdl"
+			"model_player"		"models/weapons/c_models/c_welrod.mdl"
+			"extra_wearable"	"models/player/items/spy/spy_openjacket.mdl"
+			"anim_slot"			"secondary"
+			"attach_to_hands"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"				"10 0 -10"
+				"damage bonus"						"2"
+				"reload time decreased"				"0.5"
+				"heal on hit for rapidfire"			"5"
+				"single wep deploy time decreased"	"0.5"
+				"clip size penalty"					"0.2"				
+			}
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_Welrod.Single"
+				"sound_burst"				"Weapon_Welrod.SingleCrit"
+			}
+
+			"image_inventory"		"backpack/weapons/c_models/c_welrod"
+		}
+		
+		"20011" // Der Spritzer
+		{
+			"name"				"TF_WEAPON_SPRITZER"
+			"item_name"			"Der Spritzer"
+			"item_type_name"	"#TF_Weapon_SyringeGun"
+			"item_description"	"That was indeed not medicine."
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_syringegun_medic"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"medic"			"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_spritzer.mdl"
+			"model_player"		"models/weapons/v_models/v_spritzer.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"
+				"fire rate bonus"			"0.7"
+				"weapon spread bonus"		"0.5"
+			}
+			"image_inventory"		"backpack/weapons/w_models/w_syringegun"
+		}
+		
+		"20012" // The Garand Slam
+		{
+			"name"				"TF_WEAPON_M1_GARAND"
+			"item_name"			"Garand Slam"
+			"item_type_name"	"Battle Rifle"
+			"item_description"	"Ping!"
+			"item_quality"		"normal"
+			"propername"		"1"
+
+			"item_class"		"tf_weapon_shotgun_primary"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"soldier"		"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_m1_garand.mdl"
+			"model_player"		"models/weapons/v_models/v_m1_garand.mdl"
+			"anim_slot"			"secondary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+				"move speed bonus"				"1.25"
+				"clip size bonus"				"1.25"	
+				"minicritboost on kill"			"6"	
+				"max health additive penalty"	"-25"
+				"hidden separator"				"1"
+				"damage bonus"					"15"		
+				"bullets per shot bonus"		"0.1"
+				"punch angle is constant"		"1"
+				"punch angle mod mult hidden"	"0"
+			}
+			"attributes"
+			{
+				"can headshot"
+				{
+					"attribute_class"	"can_headshot"
+					"value"				"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"				"Weapon_Rouser.Single"
+				"sound_burst"					"Weapon_Rouser.SingleCrit"
+				"tracer_effect"					"bullet_hunting_revolver_tracer01"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_m1garand"
+		}
+		
+		"20013" // Westerner's Wildcard
+		{
+			"name"				"TF_WEAPON_WW"
+			"item_name"			"Westerner's Wildcard"
+			"item_type_name"	"DB Shotgun"
+			"item_description"	"2 shells at the same time. Take it or leave it."
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_shotgun"
+			"item_slot"			"secondary"
+			"used_by_classes"
+			{
+				"soldier"		"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_western.mdl"
+			"model_player"		"models/weapons/v_models/v_wildcard.mdl"
+			"anim_slot"			"secondary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+				"bullets per shot bonus"		"2"
+				"clip size penalty"				"0.6"
+				"mod horizontal spread"			"1"
+				"scattergun no reload single"	"1"
+			}
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_WW.Single"
+				"sound_burst"				"Weapon_WW.SingleCrit"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_wildcard"
+		}
+		
+		"20014" // Westerner's Wildcard
+		{
+			"name"				"TF_WEAPON_WW_PRIMARY"
+			"item_name"			"Westerner's Wildcard"
+			"item_type_name"	"DB Shotgun"
+			"item_description"	"2 shells at the same time. Take it or leave it."
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_shotgun_primary"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_western.mdl"
+			"model_player"		"models/weapons/v_models/v_wildcard.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+				"bullets per shot bonus"		"2"
+				"clip size penalty"				"0.6"
+				"mod horizontal spread"			"1"
+				"scattergun no reload single"	"1"
+			}
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_WW.Single"
+				"sound_burst"				"Weapon_WW.SingleCrit"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_wildcard"
+		}
+		
+		"20015" // L.A.W
+		{
+			"name"				"TF_WEAPON_LAW"
+			"item_name"			"L.A.W"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_description"	"A loose cannon for a loose cannon."
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_rocketlauncher"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"soldier"		"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_law.mdl"
+			"model_player"		"models/weapons/v_models/v_law.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+				"fires homing rockets"			"1"
+				"clip size bonus"				"1.25"
+				"projectile speed increased"	"1.3"
+			}
+			"attributes"
+			{
+				"set rocket detonate mode"
+				{
+					"attribute_class"	"set_rocket_detonate_mode"
+					"value"				"3"
+				}
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_rocketlauncher"
+		}
+		
+		"20016" // Burgess
+		{
+			"name"				"TF_WEAPON_BURGESS"
+			"item_name"			"Burgess"
+			"item_type_name"	"Folding Shotgun"
+			"item_description"	"Pump, Lever or Break action? All in one."
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_shotgun"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+
+			"model_world"		"models/weapons/c_models/c_burgess.mdl"
+			"model_player"		"models/weapons/c_models/c_burgess.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+				"weapon spread bonus"					"0.85"
+				"fire rate bonus with reduced health"	"0.2"
+				"fire rate penalty"						"1.2"
+				"damage penalty"						"0.9"
+			}
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_Burgess.Single"
+				"sound_burst"				"Weapon_Burgess.SingleCrit"
+			}
+
+			"image_inventory"		"backpack/weapons/c_models/c_burgess"
+		}
+		
+		"20017" // Milli
+		{
+			"name"				"TF_WEAPON_BB"
+			"item_name"			"Milli"
+			"item_type_name"	"#TF_Weapon_Minigun"
+			"item_description"	"Look how small it is! And I can run faster."
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_minigun"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"heavy"			"1"
+			}
+
+			"model_world"		"models/weapons/c_models/c_bb.mdl"
+			"model_player"		"models/weapons/c_models/c_bb.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+				"move speed bonus"				"1.12"
+				"weapon spread bonus"			"0.7"
+				"max health additive penalty"	"-12"
+				"maxammo primary reduced"		"0.75"
+			}
+
+			"image_inventory"		"backpack/weapons/c_models/c_bb"
+		}
+		
+		"20018" // The Poacher's Pride
+		{
+			"name"				"TF_WEAPON_POACHERSPRIDE"
+			"item_name"			"Poacher's Pride"
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_description"	"This weapon's great for both far and close range."
+			"item_quality"		"normal"
+			"propername"		"1"
+
+			"item_class"		"tf2c_weapon_hunting_revolver"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_poacher.mdl"
+			"model_player"		"models/weapons/v_models/v_poacher.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"
+				"can zoom"					"1"
+				"sniper zoom penalty"		"0.5"
+				"hidden separator"			"1"
+				"damage penalty"			"0.15"
+				"bullets per shot bonus"	"10"
+				"class select override vcd"	"class_select_revrifle"
+			}
+			"attributes"
+			{
+				"weapon spread additive bonus"
+				{
+					"attribute_class"		"mult_spread_scale"
+					"value"					"0.0675"
+				}
+			}
+			"visuals"
+			{
+				"tracer_effect"		"bullet_shotgun_tracer01"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_poacher"
+		}
+		
+		"20019" // The Serbu Compact
+		{
+			"name"				"TF_WEAPON_SC"
+			"item_name"			"Serbu Compact"
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_description"	"Short, but deadly."
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_shotgun_primary"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+				"medic"			"1"
+				"civilian"		"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_serbu_shorty.mdl"
+			"model_player"		"models/weapons/v_models/v_serbu_shorty.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"				"10 0 -10"
+				"damage bonus"						"1.25"
+				"single wep deploy time decreased"	"0.85"
+				"fire rate penalty"					"1.15"
+				"spread penalty"					"0.9"
+			}
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_SC.Single"
+				"sound_burst"				"Weapon_SC.SingleCrit"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_serbu_shorty"
+		}
+		
+		"20020" // The Arbalest Bolter
+		{
+			"name"				"TF_WEAPON_AB"
+			"item_name"			"Arbalest Bolter"
+			"item_type_name"	"Bolt-Action Crossbow"
+			"item_description"	"It does look like a normal rifle disguised as a crossbow. However, it isn't. Somehow, it's a Bolt-Action crossbow."
+			"item_quality"		"normal"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_crossbow"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_arbalest_bolter.mdl"
+			"model_player"		"models/weapons/v_models/v_arbalest_bolter.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"			
+				"cannot zoom"					"1"
+				"hidden separator"				"1"
+				"fire rate penalty"				"5"
+			}
+			"attributes"
+			{
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"				"1"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"8"
+				}
+				"mod max primary clip override"
+				{
+					"attribute_class"	"mod_max_primary_clip_override"
+					"value"				"-1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_CompoundBow.Single"
+				"sound_burst"				"Weapon_CompoundBow.SingleCrit"
+			}
+
+			"image_inventory"				"backpack/weapons/w_models/w_sniperrifle"
+		}
+	}
+	"attributes"
+	{
+		"10000"
+		{
+			"name"					"can zoom"
+			"attribute_class"		"sniper_rage_DISPLAY_ONLY"
+			"description_string"	"Can zoom with this weapon"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		
+		"10001" // Helps in converting a Hunter Rifle to a shotgun
+		{
+			"name"					"weapon spread additive bonus"
+			"attribute_class"		"mult_spread_scale"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		
+		"10002"
+		{
+			"name"					"fires homing rockets"
+			"attribute_class"		"sniper_rage_DISPLAY_ONLY"
+			"description_string"	"Fires homing rockets"
+			"description_format"	"value_is_additive"
+			"effect_type"			"1"
+		}
+		
+		"10003"
+		{
+			"name"					"cannot zoom"
+			"attribute_class"		"sniper_rage_DISPLAY_ONLY"
+			"description_string"	"Can't zoom with this weapon"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		
 	}
 }

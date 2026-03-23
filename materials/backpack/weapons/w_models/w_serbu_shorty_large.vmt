@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack/weapons/w_models/w_serbu_shorty_large"
+	"$translucent" 1
+	"$vertexcolor" 1
+}

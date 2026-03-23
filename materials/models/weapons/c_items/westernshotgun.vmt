@@ -1,0 +1,46 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\weapons\c_items\westernshotgun"
+	
+	"$phong" "1"
+	"$phongexponent" "4"
+	"$phongboost" ".15"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongfresnelranges"	"[1 5 10]"
+	"$basemapalphaphongmask" "1"
+
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "5"	
+	"$rimlightboost" ".3"
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}
+
+
+
+
