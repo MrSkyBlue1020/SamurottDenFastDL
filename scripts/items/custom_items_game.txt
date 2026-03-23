@@ -894,8 +894,6 @@ before one of you gets hurt."
 			"static_attrs"
 			{
 				"min_viewmodel_offset" "10 0 -10"
-				"passive reload holstered" "1"
-				"reload while not active explain" "1"
 				"weapon burn dmg increased" "2"
 				"hidden separator"		"1"
 				"fuse bonus"			"0.3"
@@ -918,6 +916,12 @@ before one of you gets hurt."
 				{
 					"attribute_class" "mult_wpn_burntime"
 					"value" "6"
+				}
+				
+				"no damage falloff over distance"
+				{
+					"attribute_class" "mod_no_dmg_falloff"
+					"value" "1"
 				}
 				
 				"custom projectile model"
