@@ -1715,53 +1715,10 @@ Weapon from: New Old Weapons Pack"
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		
+	}
 	"attributes"
 	{
 		// Custom
-		"6000"
-		{
-			"name"					"special last vaccination"
-		}
-		"6001"
-		{
-			"name"					"last vaccination DISPLAY ONLY 1"
-			"description_format"	"value_is_additive"
-			"description_string"	"No disguise loss on backstabs"
-			"effect_type"		"positive"
-		}
-		"6002"
-		{
-			"name"					"last vaccination DISPLAY ONLY 2"
-			"description_format"	"value_is_additive"
-			"description_string"	"BACKSTAB: Silently injects lethal dose of poison
-FRONTSTAB: Shakes view and applies minor poison"
-			"effect_type"			"neutral"
-		}
-		"6003"
-		{
-			"name"					"last vaccination DISPLAY ONLY 3"
-			"description_format"	"value_is_additive"
-			"description_string"	"Deals no damage by itself"
-			"effect_type"			"negative"
-		}
-		"6004"
-		{
-			"name"					"special thermite cannon"
-			"description_format"	"value_is_additive"
-			"description_string"	"Thermite bombs get activated shortly after contact
-ALT-FIRE: smoke puff that extinguishes allies (no airblast)"
-			"effect_type"			"neutral"
-			//"hidden"				"0"
-		}
-		"6005"
-		{
-			"name"					"special viewfinder"
-			"description_format"	"value_is_additive"
-			"description_string"	"On hit: outline victim
-Headshot outlines enemies nearby victim"
-			"effect_type"			"positive"
-		}
 		"6006"
 		{
 			"name"					"special lord of the house"
