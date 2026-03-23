@@ -1907,19 +1907,5 @@ Headshot outlines enemies nearby victim"
 			"description_format"	"value_is_additive"
 			"effect_type"			"neutral"
 		}
-		"10017"
-		{
-		"name"				"spread bonus"
-		"attribute_class"			"mult_spread_scale"
-		"description_format"		"value_is_percentage"
-		"effect_type"				"positive"
-		}
-		"10018"
-		{
-		"name"				"bullets per shot penalty"
-		"attribute_class"			"mult_bullets_per_shot"
-		"description_format"		"value_is_percentage"
-		"effect_type"				"negative"
-		}
 	}
 }
