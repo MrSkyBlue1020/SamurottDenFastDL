@@ -876,8 +876,6 @@ before one of you gets hurt."
 			"name"				"TF_WEAPON_THERMITECANNON"
 			"item_name"			"Thermite Cannon"
 			"item_type_name"	"Liquid Metal Launcher"
-			"item_description"	"Made by Jugheadbomb
-Original weapon by bigmazi"
 			"item_quality"		"community"
 
 			"item_class"	"tf_weapon_grenadelauncher"
@@ -896,28 +894,28 @@ Original weapon by bigmazi"
 			"static_attrs"
 			{
 				"min_viewmodel_offset" "10 0 -10"
-				"special thermite cannon"	"1"
 				"reload while not active explain"	"1"
 				"hidden separator"		"1"
-				"fuse bonus"			"3.0"
+				"fuse bonus"			"0.3"
 				"faster reload rate"		"0.4"
-				"maxammo primary increased"	"1.25"
+				"maxammo primary increased"	"1.31"
 				"clip size penalty"		"0.75"
 				"Projectile speed decreased"	"0.7"
+				"damage penalty"	"0.25"
 			}
 
 			"attributes"
 			{
-				"special thermite cannon"
+				"Set DamageType Ignite"
 				{
-					"attribute_class"	"dummy"
-					"value"			"1.0"
+					"attribute_class"	"set_dmgtype_ignite"
+					"value"			"1"
 				}
 
-				"override projectile type"
+				"additive_burntime"
 				{
-					"attribute_class" "override_projectile_type"
-					"value" "17"	// cannon
+					"attribute_class" "mult_wpn_burntime"
+					"value" "6"
 				}
 				
 				"custom projectile model"
@@ -1795,6 +1793,7 @@ Headshot outlines enemies nearby victim"
 			"attribute_class"		"mult_wpn_burntime"
 			"description_format"	"value_is_additive"
 			"effect_type"			"positive"
+			
 		}
 		"10002"
 		{
