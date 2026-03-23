@@ -871,79 +871,6 @@ before one of you gets hurt."
 		}
 
 		// Custom weapons
-		"9100" // Last Vaccination
-		{
-			"name"				"TF_WEAPON_LASTVACCINATION"
-			"item_name"			"Last Vaccination"
-			"item_type_name"	"Poison"
-			"item_description"	"Made by Jugheadbomb
-Original weapon by bigmazi"
-
-			"item_quality"		"community"
-
-			"item_class"	"tf_weapon_knife"
-			"item_slot"		"melee"
-			"used_by_classes"
-			{
-				"Spy"	"1"
-			}
-
-			"model_player"		"models/weapons/c_models/c_spyringe/c_spyringe.mdl"
-			"attach_to_hands"	"1"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"	"5 0 -4"
-			}
-			"attributes"
-			{
-				"special last vaccination"
-				{
-					"attribute_class"	"dummy"
-					"value"			"1.0"
-				}
-				"last vaccination DISPLAY ONLY 1"
-				{
-					"attribute_class"	"dummy"
-					"value"			"1.0"
-				}
-				"last vaccination DISPLAY ONLY 2"
-				{
-					"attribute_class"	"dummy"
-					"value"			"1.0"
-				}
-				"last vaccination DISPLAY ONLY 3"
-				{
-					"attribute_class"	"dummy"
-					"value"			"1.0"
-				}
-			}
-
-			"visuals"
-			{
-				"animation_replacement"
-				{
-					"ACT_VM_DRAW"	"ACT_ITEM2_VM_DRAW"
-					"ACT_VM_IDLE"	"ACT_ITEM2_VM_IDLE"
-					"ACT_VM_HITCENTER"	"ACT_ITEM2_VM_HITCENTER"
-					"ACT_VM_SWINGHARD"	"ACT_ITEM2_VM_SWINGHARD"
-					"ACT_BACKSTAB_VM_UP"	"ACT_ITEM2_BACKSTAB_VM_UP"
-					"ACT_BACKSTAB_VM_DOWN"	"ACT_ITEM2_BACKSTAB_VM_DOWN"
-					"ACT_BACKSTAB_VM_IDLE"	"ACT_ITEM2_BACKSTAB_VM_IDLE"
-					"ACT_MELEE_VM_STUN"	"ACT_MELEE_VM_ITEM2_STUN"
-					"ACT_MELEE_VM_INSPECT_START"	"ACT_ITEM2_VM_INSPECT_START"
-					"ACT_MELEE_VM_INSPECT_IDLE"		"ACT_ITEM2_VM_INSPECT_IDLE"
-					"ACT_MELEE_VM_INSPECT_END"		"ACT_ITEM2_VM_INSPECT_END"
-				}
-
-				"sound_melee_hit"	"vox/null"
-				"sound_melee_hit_world"	"Icicle.HitWorld"
-			}
-
-			"image_inventory"		"backpack/weapons/c_models/c_spyringe/c_spyringe"
-			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
-			"drop_sound"			"ui/item_knife_small_drop.wav"
-		}
-		
 		"9101" // Thermite Cannon
 		{
 			"name"				"TF_WEAPON_THERMITECANNON"
@@ -975,7 +902,7 @@ Original weapon by bigmazi"
 				"fuse bonus"			"3.0"
 				"faster reload rate"		"0.4"
 				"maxammo primary increased"	"1.25"
-				"clip size penalty"		"0.25"
+				"clip size penalty"		"0.75"
 				"Projectile speed decreased"	"0.7"
 			}
 
@@ -1128,10 +1055,15 @@ Original weapon by bigmazi"
 					"attribute_class"	"ragdolls_become_ash"
 					"value"				"1"
 				}
-				"special viewfinder"
+				"mark for death"
 				{
-					"attribute_class" 	"dummy"
-					"value" 			"1"
+					"attribute_class" 	"mark_for_death"
+					"value" 			"8"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.75"
 				}
 				"mod set sniper laser sight"
 				{
