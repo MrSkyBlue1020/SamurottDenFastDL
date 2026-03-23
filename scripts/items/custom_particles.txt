@@ -1,0 +1,6 @@
+"particles_manifest"
+{
+	"file"	"particles/thermite_2025.pcf"
+	"file"	"particles/thermite_meteor.pcf"
+	"file"	"particles/nowp_medigun.pcf"
+}

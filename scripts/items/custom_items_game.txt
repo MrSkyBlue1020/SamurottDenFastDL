@@ -1,0 +1,1981 @@
+#base "items_game.txt"
+
+"items_game"
+{
+	"items"
+	{
+		"33" // Uberspritze
+		{
+			"attributes"
+			{
+				"add uber charge on hit"
+				{
+					"attribute_class"	"add_onhit_ubercharge"
+					"value"				"0.20"
+				}
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"				"1"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value"				"1"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class" "mult_crit_chance"
+					"value" "0"
+				}
+				"hidden separator"	"1"
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"0"
+				}
+			}
+		}
+		"52" // The Huntsman
+		{
+			"attributes"
+			{
+				"hidden separator"					"1"
+				"mod sniper zoom while jumping"
+				{
+					"attribute_class"				"mod_sniper_zoom_while_jumping"
+					"value"							"1.0"
+				}
+			}
+		}
+		// ----------------------------------------------------------------
+		// LIVE WEAPONS
+		// ----------------------------------------------------------------
+		"44"
+		{
+			"name"						"The Sandman"
+			"item_class"				"tf_weapon_bat_wood"
+			"item_slot"					"melee"
+
+			"propername"				"1"
+			"item_quality"				"unique"
+			"item_name"					"#TF_Unique_Achievement_Bat"
+			"item_type_name"			"Baseball Bat"
+			"item_description"			"Hey look, a full-size “stupid dumbass” bobblehead!"
+			"item_logname"				"sandman"
+			"item_iconname"				"sandman"
+			"image_inventory"			"backpack/weapons/c_models/c_wooden_bat/c_wooden_bat"
+			"model_player"				"models/weapons/c_models/c_wooden_bat/c_wooden_bat.mdl"
+			"attach_to_hands"			"1"
+			"drop_type"					"drop"
+			"used_by_classes"
+			{
+				"Scout"					"1"
+			}
+			"static_attrs"
+			{
+				"particle on melee hit"					"impact_wood"
+				"special taunt"							"1"
+				"taunt attack name"						"TAUNTATK_SCOUT_GRAND_SLAM"
+				"taunt attack time"						"4"
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"attributes"
+			{
+				"sandman positive DISPLAY ONLY"
+				{
+					"attribute_class"	"dummy"
+					"value"				"1"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" 			"-15"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" 			"1"
+				}
+				"hidden separator"		"1"
+				"mod bat launches balls"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"				"1"
+				}
+				"mod melee crit swing custom damage"	{"value"	"96"}
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"Scout"
+					{
+						"1"				"scenes/player/scout/low/taunt03_vocal01.vcd"
+						"2"				"scenes/player/scout/low/taunt03_vocal02.vcd"
+						"3"				"scenes/player/scout/low/taunt03_vocal03.vcd"
+						"4"				"scenes/player/scout/low/taunt03_vocal04.vcd"
+						"5"				"scenes/player/scout/low/taunt03_vocal05.vcd"
+						"6"				"scenes/player/scout/low/taunt03_vocal06.vcd"
+					}
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_miss"		"Weapon_Bat.Miss"
+				"sound_burst"			"Weapon_Bat.MissCrit"
+				"sound_melee_hit"		"Weapon_BaseballBat.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_BaseballBat.HitWorld"
+			}
+			"mouse_pressed_sound"		"#ui/item_brick_pickup.wav"
+			"drop_sound"				"#ui/item_wood_weapon_drop.wav"
+		}
+		"45"
+		{
+			"name"						"The Force-a-Nature"
+			"item_class"				"tf_weapon_scattergun"									// For how complicated this weapon is under the hood, it's surprising this is JUST a Scattergun
+			"item_slot"					"primary"
+			"anim_slot"					"item2"
+
+			"propername"				"1"
+			"item_quality"				"unique"
+			"item_name"					"#TF_Unique_Achievement_Scattergun_Double"
+			"item_type_name"			"#TF_Weapon_DoubleBarrelShotgun"
+			"item_description"			"You ain't so funny flyin' through a frickin' windshield, huh?"
+			"item_logname"				"force_a_nature"
+			"item_iconname"				"Force_a_Nature"
+			"image_inventory"			"backpack/weapons/c_models/c_double_barrel"
+			"model_world"				"models/weapons/w_models/w_double_barrel.mdl"
+			"model_player"				"models/weapons/v_models/v_double_barrel_scout.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"static_attrs"
+			{
+				"apply self knockback hidden"			"100"
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"attributes"
+			{
+				"scattergun has knockback"
+				{
+					"attribute_class"	"set_scattergun_has_knockback"
+					"value"				"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" 			"0.5"
+				}
+				"bullets per shot bonus"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value" 			"1.2"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" 			"0.9"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" 			"0.34"
+				}
+				"scattergun no reload single"
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"				"1"
+				}
+				"clip info full reload"
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1"
+				}
+				"disable fancy class select anim"
+				{
+					"attribute_class" "disable_fancy_class_select_anim"
+					"value" "1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Scatter_Gun_Double.Single"
+				"sound_burst"			"Weapon_Scatter_Gun_Double.SingleCrit"
+				"sound_reload"			"Weapon_DoubleBarrel.WorldReload"
+			}
+			"mouse_pressed_sound"		"#ui/item_medium_gun_drop.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"61"
+		{
+			"name"						"The Ambassador"
+			"item_class"				"tf_weapon_revolver"
+			"item_slot"					"secondary"
+
+			"propername"				"1"
+			"item_quality"				"unique"
+			"item_name"					"#TF_Unique_Achievement_Revolver"
+			"item_type_name"			"#TF_Weapon_Revolver"
+			"item_description"			"The finest negotiator money can buy."
+			"item_logname"				"ambassador"
+			"item_iconname"				"ambassador"
+			"image_inventory" "backpack/weapons/c_models/c_ambassador/parts/c_ambassador_opt"
+			"model_world"				"models/weapons/w_models/w_ambassador.mdl"
+			"model_player"				"models/weapons/v_models/v_ambassador_spy.mdl"
+			"brass_model"				"models/weapons/shells/shell_revolver_gold.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"Spy"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -6"
+				"custom magazine model"					"models/weapons/mags/speedloader.mdl"
+			}
+			"attributes"
+			{
+				"revolver use hit locations"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"				"1"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.85"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"1.2"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Ambassador.Single"
+				"sound_burst"			"Weapon_Ambassador.SingleCrit"
+				"tracer_effect"			"bullet_scattergun_tracer01"
+			}
+			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"
+		}
+		"127"
+		{
+			"name" "The Direct Hit"
+			"item_class" "tf_weapon_rocketlauncher"
+			"item_type_name" "#TF_Weapon_RocketLauncher"
+			"item_name" "#TF_Unique_Achievement_RocketLauncher"
+			"item_slot" "primary"
+			"item_quality" "unique"
+			"item_description"	"The eagles are screaming! I am screaming!
+And you won't be screaming much longer!"
+			"propername" "1"
+			"image_inventory" "backpack/weapons/c_models/c_directhit/c_directhit"
+			"model_world"				"models/weapons/w_models/w_directhit.mdl"
+			"model_player"				"models/weapons/v_models/v_directhit_soldier.mdl"
+			"item_logname"				"rocketlauncher_directhit"
+			"item_iconname"				"rocketlauncher_directhit"
+			"attach_to_hands" "2"
+			"used_by_classes"
+			{
+				"soldier" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 -3 -10"
+			}
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class" "mult_dmg"
+					"value" "1.25"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class" "mult_projectile_speed"
+					"value" "1.8"
+				}
+				"mod mini-crit airborne"
+				{
+					"attribute_class" "mini_crit_airborne"
+					"value" "1"
+				}
+				"disable fancy class select anim"
+				{
+					"attribute_class" "disable_fancy_class_select_anim"
+					"value" "1"
+				}
+				"Blast radius decreased"
+				{
+					"attribute_class" "mult_explosion_radius"
+					"value" "0.3"
+				}
+				"custom projectile model"
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"				"models/weapons/w_models/w_rocket_directhit.mdl"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_RPG_DirectHit.Single"
+				"sound_burst"			"Weapon_RPG_DirectHit.SingleCrit"
+				"sound_reload"			"Weapon_RPG.WorldReload"
+				"sound_special1"		"Weapon_RPG_DirectHit.Explode"
+			}
+			"mouse_pressed_sound" "ui/item_heavy_gun_pickup.wav"
+			"drop_sound" "ui/item_heavy_gun_drop.wav"
+		}
+		"141"
+		{
+			"name"						"The Frontier Justice"
+			"item_class"				"tf_weapon_sentry_revenge"
+			"item_slot"					"primary"
+			"propername"				"1"
+			"item_quality"				"unique"
+			"item_name"					"#TF_Unique_Sentry_Shotgun"
+			"item_type_name"			"#TF_Weapon_Shotgun"
+			"item_description"			"Why don't y'all get along,
+before one of you gets hurt."
+			"item_logname"				"frontier_justice"
+			"item_iconname"				"frontier_kill"
+			"image_inventory"			"backpack/weapons/c_models/c_frontierjustice/c_frontierjustice"
+			"model_world"				"models/weapons/w_models/w_frontierjustice1.mdl"
+			"model_player"				"models/weapons/v_models/v_frontierjustice_engineer.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"engineer"				"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 0 -9"
+			}
+			"attributes"
+			{
+				"mod sentry killed revenge"
+				{
+					"attribute_class"	"sentry_killed_revenge"
+					"value" "1"
+				}
+				"lose revenge crits on death DISPLAY ONLY"
+				{
+					"attribute_class" "lose_revenge_crits_on_death_DISPLAY_ONLY"
+					"value" "1"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.5"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"Engineer"
+					{
+						"1"				"scenes/player/engineer/low/taunt01_vocal01.vcd"
+						"2"				"scenes/player/engineer/low/taunt01_vocal02.vcd"
+						"3"				"scenes/player/engineer/low/taunt01_vocal03.vcd"
+						"4"				"scenes/player/engineer/low/taunt01_vocal04.vcd"
+					}
+				}
+			}
+
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_FrontierJustice.Single"
+				"sound_burst"			"Weapon_FrontierJustice.SingleCrit"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"329"
+		{
+			"name"						"The Jag"
+			"item_class"				"tf_weapon_wrench"
+			"item_slot"					"melee"
+
+			"propername"				"1"
+			"item_quality"				"unique"
+			"item_name"					"#TF_Jag"
+			"item_type_name"			"#TF_Weapon_Wrench"
+			"item_description"			"The muscle cramps ain't nothing a cold one can't fix."
+			"item_logname"				"wrench_jag"
+			"item_iconname"				"wrench_jag"
+			"image_inventory"			"backpack/workshop/weapons/c_models/c_jag/c_jag"
+			"model_player"				"models/workshop/weapons/c_models/c_jag/c_jag.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"Engineer"				"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 -2 -9"
+			}
+			"attributes"
+			{
+				"Construction rate increased"
+				{
+					"attribute_class"	"mult_construction_value"
+					"value"				"1.3"
+				}
+				"swing speed bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.85"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.75"
+				}
+				"Repair rate decreased"
+				{
+					"attribute_class"	"mult_repair_value"
+					"value"				"0.7"
+				}
+				"dmg penalty vs buildings"
+				{
+					"attribute_class"	"mult_dmg_vs_buildings"
+					"value"				"0.67"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
+		"305"
+		{
+			"name"						"The Crusader's Crossbow"
+			"item_class"				"tf_weapon_crossbow"
+			"item_slot"					"primary"
+
+			"propername"				"1"
+			"item_quality"				"unique"
+			"item_name"					"#TF_CrusadersCrossbow"
+			"item_type_name"			"#TF_Weapon_Crossbow"
+			"item_description"			"Zhis is an experimental form of acupuncture. Now, hold still!"
+			"item_logname"				"crusaders_crossbow"
+			"item_iconname"				"crusaders_crossbow"
+			"image_inventory"			"backpack/workshop/weapons/c_models/c_crusaders_crossbow/c_crusaders_crossbow"
+			"model_world"				"models/weapons/w_models/w_crusaders_crossbow.mdl"
+			"model_player"				"models/weapons/v_models/v_crusaders_crossbow_medic.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"Medic"					"1"
+			}
+			"static_attrs"
+			{
+				"crusaders crossbow explain"			"1"
+				"damage and health at range increased"	"1"
+
+				"maxammo primary reduced"				"0.1"
+				"holds single shot penalty"				"1"
+				"allowed in medieval mode"				"1"
+				"reload while not active explain"		"1"
+
+				"hidden separator"						"1"
+				"damage penalty"						"0.5"									// HEALING NERF!! This is long warranted, and super necessary given how the 'Nader exists now. Nevertheless, this is super interesting.
+				"dmg penalty vs players"				"2"										// For some reason, it gets its healing numbers FROM its damage numbers - it deals 2x its damage as healing to teammates. So, nerf damage across the board, then bump it back up, and you've got something mostly serviceable!
+				"dmg bonus vs buildings"				"2"										// (Note; I can re-increase damage vs. players and buildings, but not for anything else, so Crossbow is slightly nerfed against NPC's like Tanks, Halloween Bosses, and map-breakables, if that... means anything to you.)
+				"lunchbox adds minicrits"				"1"
+				"custom magazine model"					"models/weapons/mags/vial_mp40.mdl"
+				"min_viewmodel_offset"					"10 0 -12"
+				"custom projectile origin offset"		"18 11 -5"								// Shoot, I forgot these. This will make these show up properly and not from the left side of the screen.
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"Medic"
+					{
+						"1"				"scenes/player/medic/low/taunt01_vocal01.vcd"
+						"2"				"scenes/player/medic/low/taunt01_vocal03.vcd"
+						"3"				"scenes/player/medic/low/taunt01_vocal04.vcd"
+						"4"				"scenes/player/medic/low/taunt01_vocal05.vcd"
+					}
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_CrusadersCrossbow.SingleFix"
+				"sound_burst"			"Weapon_CrusadersCrossbow.SingleCritFix"
+				"sound_reload"			"Weapon_SyringeGun.WorldReload"
+			}
+			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"
+		}
+		"411"
+		{
+			"name"						"The Quick-Fix"
+			"item_class"				"tf_weapon_medigun"
+			"item_slot"					"secondary"
+			"equip_region"				"medigun_backpack"
+
+			"propername"				"1"
+			"item_quality"				"unique"
+			"item_name"					"#TF_Unique_MediGun_QuickFix"
+			"item_type_name"			"#TF_Weapon_Medigun_Prototype"
+			"item_description"			"Let's go practice medicine."
+			"image_inventory"			"backpack/weapons/c_models/c_proto_medigun/c_proto_medigun"
+			"model_world"				"models/weapons/w_models/w_quickfix.mdl"
+			"model_player"				"models/weapons/v_models/v_quickfix_medic.mdl"
+			"attach_to_hands"			"2"
+			"extra_wearable"			"models/player/items/quickfix_backpack.mdl"
+			"used_by_classes"
+			{
+				"Medic"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -9"
+			}
+			"attributes"
+			{
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"				"2"
+				}
+				"medigun charge is megaheal"
+				{
+					"attribute_class"	"set_charge_type"
+					"value"				"2"
+				}
+				"heal rate bonus"
+				{
+					"attribute_class"	"mult_medigun_healrate"
+					"value" 			"1.4"
+				}
+				"ubercharge rate bonus"
+				{
+					"attribute_class"	"mult_medigun_uberchargerate"
+					"value"				"1.1"
+				}
+				"overheal penalty"
+				{
+					"attribute_class"	"mult_medigun_overheal_amount"
+					"value"				"0.5"
+				}
+				"boost speed from patient text"
+				{
+					"attribute_class"	"boost_speed_from_patient"
+					"value"				"1"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"backpack"			"1"
+					"medic_backpack"	"1"
+				}
+				"sound_single_shot"		"Weapon_Quick_Fix.Healing"
+				"sound_special2"		"TFPlayer.QuickFixInvulnerableOn"
+				"sound_special3"		"TFPlayer.MegaHealOff"
+			}
+			"visuals_red"
+			{
+				"use_visualsblock_as_base"	"visuals"
+				"beam_effect"			"quickfix_beam_red"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_red"
+				}
+			}
+			"visuals_blu"
+			{
+				"use_visualsblock_as_base"	"visuals"
+				"beam_effect"			"quickfix_beam_blue"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_blue"
+				}
+			}
+			"visuals_grn"
+			{
+				"use_visualsblock_as_base"	"visuals"
+				"beam_effect"			"quickfix_beam_green"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_blue"
+				}
+			}
+			"visuals_ylw"
+			{
+				"use_visualsblock_as_base"	"visuals"
+				"beam_effect"			"quickfix_beam_yellow"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_red"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		
+		// ----------------------------------------------------------------
+		// Death & Taxes weapons
+		// ----------------------------------------------------------------
+		"2001" // Nail Gun
+		{
+			"attributes"
+			{
+				"hidden separator"		"1"
+				"Reload time increased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"				"1.25"
+				}
+				"dmg bonus vs buildings"
+				{
+					"attribute_class"	"mult_dmg_vs_buildings"
+					"value"				"0.84"
+				}
+			}
+		}
+		"2003" // Hunting Revolver
+		{
+			"attributes"
+			{
+				"sniper zoom penalty"
+				{
+					"attribute_class"	"mult_zoom_fov"
+					"value"				"0.5"
+				}
+				"longer damage falloff distance"
+				{
+					"attribute_class"	"mult_falloff_distance"
+					"value"				"2.0"
+				}
+				
+				"hidden separator"		"1"
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"0"
+				}
+			}
+		}
+		"2006" // Dynamite Pack
+		{
+			"attributes"
+			{
+				"maxammo primary increased"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"1.5"
+				}
+			}
+		}
+		"2008" // Mine Layer
+		{
+			"attributes"
+			{
+				"Projectile speed increased hidden"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"				"1.0"
+				}
+			}
+		}
+		"2009" // Shock Therapy
+		{
+			"attributes"
+			{
+				"taser explain"			"1"
+
+				"melee range multiplier"
+				{
+					"attribute_class"	"melee_range_multiplier"
+					"value"				"1.7"
+				}
+				"melee bounds multiplier"
+				{
+					"attribute_class"	"melee_bounds_multiplier"
+					"value"				"1.55"
+				}
+				"crit mod disabled hidden"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				"damage bonus HIDDEN"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"1.54"
+				}
+				"ragdolls become ash"
+				{
+					"attribute_class"	"ragdolls_become_ash"
+					"value"				"1"
+				}
+				"heal on smack DISPLAY ONLY"
+				{
+					"attribute_class"	"heal_on_smack_DISPLAY_ONLY"
+					"value"				"1"
+				}
+				"heal rate penalty"
+				{
+					"attribute_class"	"mult_medigun_healrate"
+					"value"				"0.85"
+				}
+				"minicrit vs wet players"
+				{
+					"attribute_class"	"minicrit_vs_wet_players"
+					"value"				"0"
+				}
+				"hidden separator"	"1"
+				"crit vs wet players"
+				{
+					"attribute_class" "crit_vs_wet_players"
+					"value" "1"
+				}
+			}
+		}
+
+		// ----------------------------------------------------------------
+		// Fight or Flight weapons
+		// ----------------------------------------------------------------
+		"2013" // Twin Barrel
+		{
+			"attributes"
+			{
+				"scattergun has knockback"
+				{
+					"attribute_class"	"set_scattergun_has_knockback"
+					"value"				"1"
+				}
+				"mod horizontal spread"
+				{
+					"attribute_class"	"mod_horizontal_spread"
+					"value"				"1"
+				}
+				"reload while not active explain"	"1"
+				"hidden separator"			"1"
+				"apply self knockback hidden"
+				{
+					"attribute_class"	"apply_self_knockback"
+					"value"				"208"
+				}
+				"weapon enemy knockback mod mult hidden"
+				{
+					"attribute_class"	"weapon_enemy_knockback_mod"
+					"value"				"0.2"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value"				"1"
+				}
+				"damage force reduction self launch"
+				{
+					"attribute_class"	"damage_force_reduction_self_launch"
+					"value"				"1.5"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.875"
+				}
+			}
+		}
+		"2016" // Harvester
+		{
+			"attributes"
+			{
+				"harvester explain"
+				{
+					"attribute_class"	"harvester_explain"
+					"value"				"1"
+				}
+				"heal on crit scythe simple"
+				{
+					"attribute_class"	"heal_on_crit_scythe_simple"
+					"value"				"195"
+				}
+				"flat heal on afterburn on active"
+				{
+					"attribute_class"	"flat_heal_on_afterburn_active"
+					"value"				"3"
+				}
+				"remove targets afterburn on death"
+				{
+					"attribute_class"	"on_death_remove_targets_afterburn"
+					"value"				"1"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				"hidden separator"		"1"
+				"remember targets remaining afterburn"
+				{
+					"attribute_class"	"remember_targets_afterburn"
+					"value"				"1"
+				}
+				"heal on crit scythe simple taunt"
+				{
+					"attribute_class"	"heal_on_crit_scythe_simple_taunt"
+					"value"				"195"
+				}
+			}
+		}
+		"2017" // Brick
+		{
+			"attributes"
+			{
+				"mod use custom ammo type"
+				{
+					"attribute_class"	"mod_use_custom_ammo_type"
+					"value"				"5"
+				}
+			}
+		}
+
+		// ----------------------------------------------------------------
+		// Double Down weapons
+		// ----------------------------------------------------------------
+		"2020" // Derby Cane
+		{
+			"attributes"
+			{
+				"derbycane explain"		"1"
+
+				"hidden separator"		"1"
+				"umbrella recharge rate increased"
+				{
+					"attribute_class"	"umbrella_recharge_rate"
+					"value"				"1.0"
+				}
+			}
+		}
+
+		// Custom weapons
+		"9100" // Last Vaccination
+		{
+			"name"				"TF_WEAPON_LASTVACCINATION"
+			"item_name"			"Last Vaccination"
+			"item_type_name"	"Poison"
+			"item_description"	"Made by Jugheadbomb
+Original weapon by bigmazi"
+
+			"item_quality"		"community"
+
+			"item_class"	"tf_weapon_knife"
+			"item_slot"		"melee"
+			"used_by_classes"
+			{
+				"Spy"	"1"
+			}
+
+			"model_player"		"models/weapons/c_models/c_spyringe/c_spyringe.mdl"
+			"attach_to_hands"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"5 0 -4"
+			}
+			"attributes"
+			{
+				"special last vaccination"
+				{
+					"attribute_class"	"dummy"
+					"value"			"1.0"
+				}
+				"last vaccination DISPLAY ONLY 1"
+				{
+					"attribute_class"	"dummy"
+					"value"			"1.0"
+				}
+				"last vaccination DISPLAY ONLY 2"
+				{
+					"attribute_class"	"dummy"
+					"value"			"1.0"
+				}
+				"last vaccination DISPLAY ONLY 3"
+				{
+					"attribute_class"	"dummy"
+					"value"			"1.0"
+				}
+			}
+
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_VM_DRAW"	"ACT_ITEM2_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_ITEM2_VM_IDLE"
+					"ACT_VM_HITCENTER"	"ACT_ITEM2_VM_HITCENTER"
+					"ACT_VM_SWINGHARD"	"ACT_ITEM2_VM_SWINGHARD"
+					"ACT_BACKSTAB_VM_UP"	"ACT_ITEM2_BACKSTAB_VM_UP"
+					"ACT_BACKSTAB_VM_DOWN"	"ACT_ITEM2_BACKSTAB_VM_DOWN"
+					"ACT_BACKSTAB_VM_IDLE"	"ACT_ITEM2_BACKSTAB_VM_IDLE"
+					"ACT_MELEE_VM_STUN"	"ACT_MELEE_VM_ITEM2_STUN"
+					"ACT_MELEE_VM_INSPECT_START"	"ACT_ITEM2_VM_INSPECT_START"
+					"ACT_MELEE_VM_INSPECT_IDLE"		"ACT_ITEM2_VM_INSPECT_IDLE"
+					"ACT_MELEE_VM_INSPECT_END"		"ACT_ITEM2_VM_INSPECT_END"
+				}
+
+				"sound_melee_hit"	"vox/null"
+				"sound_melee_hit_world"	"Icicle.HitWorld"
+			}
+
+			"image_inventory"		"backpack/weapons/c_models/c_spyringe/c_spyringe"
+			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
+			"drop_sound"			"ui/item_knife_small_drop.wav"
+		}
+		
+		"9101" // Thermite Cannon
+		{
+			"name"				"TF_WEAPON_THERMITECANNON"
+			"item_name"			"Thermite Cannon"
+			"item_type_name"	"Liquid Metal Launcher"
+			"item_description"	"Made by Jugheadbomb
+Original weapon by bigmazi"
+			"item_quality"		"community"
+
+			"item_class"	"tf_weapon_grenadelauncher"
+			"item_slot"		"primary"
+			"used_by_classes"
+			{
+				"Pyro"	"1"
+			}
+
+			"item_logname"				"thermite"
+			"item_iconname"				"thermite"
+
+			"model_player"		"models/weapons/cwp/thermblower/v_thermblower.mdl"
+			"model_world"		"models/weapons/cwp/thermblower/c_thermblower.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 0 -10"
+				"special thermite cannon"	"1"
+				"reload while not active explain"	"1"
+				"hidden separator"		"1"
+				"fuse bonus"			"3.0"
+				"faster reload rate"		"0.4"
+				"maxammo primary increased"	"1.25"
+				"clip size penalty"		"0.25"
+				"Projectile speed decreased"	"0.7"
+			}
+
+			"attributes"
+			{
+				"special thermite cannon"
+				{
+					"attribute_class"	"dummy"
+					"value"			"1.0"
+				}
+
+				"override projectile type"
+				{
+					"attribute_class" "override_projectile_type"
+					"value" "17"	// cannon
+				}
+				
+				"custom projectile model"
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"			"models/weapons/cwp/thermblower/shell.mdl"
+				}
+			}
+
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Thermite.Single"
+				"sound_burst"		"Weapon_Thermite.SingleCrit"
+				
+				"trail_effect"		"thermite_meteor_blue"
+				"trail_effect_crit"	"thermite_meteor_blue_crits"
+			}
+
+			"visuals_red"
+			{
+				"trail_effect"		"thermite_meteor_red"
+				"trail_effect_crit"	"thermite_meteor_red_crits"
+			}
+			"visuals_blu"
+			{
+				"trail_effect"		"thermite_meteor_blue"
+				"trail_effect_crit"	"thermite_meteor_blue_crits"
+			}
+
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"Pyro"
+					{
+						"1"		"scenes/player/pyro/low/taunt01_v1.vcd"
+						"2"		"scenes/player/pyro/low/taunt01_v2.vcd"
+						"3"		"scenes/player/pyro/low/taunt01_v3.vcd"
+					}
+				}
+			}
+
+			"image_inventory"		"backpack/weapons/c_models/c_thblower/c_thblower"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"			"ui/item_heavy_gun_drop.wav"
+		}
+
+		"9102"	// Lord of the House
+		{
+			"name"					"TF_WEAPON_PIMP_CANE"
+			"item_class"				"tf2c_weapon_umbrella"
+			"item_slot"				"melee"
+
+			"item_quality"				"community"
+			"item_name"				"Lord of the House"
+			"item_type_name"			"#TF_Weapon_Cane"
+			"item_description"			"Proper leadership includes protection."
+			"item_logname"				"Lord of the House"
+			"item_iconname"				"Lord of the House"
+			"image_inventory"			"backpack/weapons/c_models/c_cashgrab"
+			"model_world"               		"models/workshop/weapons/c_models/c_cashgrab/c_cashgrab.mdl"
+			"model_player"				"models/workshop/weapons/v_models/v_cashgrab/v_cashgrab_civ.mdl"
+			"extra_wearable"			"models/hats/civilian_magician/civilian_magician_edit.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"civilian"				"1"
+			}
+			"static_attrs"
+			{
+				"particle on melee hit"					"blood_trail_red_01_money"
+				"melee bounds multiplier"				"1.55"
+			}
+			"attributes"
+			{
+				"civ boost cond override"
+				{
+					"attribute_class"	"add_civ_boost_override"
+					"value" 		"26 1.0"
+				}
+				"special lord of the house"
+				{
+					"attribute_class"	"dummy"
+					"value"			"1"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"			"-50"
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_miss"		"Weapon_BoxingGloves.Miss"
+				"sound_melee_hit"		"Weapon_BoxingGloves.HitFlesh"
+				"sound_melee_hit_world"		"Weapon_BoxingGloves.HitWorld"
+				"sound_burst"			"Weapon_BoxingGloves.MissCrit"
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+
+		"9103"	// Viewfinder
+		{
+			"name"				"Viewfinder"
+			"item_class"		"tf_weapon_sniperrifle"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_description"	"Didn't know they were allowed to show that on TV."
+			"item_name"			"Viewfinder"
+			"item_slot"			"primary"
+			"anim_slot"			"primary"
+			"item_quality"		"community"
+			"image_inventory"	"backpack/w_viewfinder"
+
+			"item_logname"		"tv_sniper"
+			"item_iconname"		"tv_sniper"
+			"model_player"		"models/weapons/c_models/c_viewfinder/c_viewfinder.mdl"
+			"attach_to_hands" 	"1"
+			"used_by_classes"
+			{
+				"sniper" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "5 0 -8"
+			}
+			"attributes"
+			{
+				"ragdolls become ash"
+				{
+					"attribute_class"	"ragdolls_become_ash"
+					"value"				"1"
+				}
+				"special viewfinder"
+				{
+					"attribute_class" 	"dummy"
+					"value" 			"1"
+				}
+				"mod set sniper laser sight"
+				{
+					"attribute_class" "mod_set_sniper_laser_sight"
+					"value" "1"
+				}
+				"viewfinder laser sight DISPLAY ONLY"
+				{
+					"attribute_class"	"dummy"
+					"value"				"1"
+				}
+				"sniper only fire zoomed"
+				{
+					"attribute_class"	"sniper_only_fire_zoomed"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_ShootingStar.SingleCharged"
+				"sound_burst"		"Weapon_ShootingStar.SingleCrit"
+				"sound_reload"		"Weapon_SniperRailgun.WorldReload"
+				"sound_empty"		"Weapon_SniperRailgun.ClipEmpty"
+				"sound_special2"	"Weapon_SniperRailgun.NonScoped"
+				"sound_special3"	"Weapon_ShootingStar.Single"
+				"muzzle_flash"		"dxhr_sniper_muzzleflash"
+			}
+			"mouse_pressed_sound" "ui/item_heavy_gun_pickup.wav"
+			"drop_sound" "ui/item_heavy_gun_drop.wav"
+		}
+
+		"9105"	// Spitfire
+		{
+			"name"						"Spitfire"
+			"item_class"				"tf_weapon_shotgun"
+			"item_slot"					"secondary"
+
+			"item_quality"				"community"
+			"item_name"					"Spitfire"
+			"item_type_name"			"#TF_Weapon_Shotgun"
+			"item_description"			"Fight fire with firepower.
+
+Weapon from: New Old Weapons Pack"
+			"item_logname"				"spitfire"
+			"item_iconname"				"spitfire"
+			"image_inventory"			"backpack/weapons/w_models/w_spitfire"
+			"model_world"				"models/weapons/w_models/w_spitfire.mdl"
+			"model_player"				"models/weapons/v_models/v_spitfire_pyro.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"Pyro"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -9"
+				"special taunt"					"1"
+			}
+			"attributes"
+			{
+				"minicrit vs burning player"
+				{
+					"attribute_class"	"or_minicrit_vs_playercond_burning"
+					"value"				"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.75"
+				}
+				"single wep deploy time decreased"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"				"0.8"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.75"
+				}
+				"spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"1.5"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.5"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_SpitFire.Single"
+				"sound_burst"			"Weapon_SpitFire.SingleCrit"
+				"muzzle_flash"			"muzzle_scattergun"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+
+		"9106"
+		{
+			"name"						"Heavy Machine Gun"
+			"item_class"				"tf_weapon_minigun"
+			"item_slot"					"primary"
+			"anim_slot"					"secondary"
+
+			"item_quality"				"community"
+			"item_name"					"Heavy Machine Gun"
+			"item_type_name"			"Machine Gun - (Mashu)"
+			"item_description"			"Light on feet, heavy with firepower.
+
+Weapon from: New Old Weapons Pack"
+			"item_logname"				"machinegun"
+			"item_iconname"				"machinegun"
+			"image_inventory"			"backpack/weapons/w_models/w_machinegun"
+			"model_world"				"models/weapons/w_models/w_machinegun.mdl"
+			"model_player"				"models/weapons/v_models/v_machinegun_heavy.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"Heavy"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -9"
+				"class select override vcd"				"taunt02"
+			}
+			"attributes"
+			{
+				"aiming movespeed increased"
+				{
+					"attribute_class"	"mult_player_aiming_movespeed"
+					"value"				"1.5"
+				}
+				"minigun spinup time decreased"
+				{
+					"attribute_class"	"mult_minigun_spinup_time"
+					"value"				"0.8"
+				}
+				"minigun fire rate bonus"
+				{
+					"attribute_class"	"mul_nonrocketjump_attackrate"
+					"value"				"0.7"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.6"
+				}
+				"spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"1.25"
+				}
+				"maxammo primary reduced"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"0.75"
+				}
+				"hidden separator"		"1"
+				"minigun deployed crouchwalk"			{"value"	"1"}
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"Heavy"
+					{
+						"1"				"scenes/player/heavy/low/taunt02.vcd"
+						"2"				"scenes/player/heavy/low/taunt02_v1.vcd"
+						"3"				"scenes/player/heavy/low/taunt02_v2.vcd"
+					}
+				}
+			}
+			"visuals"
+			{
+				"sound_empty"			"Weapon_MachineGun.ClipEmpty"
+				"sound_double_shot"		"Weapon_MachineGun.Fire"
+				"sound_burst"			"Weapon_MachineGun.FireCrit"
+				"sound_special1"		"Weapon_MachineGun.WindUp"
+				"sound_special2"		"Weapon_MachineGun.WindDown"
+				"sound_special3"		"Weapon_MachineGun.Spin"
+				"muzzle_flash"			"muzzle_minigun_constant_core"
+				"animation_replacement"
+				{
+					"ACT_MP_ATTACK_STAND_SECONDARY"				"ACT_MP_ATTACK_STAND_PRIMARY"
+					"ACT_MP_ATTACK_STAND_PREFIRE"				"ACT_MP_GESTURE_FLINCH_CHEST"
+					"ACT_MP_ATTACK_STAND_POSTFIRE"				"ACT_MP_ATTACK_STAND_PRIMARY_ALT"
+					"ACT_MP_ATTACK_CROUCH_SECONDARY"			"ACT_MP_ATTACK_CROUCH_PRIMARY"
+					"ACT_MP_ATTACK_CROUCH_PREFIRE"				"ACT_MP_GESTURE_FLINCH_CHEST"
+					"ACT_MP_ATTACK_CROUCH_POSTFIRE"				"ACT_MP_ATTACK_STAND_PRIMARY_ALT"
+					"ACT_MP_ATTACK_SWIM_SECONDARY"				"ACT_MP_ATTACK_SWIM_PRIMARY"
+					"ACT_MP_ATTACK_SWIM_PREFIRE"				"ACT_MP_GESTURE_FLINCH_CHEST"
+					"ACT_MP_ATTACK_SWIM_POSTFIRE"				"ACT_MP_ATTACK_STAND_PRIMARY_ALT"
+					"ACT_MP_DEPLOYED_IDLE"						"ACT_MP_STAND_SECONDARY"
+					"ACT_MP_DEPLOYED"							"ACT_MP_RUN_SECONDARY"
+					"ACT_MP_CROUCH_DEPLOYED_IDLE"				"ACT_MP_CROUCH_SECONDARY"
+					"ACT_MP_SWIM_DEPLOYED"						"ACT_MP_SWIM_SECONDARY"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+
+		"9107"	// Engineer Revolver
+		{
+			"name"						"Engineer Revolver"
+			"item_class"				"tf_weapon_pistol"
+			"item_slot"					"secondary"
+
+			"item_quality"				"community"
+			"item_name"					"Six-Shooter"
+			"item_type_name"			"#TF_Weapon_Revolver"
+			"item_description"			"Just one gun and six shots.
+
+Weapon from: New Old Weapons Pack"
+			"item_logname"				"sixshooter"
+			"item_iconname"				"sixshooter"
+			"image_inventory"			"backpack/weapons/w_models/w_sixshooter"
+			"model_world"				"models/weapons/w_models/w_sixshooter.mdl"
+			"model_player"				"models/weapons/v_models/v_sixshooter_engineer.mdl"
+			"brass_eject_model"			"models/weapons/shells/shell_revolver.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"Engineer"				"1"
+			}
+			"static_attrs"
+			{
+				"damage bonus hidden"					"2.66"
+				"clip size penalty hidden"				"0.5"
+				"fire rate penalty hidden"				"3.4"
+				"hidden secondary max ammo penalty"		"0.18"
+				"custom magazine model"					"models/weapons/mags/speedloader.mdl"
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"Engineer"
+					{
+						"1"				"scenes/player/engineer/low/taunt02_vocal01.vcd"
+						"2"				"scenes/player/engineer/low/taunt02_vocal02.vcd"
+						"3"				"scenes/player/engineer/low/taunt02_vocal03.vcd"
+					}
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_EngiRevolver.Single"
+				"sound_burst"			"Weapon_EngiRevolver.SingleCrit"
+				"sound_reload"			"Weapon_Revolver.WorldReload"
+				"tracer_effect"			"bullet_tracer01"
+				"animation_replacement"
+				{
+					"ACT_MP_ATTACK_STAND_SECONDARY"				"ACT_MP_ATTACK_STAND_PRIMARY"
+					"ACT_MP_ATTACK_CROUCH_SECONDARY"			"ACT_MP_ATTACK_CROUCH_PRIMARY"
+					"ACT_MP_ATTACK_SWIM_SECONDARY"				"ACT_MP_ATTACK_SWIM_PRIMARY"
+
+					"ACT_MP_RELOAD_STAND_SECONDARY"				"ACT_MP_RELOAD_STAND_PRIMARY_ALT"
+					"ACT_MP_RELOAD_CROUCH_SECONDARY"			"ACT_MP_RELOAD_CROUCH_PRIMARY_ALT"
+					"ACT_MP_RELOAD_SWIM_SECONDARY"				"ACT_MP_RELOAD_SWIM_PRIMARY_ALT"
+				}
+			}
+			"mouse_pressed_sound"		"#weapons/draw_six_shooter.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"
+		}
+		"9108"	// Frag Grenade
+		{
+			"name"				"Frag Grenade"
+			"item_class"		"tf_weapon_grenade_mirv"
+			"item_type_name"	"#TF_Weapon_Grenade"
+			"item_name"			"Frag Grenade"
+			"item_description"	"Good morning Vietnam!
+ 
+Model from: Pre-Fortress 2
+Animations by: 'Fence'
+Weapon by: 'Quinnz'"
+			"item_slot"			"secondary"
+			"anim_slot"			"melee_allclass"
+
+			"item_logname"		"grenade"
+			"item_iconname"		"taunt_soldier"
+
+			"item_quality"		"community"
+			"image_inventory"	"backpack/weapons/w_models/w_grenade_frag/w_grenade_frag"
+			"model_player"		"models/weapons/v_models/v_grenade_frag_new.mdl"
+			"model_world"		"models/weapons/w_models/w_grenade_frag.mdl"
+			"attach_to_hands"	"2"
+			"used_by_classes"
+			{
+				"soldier" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 0 -10"
+				"hidden separator"	"1"
+				"custom projectile model"				"models/weapons/w_models/w_grenade_frag.mdl"
+				"fire rate bonus hidden"				"1.33"
+				"effect bar recharge rate increased"	"0.5"
+				"no damage falloff over distance"		"1"
+				"centerfire projectile"					"1"
+				"meter_label"							"GRENADE"
+			}
+			"attributes"
+			{	
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"3"
+				}
+				"dmg bonus vs buildings"
+				{
+					"attribute_class"	"mult_dmg_vs_buildings"
+					"value"				"1.5"
+				}
+				"Blast radius increased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"				"1.5"
+				}
+				"damage bonus hidden"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.5"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				"stickybomb charge rate mine layer"
+				{
+					"attribute_class"	"stickybomb_charge_rate"
+					"value" 			"1.65"
+				}
+				"blast splash damage decreased"
+				{
+					"attribute_class"	"mult_explosion_splash_damage"
+					"value" 			"1.4"
+				}
+				"bomblets count mod mult hidden"
+				{
+					"attribute_class"	"bomblets_count_mod"
+					"value" 			"0"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Grenade_Mirv.Throw"
+				"sound_double_shot"		"Weapon_Grenade_Mirv.ChargeUp"
+				"sound_reload"			"Weapon_StickyBombLauncher.WorldReload"
+				"sound_special1"		"Weapon_Grenade_Mirv.Explode"
+				"sound_special2"		"Player.UseDeny"
+				"sound_special3"		"Weapon_StickyBombLauncher.ModeSwitch"
+				"sound_burst"			"Weapon_Grenade_Mirv.ThrowCrit"
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"Soldier"			"scenes/player/soldier/low/taunt07.vcd"
+				}
+			}
+
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"9109"																			
+		{
+			"name"						"General's Garand"
+			"item_class"				"tf_weapon_smg"
+			"item_slot"					"secondary"
+
+			"item_quality"				"community"
+			"item_name"					"General's Garand"
+			"item_type_name"			"Semi-Automatic Rifle"
+			"item_description"			"Pay attention maggot! this rifle is what your ancestors used to win wars with!
+
+Model by: 'Hau, Kibbleknight'
+Animations by: 'Raptor Dan'"
+			"item_logname"				"garand"
+			"item_iconname"				"garand"
+			"image_inventory"			"backpack/weapons/c_models/c_garand_v2/c_garand_v2"
+			"model_world"				"models/workshop/weapons/c_models/c_garand_shotgun/c_garand_shotgun.mdl"
+			"model_player"				"models/weapons/v_models/v_garand_soldier_v2.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"soldier"				"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"				"10 0 -9"
+				"hidden separator"					"1"
+				"damage bonus"						"4.0"
+				"scattergun no reload single"		"1"
+				"clip size penalty"					"0.32"
+				"maxammo secondary reduced"			"0.43"
+				"fire rate penalty"					"4.5"
+				"longer damage falloff distance"	"3.0"
+                "weapon spread bonus"				"0.5"
+			}
+			"visuals"
+			{
+			    "sound_single_shot"		"Weapon_Garand.Single"
+				"sound_burst"			"Weapon_Garand.SingleCrit"
+				"tracer_effect"			"bullet_hunting_revolver_tracer01"
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"Soldier"
+					{
+						"1"	"scenes/player/soldier/low/taunt02_v1.vcd"
+						"2"	"scenes/player/soldier/low/taunt02_v2.vcd"
+					}
+				}
+			}
+
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"9110"
+		{
+			"name"						"Welder"
+			"item_class"				"tf_weapon_wrench"
+			"item_slot"					"melee"
+			"anim_slot"					"secondary"
+            //"show_in_armory"			"0"
+
+			"item_quality"				"community"
+			"item_name"					"Welder"
+			"item_type_name"			"Welder"
+			"item_description"			"Y'all seared like a rack a' ribs.
+
+Weapon from: New Old Weapons Pack"
+			"item_logname"				"welder"
+			"item_iconname"				"welder"
+			"image_inventory"			"backpack/weapons/w_models/w_welder"
+			"model_world"				"models/weapons/w_models/w_welder.mdl"
+			"model_player"				"models/weapons/v_models/v_welder_engineer.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"Engineer"				"1"
+			}
+			"static_attrs"
+			{
+				"welder firerate"						"0.125"									// This hinges on being a high firerate, low-output option. For the firerate, this helps it feel snappy, there's usually a LOT of downtime between individual hits.
+				"mult melee smack delay"				"0.00001"
+				"damage bonus HIDDEN"					"0.155"									// This does about 10 DMG, which honestly kills a bit slower than you might think. So, this isn't really a great option for self-defense, like, at all.
+				"building support decrease"				"0.6"
+				"crit mod disabled"						"0"	
+
+				"particle on melee hit"					"flaregun_destroyed"
+				"min_viewmodel_offset"					"10 -2 -9"
+			}
+			"attributes"
+			{
+				"hidden separator"		"1"
+				"dmg bonus vs buildings"				{"value"	"0.125"}					// This technically makes it WAY WORSE at destroying enemy Engineer buildings, but it needs to be this bad so it doesn't instagib Sappers. Ah well... For ref, this does 1 dmg (YEESH) to most buildings, and 8 dmg to Sappers
+				"Repair rate decreased"					{"value"	"0.075"}					// 3 metal per hit for Repairing - this heals 9 HP per (3s full repair | 2s Jag, 1.5s Wrench)
+				"upgrade rate decrease"					{"value"	"0.125"}					// 3 metal per hit for Upgrading (7s upgrade | Wrench 6s, Jag 5s)
+
+				"Set DamageType Ignite"					{"value"	"1"}
+				"additive_burntime"						{"value"	"0.175"}
+				"weapon burn dmg reduced"				{"value"	"0"}
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"Engineer"
+					{
+						"1"				"scenes/player/engineer/low/taunt02_vocal01.vcd"
+						"2"				"scenes/player/engineer/low/taunt02_vocal02.vcd"
+						"3"				"scenes/player/engineer/low/taunt02_vocal03.vcd"
+					}
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_miss"		"Weapon_Welder.FireFast"								// The sounds for this weapon were a right proper NIGHTMARE to assemble - essentially had to carefully stitch together sounds that are short enough, resonant enough, and not grating enough to register as fire without making your eardrums bleed! It plays like 10 times a second, after all.
+				"sound_burst"			"Weapon_Welder.FireFast"
+				"sound_melee_hit"		"Weapon_Welder.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Welder.HitWorld"
+				"sound_special2"		"Weapon_Welder.HitWorld"
+				"sound_special1"		"Weapon_Welder.Build"									// A new, somewhat-hacky build sound! The old one was too grating in any form, so I had to try using a new sound effect entirely.
+			}
+			"mouse_pressed_sound"		"#ui/item_welder_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"
+		}
+		"9111"
+		{
+			"name"						"Lever Rifle"
+			"item_class"				"tf_weapon_scattergun"
+			"item_slot"					"primary"
+
+			"item_quality"				"community"
+			"item_name"					"Lever Rifle"
+			"item_type_name"			"Lever Shotgun"
+			"item_description"			"You gotta walk, before you can run.
+
+Weapon from: New Old Weapons Pack"
+			"item_logname"				"leverrifle"
+			"item_iconname"				"leverrifle"
+			"image_inventory"			"backpack/weapons/w_models/w_leverrifle"
+			"model_world"				"models/weapons/w_models/w_leverrifle.mdl"
+			"model_player"				"models/weapons/v_models/v_leverrifle_scout.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"Scout"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -11"
+			}
+			"attributes"
+			{
+				"clipsize increase on kill"	
+				{
+					"attribute_class"	"clipsize_increase_on_kill"
+					"value"				"1 5"
+				}
+				"clip increase on kill with cap"
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"5"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.8"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.67"
+				}
+                "spread penalty"
+                {
+                	"attribute_class"	"mult_spread_scale"
+                    "value"				"1.33"
+                }
+				"Reload time increased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"				"1.2"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_LeverRifle.Single"
+				"sound_burst"			"Weapon_LeverRifle.SingleCrit"
+				"sound_reload"			"Weapon_Shotgun.WorldReload"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"9112"
+		{
+			"name"						"Double Scotch"
+			"item_class"				"tf_weapon_grenadelauncher"
+			"item_slot"					"primary"
+			"anim_slot"					"secondary"
+
+			"item_quality"				"community"
+			"item_name"					"Double Scotch"
+			"item_type_name"			"#TF_Weapon_GrenadeLauncher"
+			"item_description"			"Let this be the hair o' the dog that bit ye.
+
+Weapon from: New Old Weapons Pack"
+			"item_logname"				"cyclops_dbl"
+			"item_iconname"				"cyclops_dbl"
+			"image_inventory"			"backpack/weapons/w_models/w_cyclops_dbl"
+			"model_world"				"models/weapons/w_models/w_cyclops_dbl.mdl"
+			"model_player"				"models/weapons/v_models/v_cyclops_dbl_demo.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"Demoman"				"1"
+			}
+			"static_attrs"
+			{
+				"class select override vcd"				"class_select_cyclops"
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"attributes"
+			{
+				"keep ammo on kill"	
+				{
+					"attribute_class"	"add_ammo_on_kill"
+					"value"				"1"
+				}
+				"successive hit minicrit"
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"0.35"
+				}
+				"instant reload on direct hit kill FIX"
+				{
+					"attribute_class"	"instant_reload_on_direct_hit_kill"
+					"value"				"2"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"				"1.75"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.5"
+				}
+				"Blast radius decreased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"				"0.34"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.85"
+				}
+				"custom projectile model"
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"				"models/weapons/w_models/w_grenade_cyclops_bouncer.mdl"
+				}
+
+				"add condition on hit weapon"			{"value"	"TF_COND_GRAPPLINGHOOK_BLEEDING 2"}	// Combo checks against: TF_COND_GRAPPLINGHOOK_BLEEDING (Cond 101)
+				"minicrit vs cond no dot"				{"value"	"102"}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_CyclopsBouncer.Shoot"
+				"sound_burst"			"Weapon_CyclopsBouncer.ShootCrit"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+	}
+	"attributes"
+	{
+		// Custom
+		"6000"
+		{
+			"name"					"special last vaccination"
+		}
+		"6001"
+		{
+			"name"					"last vaccination DISPLAY ONLY 1"
+			"description_format"	"value_is_additive"
+			"description_string"	"No disguise loss on backstabs"
+			"effect_type"		"positive"
+		}
+		"6002"
+		{
+			"name"					"last vaccination DISPLAY ONLY 2"
+			"description_format"	"value_is_additive"
+			"description_string"	"BACKSTAB: Silently injects lethal dose of poison
+FRONTSTAB: Shakes view and applies minor poison"
+			"effect_type"			"neutral"
+		}
+		"6003"
+		{
+			"name"					"last vaccination DISPLAY ONLY 3"
+			"description_format"	"value_is_additive"
+			"description_string"	"Deals no damage by itself"
+			"effect_type"			"negative"
+		}
+		"6004"
+		{
+			"name"					"special thermite cannon"
+			"description_format"	"value_is_additive"
+			"description_string"	"Thermite bombs get activated shortly after contact
+ALT-FIRE: smoke puff that extinguishes allies (no airblast)"
+			"effect_type"			"neutral"
+			//"hidden"				"0"
+		}
+		"6005"
+		{
+			"name"					"special viewfinder"
+			"description_format"	"value_is_additive"
+			"description_string"	"On hit: outline victim
+Headshot outlines enemies nearby victim"
+			"effect_type"			"positive"
+		}
+		"6006"
+		{
+			"name"					"special lord of the house"
+			"description_format"	"value_is_additive"
+			"description_string"	"Alt-Fire: Give defense buff to a teammate and yourself"
+			"effect_type"			"neutral"
+		}
+		"6007"
+		{
+			"name"					"viewfinder laser sight DISPLAY ONLY"
+			"description_format"	"value_is_additive"
+			"description_string"	"Projects a laser tracer while zoomed"
+			"effect_type"			"negative"
+		}
+		"6008"
+		{
+			"name"					"sandman positive DISPLAY ONLY"
+			"description_format"	"value_is_additive"
+			"description_string"	"Alt-Fire: Launches a ball that slows and Marks-for-death opponents"
+			"effect_type"			"positive"
+		}
+
+		// Legacy fix
+		"10000"
+		{
+			"name"					"minigun fire rate bonus"
+			"attribute_class"		"mul_nonrocketjump_attackrate"								// Avoids the dumb pitch-shifting property!
+			"description_string"	"#Attrib_FireRate_Positive"
+			"description_format"	"value_is_inverted_percentage"
+			"effect_type"			"positive"
+		}
+		"10001"
+		{
+			"name"					"weapon burn time additive hidden"
+			"attribute_class"		"mult_wpn_burntime"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"10002"
+		{
+			"name" 					"custom magazine model"
+			"attribute_class"		"custom_magazine_model"
+			"attribute_type"		"string"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"10003"
+		{
+			"name"					"clip info full reload"
+			"description_string"	"Weapon reloads its entire clip at once"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"10004"
+		{
+			"name"					"swing speed bonus"
+			"attribute_class"		"mult_postfiredelay"
+			"description_string"	"+%s1% faster swing speed"
+			"description_format"	"value_is_inverted_percentage"
+			"effect_type"			"positive"
+		}
+		"10005"
+		{
+			"name"					"boost speed from patient text"
+			"attribute_class"		"boost_speed_from_patient"
+			"description_string"	"Move at the speed of any faster heal target"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"10006"
+		{
+			"name"					"crusaders crossbow explain"
+			"description_string"	"Fires crossbow bolts that can heal teammates on hit"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"10007"
+		{
+			"name"					"holds single shot penalty"
+			"description_string"	"Can only fire once before reloading"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"10008"
+		{
+			"name"					"damage and health at range increased"
+			"description_string"	"Damage and heal scales with range"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"10009"
+		{
+			"name"					"welder firerate"
+			"attribute_class"		"mult_postfiredelay"
+			"description_string"	"Attacks are continuous with no delay"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"10010"
+		{
+			"name"					"building support decrease"
+			"description_string"	"%s1% slower building support rate"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"10011"
+		{
+			"name"					"additive_burntime"
+			"attribute_class"		"mult_wpn_burntime"
+			"description_format"	"value_is_additive"
+			"hidden"				"1"
+		}
+		"10012"
+		{
+			"name"					"clip increase on kill with cap"
+			"description_string"	"On Kill: Gain +1 increased clip size, up to a maximum of +%s1"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"10013"
+		{
+			"name"					"instant reload on direct hit kill FIX"
+			"attribute_class"		"instant_reload_on_direct_hit_kill"
+			"description_string"	"#Attrib_InstantReloadOnDirectHitKill"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"0"
+		}
+		"10014"
+		{
+			"name"					"successive hit minicrit"
+			"description_string"	"On Hit: 100% mini-crit on next successful hit"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"10015"
+		{
+			"name"					"keep ammo on kill"
+			"attribute_class"		"add_ammo_on_kill"
+			"description_string"	"Successful kills don't consume ammo"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"10016"
+		{
+			"name"					"stickies dont stick TEXT"
+			"attribute_class"		"stickies_dont_stick"
+			"description_string"	"Stickybombs don't stick to surfaces"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+	}
+}
