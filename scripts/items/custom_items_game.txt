@@ -82,6 +82,11 @@
 			}
 			"attributes"
 			{
+				"sandman positive DISPLAY ONLY"
+				{
+					"attribute_class"	"dummy"
+					"value"				"1"
+				}
 				"max health additive penalty"
 				{
 					"attribute_class"	"add_maxhealth"
@@ -866,11 +871,86 @@ before one of you gets hurt."
 		}
 
 		// Custom weapons
+		"9100" // Last Vaccination
+		{
+			"name"				"TF_WEAPON_LASTVACCINATION"
+			"item_name"			"Last Vaccination"
+			"item_type_name"	"Poison"
+			"item_description"	"Made by Jugheadbomb
+Original weapon by bigmazi"
+
+			"item_quality"		"community"
+
+			"item_class"	"tf_weapon_knife"
+			"item_slot"		"melee"
+			"used_by_classes"
+			{
+				"Spy"	"1"
+			}
+
+			"model_player"		"models/weapons/c_models/c_spyringe/c_spyringe.mdl"
+			"attach_to_hands"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"5 0 -4"
+			}
+			"attributes"
+			{
+				"special last vaccination"
+				{
+					"attribute_class"	"dummy"
+					"value"			"1.0"
+				}
+				"last vaccination DISPLAY ONLY 1"
+				{
+					"attribute_class"	"dummy"
+					"value"			"1.0"
+				}
+				"last vaccination DISPLAY ONLY 2"
+				{
+					"attribute_class"	"dummy"
+					"value"			"1.0"
+				}
+				"last vaccination DISPLAY ONLY 3"
+				{
+					"attribute_class"	"dummy"
+					"value"			"1.0"
+				}
+			}
+
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_VM_DRAW"	"ACT_ITEM2_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_ITEM2_VM_IDLE"
+					"ACT_VM_HITCENTER"	"ACT_ITEM2_VM_HITCENTER"
+					"ACT_VM_SWINGHARD"	"ACT_ITEM2_VM_SWINGHARD"
+					"ACT_BACKSTAB_VM_UP"	"ACT_ITEM2_BACKSTAB_VM_UP"
+					"ACT_BACKSTAB_VM_DOWN"	"ACT_ITEM2_BACKSTAB_VM_DOWN"
+					"ACT_BACKSTAB_VM_IDLE"	"ACT_ITEM2_BACKSTAB_VM_IDLE"
+					"ACT_MELEE_VM_STUN"	"ACT_MELEE_VM_ITEM2_STUN"
+					"ACT_MELEE_VM_INSPECT_START"	"ACT_ITEM2_VM_INSPECT_START"
+					"ACT_MELEE_VM_INSPECT_IDLE"		"ACT_ITEM2_VM_INSPECT_IDLE"
+					"ACT_MELEE_VM_INSPECT_END"		"ACT_ITEM2_VM_INSPECT_END"
+				}
+
+				"sound_melee_hit"	"vox/null"
+				"sound_melee_hit_world"	"Icicle.HitWorld"
+			}
+
+			"image_inventory"		"backpack/weapons/c_models/c_spyringe/c_spyringe"
+			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
+			"drop_sound"			"ui/item_knife_small_drop.wav"
+		}
+		
 		"9101" // Thermite Cannon
 		{
 			"name"				"TF_WEAPON_THERMITECANNON"
 			"item_name"			"Thermite Cannon"
 			"item_type_name"	"Liquid Metal Launcher"
+			"item_description"	"Made by Jugheadbomb
+Original weapon by bigmazi"
 			"item_quality"		"community"
 
 			"item_class"	"tf_weapon_grenadelauncher"
@@ -1529,11 +1609,11 @@ Weapon from: New Old Weapons Pack"
 			{
 				"hidden separator"		"1"
 				"dmg bonus vs buildings"				{"value"	"0.125"}					// This technically makes it WAY WORSE at destroying enemy Engineer buildings, but it needs to be this bad so it doesn't instagib Sappers. Ah well... For ref, this does 1 dmg (YEESH) to most buildings, and 8 dmg to Sappers
-				"Repair rate decreased"					{"value"	"0.15"}					// 3 metal per hit for Repairing - this heals 9 HP per (3s full repair | 2s Jag, 1.5s Wrench)
-				"upgrade rate decrease"					{"value"	"0.15"}					// 3 metal per hit for Upgrading (7s upgrade | Wrench 6s, Jag 5s)
+				"Repair rate decreased"					{"value"	"0.075"}					// 3 metal per hit for Repairing - this heals 9 HP per (3s full repair | 2s Jag, 1.5s Wrench)
+				"upgrade rate decrease"					{"value"	"0.125"}					// 3 metal per hit for Upgrading (7s upgrade | Wrench 6s, Jag 5s)
 
 				"Set DamageType Ignite"					{"value"	"1"}
-				"additive_burntime"						{"value"	"2"}
+				"additive_burntime"						{"value"	"0.175"}
 				"weapon burn dmg reduced"				{"value"	"0"}
 			}
 			"taunt"
@@ -1719,6 +1799,49 @@ Weapon from: New Old Weapons Pack"
 	"attributes"
 	{
 		// Custom
+		"6000"
+		{
+			"name"					"special last vaccination"
+		}
+		"6001"
+		{
+			"name"					"last vaccination DISPLAY ONLY 1"
+			"description_format"	"value_is_additive"
+			"description_string"	"No disguise loss on backstabs"
+			"effect_type"		"positive"
+		}
+		"6002"
+		{
+			"name"					"last vaccination DISPLAY ONLY 2"
+			"description_format"	"value_is_additive"
+			"description_string"	"BACKSTAB: Silently injects lethal dose of poison
+FRONTSTAB: Shakes view and applies minor poison"
+			"effect_type"			"neutral"
+		}
+		"6003"
+		{
+			"name"					"last vaccination DISPLAY ONLY 3"
+			"description_format"	"value_is_additive"
+			"description_string"	"Deals no damage by itself"
+			"effect_type"			"negative"
+		}
+		"6004"
+		{
+			"name"					"special thermite cannon"
+			"description_format"	"value_is_additive"
+			"description_string"	"Thermite bombs get activated shortly after contact
+ALT-FIRE: smoke puff that extinguishes allies (no airblast)"
+			"effect_type"			"neutral"
+			//"hidden"				"0"
+		}
+		"6005"
+		{
+			"name"					"special viewfinder"
+			"description_format"	"value_is_additive"
+			"description_string"	"On hit: outline victim
+Headshot outlines enemies nearby victim"
+			"effect_type"			"positive"
+		}
 		"6006"
 		{
 			"name"					"special lord of the house"
@@ -1732,6 +1855,13 @@ Weapon from: New Old Weapons Pack"
 			"description_format"	"value_is_additive"
 			"description_string"	"Projects a laser tracer while zoomed"
 			"effect_type"			"negative"
+		}
+		"6008"
+		{
+			"name"					"sandman positive DISPLAY ONLY"
+			"description_format"	"value_is_additive"
+			"description_string"	"Alt-Fire: Launches a ball that slows and Marks-for-death opponents"
+			"effect_type"			"positive"
 		}
 
 		// Legacy fix
@@ -1749,7 +1879,6 @@ Weapon from: New Old Weapons Pack"
 			"attribute_class"		"mult_wpn_burntime"
 			"description_format"	"value_is_additive"
 			"effect_type"			"positive"
-			
 		}
 		"10002"
 		{
