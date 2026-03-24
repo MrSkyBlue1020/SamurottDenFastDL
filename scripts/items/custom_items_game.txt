@@ -977,6 +977,7 @@ Original weapon by bigmazi"
 				"clip size penalty"		"0.75"
 				"Projectile speed decreased"	"0.7"
 				"damage penalty"	"0.75"
+				"self dmg push force decreased  "0.6"
 			}
 
 			"attributes"
