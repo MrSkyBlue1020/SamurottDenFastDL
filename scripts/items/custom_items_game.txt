@@ -874,9 +874,9 @@ before one of you gets hurt."
 		"9100" // Last Vaccination
 		{
 			"name"				"TF_WEAPON_LASTVACCINATION"
-			"item_name"			"Last Vaccination"
+			"item_name"			"Sleep Serum"
 			"item_type_name"	"Poison"
-			"item_description"	"Made by Jugheadbomb
+			"item_description"	"Made by MrSkyBlue
 Original weapon by bigmazi"
 
 			"item_quality"		"community"
@@ -896,25 +896,25 @@ Original weapon by bigmazi"
 			}
 			"attributes"
 			{
-				"special last vaccination"
+				"tranq on hit"
 				{
-					"attribute_class"	"dummy"
-					"value"			"1.0"
+				"attribute_class"	"mod_tranq_onhit"
+				"value"				"1.0"
 				}
-				"last vaccination DISPLAY ONLY 1"
+				"keep disguise on attack"
 				{
-					"attribute_class"	"dummy"
-					"value"			"1.0"
+				"attribute_class"	"keep_disguise_on_attack"
+				"value"				"1.0"
 				}
-				"last vaccination DISPLAY ONLY 2"
+				"silent killer"
 				{
-					"attribute_class"	"dummy"
-					"value"			"1.0"
+				"attribute_class"	"set_silent_killer"
+				"value"				"1.0"
 				}
-				"last vaccination DISPLAY ONLY 3"
+				"minicrit take while disguised"
 				{
-					"attribute_class"	"dummy"
-					"value"			"1.0"
+				"attribute_class"	"minicrit_take_while_disguised"
+				"value"				"1.0"
 				}
 			}
 
@@ -949,7 +949,7 @@ Original weapon by bigmazi"
 			"name"				"TF_WEAPON_THERMITECANNON"
 			"item_name"			"Thermite Cannon"
 			"item_type_name"	"Liquid Metal Launcher"
-			"item_description"	"Made by Jugheadbomb
+			"item_description"	"Made by MrSkyBlue
 Original weapon by bigmazi"
 			"item_quality"		"community"
 
@@ -1253,7 +1253,7 @@ Weapon from: New Old Weapons Pack"
 
 			"item_quality"				"community"
 			"item_name"					"Heavy Machine Gun"
-			"item_type_name"			"Machine Gun - (Mashu)"
+			"item_type_name"			"Machine Gun"
 			"item_description"			"Light on feet, heavy with firepower.
 
 Weapon from: New Old Weapons Pack"
@@ -1287,7 +1287,7 @@ Weapon from: New Old Weapons Pack"
 				"minigun fire rate bonus"
 				{
 					"attribute_class"	"mul_nonrocketjump_attackrate"
-					"value"				"0.7"
+					"value"				"0.85"
 				}
 				"damage penalty"
 				{
@@ -1297,7 +1297,7 @@ Weapon from: New Old Weapons Pack"
 				"spread penalty"
 				{
 					"attribute_class"	"mult_spread_scale"
-					"value"				"1.25"
+					"value"				"1.3"
 				}
 				"maxammo primary reduced"
 				{
