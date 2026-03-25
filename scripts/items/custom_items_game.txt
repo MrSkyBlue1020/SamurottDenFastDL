@@ -879,7 +879,7 @@ before one of you gets hurt."
 			"item_description"	"Made by MrSkyBlue
 Original weapon by bigmazi"
 
-			"item_quality"		"community"
+			"item_quality"		"vintage"
 
 			"item_class"	"tf_weapon_knife"
 			"item_slot"		"melee"
@@ -951,7 +951,7 @@ Original weapon by bigmazi"
 			"item_type_name"	"Liquid Metal Launcher"
 			"item_description"	"Made by MrSkyBlue
 Original weapon by bigmazi"
-			"item_quality"		"community"
+			"item_quality"		"vintage"
 
 			"item_class"	"tf_weapon_grenadelauncher"
 			"item_slot"		"primary"
@@ -1112,7 +1112,7 @@ Original weapon by bigmazi"
 			"item_name"			"Viewfinder"
 			"item_slot"			"primary"
 			"anim_slot"			"primary"
-			"item_quality"		"community"
+			"item_quality"		"vintage"
 			"image_inventory"	"backpack/w_viewfinder"
 
 			"item_logname"		"tv_sniper"
@@ -1578,7 +1578,7 @@ Animations by: 'Raptor Dan'"
 			"anim_slot"					"secondary"
             //"show_in_armory"			"0"
 
-			"item_quality"				"community"
+			"item_quality"				"Vintage"
 			"item_name"					"Welder"
 			"item_type_name"			"Welder"
 			"item_description"			"Y'all seared like a rack a' ribs.
@@ -1611,10 +1611,11 @@ Weapon from: New Old Weapons Pack"
 				"dmg bonus vs buildings"				{"value"	"0.125"}					// This technically makes it WAY WORSE at destroying enemy Engineer buildings, but it needs to be this bad so it doesn't instagib Sappers. Ah well... For ref, this does 1 dmg (YEESH) to most buildings, and 8 dmg to Sappers
 				"Repair rate decreased"					{"value"	"0.075"}					// 3 metal per hit for Repairing - this heals 9 HP per (3s full repair | 2s Jag, 1.5s Wrench)
 				"upgrade rate decrease"					{"value"	"0.125"}					// 3 metal per hit for Upgrading (7s upgrade | Wrench 6s, Jag 5s)
+				"metal regen"							{"value"	"10"}
 
 				"Set DamageType Ignite"					{"value"	"1"}
-				"additive_burntime"						{"value"	"0.175"}
-				"weapon burn dmg reduced"				{"value"	"0"}
+				"additive_burntime"						{"value"	"3"}
+				"weapon burn dmg reduced"				{"value"	"0.33"}
 			}
 			"taunt"
 			{
