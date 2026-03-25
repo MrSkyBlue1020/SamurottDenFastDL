@@ -875,7 +875,7 @@ before one of you gets hurt."
 		{
 			"name"				"TF_WEAPON_LASTVACCINATION"
 			"item_name"			"Sleep Serum"
-			"item_type_name"	"Poison"
+			"item_type_name"	"Injection"
 			"item_description"	"Made by MrSkyBlue
 Original weapon by bigmazi"
 
@@ -899,7 +899,7 @@ Original weapon by bigmazi"
 				"tranq on hit"
 				{
 				"attribute_class"	"mod_tranq_onhit"
-				"value"				"1.0"
+				"value"				"5.0"
 				}
 				"keep disguise on attack"
 				{
