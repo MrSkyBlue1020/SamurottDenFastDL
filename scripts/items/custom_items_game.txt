@@ -1219,7 +1219,7 @@ Weapon from: New Old Weapons Pack"
 				"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value"				"0.5"
+					"value"				"0.66"
 				}
 			}
 			"visuals"
