@@ -1785,9 +1785,8 @@ Weapon from: New Old Weapons Pack"
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-	}
-	
-	{
+		"9113"
+		{
 			"name"						"TF_WEAPON_SHELLRAISER"
 			"item_class"				"tf_weapon_rocketlauncher"
 
