@@ -964,7 +964,7 @@ Original weapon by bigmazi"
 			"static_attrs"
 			{
 				"min_viewmodel_offset" 			"10 0 -10"
-				"weapon burn dmg increased" 	"2.0"
+				"weapon burn dmg increased" 	"1.67"
 				"fuse bonus"					"0.3"
 				"faster reload rate"			"0.4"
 				"maxammo primary increased"		"1.5"
@@ -1265,17 +1265,12 @@ Weapon from: New Old Weapons Pack"
 				"aiming movespeed increased"
 				{
 					"attribute_class"	"mult_player_aiming_movespeed"
-					"value"				"1.5"
+					"value"				"1.3"
 				}
 				"minigun spinup time decreased"
 				{
 					"attribute_class"	"mult_minigun_spinup_time"
 					"value"				"0.8"
-				}
-				"minigun fire rate bonus"
-				{
-					"attribute_class"	"mul_nonrocketjump_attackrate"
-					"value"				"0.85"
 				}
 				"damage penalty"
 				{
