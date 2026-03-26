@@ -976,11 +976,6 @@ Original weapon by bigmazi"
 
 			"attributes"
 			{
-				"special thermite cannon"
-				{
-					"attribute_class"	"dummy"
-					"value"				"1"
-				}
 				"Set DamageType Ignite"
 				{
 					"attribute_class"	"set_dmgtype_ignite"
@@ -2025,13 +2020,6 @@ Headshot outlines enemies nearby victim"
 			"description_string"	"Stickybombs don't stick to surfaces"
 			"description_format"	"value_is_additive"
 			"effect_type"			"neutral"
-		}
-		"10017"
-		{
-			"name"					"no airblast TEXT"
-			"description_string"	"No airblast"
-			"description_format"	"value_is_additive"
-			"effect_type"			"negative"
 		}
 	}
 }
