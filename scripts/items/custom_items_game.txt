@@ -1602,11 +1602,11 @@ Weapon from: New Old Weapons Pack"
 			}
 			"attributes"
 			{
+				"metal regen"							{"value"	"15"}
 				"hidden separator"		"1"
 				"dmg bonus vs buildings"				{"value"	"0.125"}					// This technically makes it WAY WORSE at destroying enemy Engineer buildings, but it needs to be this bad so it doesn't instagib Sappers. Ah well... For ref, this does 1 dmg (YEESH) to most buildings, and 8 dmg to Sappers
 				"Repair rate decreased"					{"value"	"0.075"}					// 3 metal per hit for Repairing - this heals 9 HP per (3s full repair | 2s Jag, 1.5s Wrench)
 				"upgrade rate decrease"					{"value"	"0.125"}					// 3 metal per hit for Upgrading (7s upgrade | Wrench 6s, Jag 5s)
-				"metal regen"							{"value"	"10"}
 
 				"Set DamageType Ignite"					{"value"	"1"}
 				"additive_burntime"						{"value"	"3"}
