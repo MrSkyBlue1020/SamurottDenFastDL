@@ -1812,6 +1812,7 @@ Weapon from: New Old Weapons Pack"
 			"damage penalty"							"0.6"
 			"maxammo primary reduced"					"0.8"
 			"blast radius decreased" 					"0.5"
+			"dmg penalty vs buildings"					"0.6"
 			"weapon enemy knockback mod mult hidden"	"1.25"
 			}
 			"attributes"
