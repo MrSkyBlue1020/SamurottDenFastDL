@@ -1792,7 +1792,7 @@ Weapon from: New Old Weapons Pack"
 			"propername"				"1"
 			"item_quality"				"vintage"
 			"item_name"					"Shellraiser"
-			"item_slot"					"primary"
+			//"item_slot"					"primary"
 			"item_type_name"			"Autocannon"
 			"item_description"			"Blast through anything that looks at you funny with this shoulder-mounted anti-personnel launcher!"
 			"item_logname"				"bren_launcher"
@@ -1806,13 +1806,21 @@ Weapon from: New Old Weapons Pack"
 			}
 			"static_attrs"
 			{
-			"projectile speed increased"				"2.0"
+			"projectile speed increased"				"3.0"
 			"mod max primary clip override"				"-1"
-			"fire rate bonus"							"1.4"
+			"fire rate bonus"							"0.6"
 			"damage penalty"							"0.6"
-			"maxammo primary reduced"					"0.2"
+			"maxammo primary reduced"					"0.8"
 			"blast radius decreased" 					"0.5"
 			"weapon enemy knockback mod mult hidden"	"1.25"
+			}
+			"attributes"
+			{
+			"mod max primary clip override"
+				{
+					"attribute_class"	"mod_max_primary_clip_override"
+					"value"				"-1"
+				}	
 			}
 			"visuals"
 			{
