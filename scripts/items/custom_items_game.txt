@@ -971,7 +971,6 @@ Original weapon by bigmazi"
 				"clip size penalty"				"0.75"
 				"Projectile speed decreased"	"0.7"
 				"damage penalty"				"0.75"
-				"airblast_disabled" 			"1.0"
 			}
 
 			"attributes"
@@ -1587,7 +1586,7 @@ Weapon from: New Old Weapons Pack"
 			{
 				"welder firerate"						"0.125"									// This hinges on being a high firerate, low-output option. For the firerate, this helps it feel snappy, there's usually a LOT of downtime between individual hits.
 				"mult melee smack delay"				"0.00001"
-				"damage bonus HIDDEN"					"0.155"									// This does about 10 DMG, which honestly kills a bit slower than you might think. So, this isn't really a great option for self-defense, like, at all.
+				"damage bonus HIDDEN"					"0.31"									// This does about 10 DMG, which honestly kills a bit slower than you might think. So, this isn't really a great option for self-defense, like, at all.
 				"building support decrease"				"0.6"
 				"crit mod disabled"						"0"	
 
@@ -1810,7 +1809,7 @@ Weapon from: New Old Weapons Pack"
 			"mod max primary clip override"				"-1"
 			"fire rate bonus"							"1.4"
 			"damage penalty"							"0.6"
-			"hidden primary max ammo penalty"			"0.2"
+			"maxammo primary reduced"					"0.2"
 			"blast radius decreased" 					"0.5"
 			"weapon enemy knockback mod mult hidden"	"1.25"
 			}
@@ -1822,8 +1821,7 @@ Weapon from: New Old Weapons Pack"
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-	
-	
+	}
 	"attributes"
 	{
 		// Custom
