@@ -314,3 +314,28 @@
 	"soundlevel"	"SNDLVL_94dB"
 	"wave"			")weapons/stickyroller_shoot_crit.wav"
 }
+
+// ------------------------------------------------------------------------------------ //
+// The Shellraiser
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Bren.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		")weapons/bren_launcher/bren_launcher_shoot.wav"
+	}
+}
+"Weapon_Bren.SingleCrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		")weapons/bren_launcher/bren_launcher_shoot_crit.wav"
+	}
+}
