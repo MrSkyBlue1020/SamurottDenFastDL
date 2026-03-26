@@ -901,14 +901,14 @@ Original weapon by bigmazi"
 				"attribute_class"	"mod_tranq_onhit"
 				"value"				"5.0"
 				}
-				"keep disguise on attack"
-				{
-				"attribute_class"	"keep_disguise_on_attack"
-				"value"				"1.0"
-				}
 				"silent killer"
 				{
 				"attribute_class"	"set_silent_killer"
+				"value"				"1.0"
+				}
+				"minicrit take while disguised"
+				{
+				"attribute_class"	"minicrit_take_while_disguised"
 				"value"				"1.0"
 				}
 			}
