@@ -1626,7 +1626,7 @@ Weapon from: New Old Weapons Pack"
 		}
 		"9111"
 		{
-			"name"						"Lever Rifle"
+			"name"						"Trench Runner"
 			"item_class"				"tf_weapon_scattergun"
 			"item_slot"					"primary"
 
