@@ -1831,8 +1831,8 @@ Made by MrSkyBlue"
 	
 		"20009" // Combat SMG
 		{
-			"name"				"Combat SMG"
-			"item_name"			"Combat_SMG_Sniper"
+			"name"				"Combat_SMG_Sniper"
+			"item_name"			"Combat SMG"
 			"item_type_name"	"#TF_Weapon_SMG"
 			"item_description"	"Good? Bad? I'm the man with the gun."
 			"item_quality"		"normal"
@@ -1870,8 +1870,8 @@ Made by MrSkyBlue"
 		
 	"20010" // Combat SMG
 		{
-			"name"				"Combat SMG"
-			"item_name"			"Combat_SMG_All"
+			"name"				"Combat_SMG_All"
+			"item_name"			"Combat SMG"
 			"item_type_name"	"#TF_Weapon_SMG"
 			"item_description"	"If they move, I kill 'em!"
 			"item_quality"		"normal"
