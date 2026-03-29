@@ -339,3 +339,40 @@
 		"wave"		")weapons/bren_launcher/bren_launcher_shoot_crit.wav"
 	}
 }
+
+// ------------------------------------------------------------------------------------ //
+// COMGAT SMG
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_SMG.Draw"
+{
+	"channel"	"CHAN_AUTO"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".5"
+	"wave"		"weapons/draw_secondary.wav"
+}
+
+"Weapon_SMG_DM.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/smg_dm_shoot.wav"
+}
+
+"Weapon_SMG_DM.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/smg_dm_shoot_crit.wav"
+}
+
+"Weapon_SMG_DM.Draw"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		")weapons/draw_smg_dm.wav"
+}
