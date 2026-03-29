@@ -1831,8 +1831,8 @@ Made by MrSkyBlue"
 	
 	"20009" // Combat SMG
 		{
-			"name"				"TF_WEAPON_COMBAT_SMG"
-			"item_name"			"#TF_Weapon_SMG_DM"
+			"name"				"Combat SMG"
+			"item_name"			"Submachine Gun"
 			"item_type_name"	"#TF_Weapon_SMG"
 			"item_description"	"Good? Bad? I'm the man with the gun."
 			"item_quality"		"normal"
@@ -1852,9 +1852,9 @@ Made by MrSkyBlue"
 			"static_attrs"
 			{
 				"min_viewmodel_offset"			"10 0 -10"
-				"fire rate bonus"				"1.2"
+				"fire rate bonus"				"0.7
 				"clip size bonus"				"1.8"
-				"maxammo secondary increased"	"1.8"
+				"maxammo secondary increased"	"2.6"
 				"damage penalty"				"0.75"
 			}
 			"visuals"
@@ -1894,7 +1894,7 @@ Made by MrSkyBlue"
 			"static_attrs"
 			{
 				"min_viewmodel_offset"			"10 0 -10"
-				"fire rate bonus"				"1.3"
+				"fire rate bonus"				"0.7"
 				"clip size bonus"				"1.8"
 				"maxammo secondary increased"	"2.6"
 				"damage penalty"				"0.75"
