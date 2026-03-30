@@ -1939,7 +1939,14 @@ Made by MrSkyBlue"
 				"damage penalty"				"0.70"
 				"hidden separator"				"1"
 			}
-			
+			"attributes"
+			{
+			"mod use custom ammo type"
+				{
+					"attribute_class"	"mod_use_custom_ammo_type"
+					"value"				"0"
+				}	
+			}
 			
 			"visuals"
 			{
