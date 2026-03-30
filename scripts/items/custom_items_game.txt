@@ -1944,7 +1944,7 @@ Made by MrSkyBlue"
 			"mod use custom ammo type"
 				{
 					"attribute_class"	"mod_use_custom_ammo_type"
-					"value"				"0"
+					"value"				"4"
 				}	
 			}
 			
