@@ -1045,7 +1045,7 @@ Original weapon by bigmazi"
 			"item_logname"				"Lord of the House"
 			"item_iconname"				"Lord of the House"
 			"image_inventory"			"backpack/weapons/c_models/c_cashgrab"
-			"model_world"               		"models/workshop/weapons/c_models/c_cashgrab/c_cashgrab.mdl"
+			"model_world"               "models/workshop/weapons/c_models/c_cashgrab/c_cashgrab.mdl"
 			"model_player"				"models/workshop/weapons/v_models/v_cashgrab/v_cashgrab_civ.mdl"
 			"extra_wearable"			"models/hats/civilian_magician/civilian_magician_edit.mdl"
 			"attach_to_hands"			"2"
@@ -1829,7 +1829,7 @@ Made by MrSkyBlue"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 	
-		"20009" // Combat SMG
+		//"20009" // Combat SMG (MISSING TEXTURES NO FIX)
 		{
 			"name"				"Combat_SMG_Sniper"
 			"item_name"			"Combat SMG"
@@ -1868,7 +1868,7 @@ Made by MrSkyBlue"
 		}
 		
 		
-	"20010" // Combat SMG
+	//"20010" // Combat SMG (MISSING TEXTURES NO FIX)
 		{
 			"name"				"Combat_SMG_All"
 			"item_name"			"Combat SMG"
@@ -1895,21 +1895,8 @@ Made by MrSkyBlue"
 				"min_viewmodel_offset"			"10 0 -10"
 				"fire rate bonus"				"0.8"
 				"clip size bonus"				"1.8"
+				"maxammo secondary increased"	"1.8"
 				"damage penalty"				"0.70"
-			}
-			
-			"attributes"
-			{
-				"mod use custom ammo type"
-				{
-					"attribute_class"			"mod_use_custom_ammo_type"
-					"value" 					"4"
-				}
-				"maxammo grenades1 increased"
-				{
-					"attribute_class"			"mult_maxammo_grenades1"
-					"value" 					"135"
-				}
 			}
 			
 			"visuals"
