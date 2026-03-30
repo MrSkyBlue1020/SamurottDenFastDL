@@ -1895,6 +1895,7 @@ Made by MrSkyBlue"
 				"min_viewmodel_offset"			"10 0 -10"
 				"fire rate bonus"				"0.8"
 				"clip size bonus"				"1.8"
+				"maxammo primary increased"	"1.8"
 				"damage penalty"				"0.70"
 			}
 			
