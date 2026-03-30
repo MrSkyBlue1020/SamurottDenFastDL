@@ -1631,7 +1631,7 @@ Weapon from: New Old Weapons Pack"
 			"item_slot"					"primary"
 
 			"item_quality"				"community"
-			"item_name"					"Lever Rifle"
+			"item_name"					"Trench Runner"
 			"item_type_name"			"Lever Shotgun"
 			"item_description"			"You gotta walk, before you can run.
 
@@ -1829,7 +1829,7 @@ Made by MrSkyBlue"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 	
-		"20009" // Combat SMG (MISSING TEXTURES NO FIX)
+		"20009" // Combat SMG
 		{
 			"name"				"Combat_SMG_Sniper"
 			"item_name"			"Combat SMG"
@@ -1853,8 +1853,8 @@ Made by MrSkyBlue"
 			{
 				"min_viewmodel_offset"			"10 0 -10"
 				"fire rate bonus"				"0.8"
-				"clip size bonus"				"1.8"
-				"maxammo secondary increased"	"1.8"
+				"clip size bonus"				"1.4"
+				"maxammo secondary increased"	"1.4"
 				"damage penalty"				"0.70"
 			}
 			"visuals"
@@ -1868,9 +1868,9 @@ Made by MrSkyBlue"
 		}
 		
 		
-	"20010" // Combat SMG (MISSING TEXTURES NO FIX)
+	"20010" // Combat SMG
 		{
-			"name"				"Combat_SMG_All"
+			"name"				"Combat_SMG_Medic"
 			"item_name"			"Combat SMG"
 			"item_type_name"	"#TF_Weapon_SMG"
 			"item_description"	"If they move, I kill 'em!"
@@ -1882,7 +1882,6 @@ Made by MrSkyBlue"
 			"used_by_classes"
 			{	
 				"medic"			"1"
-				"engineer"		"1"
 			}
 
 			"model_world"		"models/weapons/w_models/w_smg_dm.mdl"
@@ -1894,9 +1893,15 @@ Made by MrSkyBlue"
 			{
 				"min_viewmodel_offset"			"10 0 -10"
 				"fire rate bonus"				"0.8"
-				"clip size bonus"				"1.8"
-				"maxammo primary increased"	"1.8"
+				"clip size bonus"				"1.4"
+				"maxammo primary increased"		"1.4"
 				"damage penalty"				"0.70"
+			}
+			
+			"attributes"
+			{
+				"attribute_class"				"mod_use_custom_ammo_type"
+				"value"							"0"
 			}
 			
 			"visuals"
@@ -1908,6 +1913,54 @@ Made by MrSkyBlue"
 
 			"image_inventory"		"backpack/weapons/w_models/w_smgDM"
 		}
+		
+		"20011" // Combat SMG
+		{
+			"name"				"Combat_SMG_Engi"
+			"item_name"			"Combat SMG"
+			"item_type_name"	"#TF_Weapon_SMG"
+			"item_description"	"If they move, I kill 'em!"
+			"item_quality"		"vintage"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_smg"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{	
+				"engineer"			"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_smg_dm.mdl"
+			"model_player"		"models/weapons/v_models/v_smg_dm.mdl"
+			"anim_slot"			"primary"
+			"bucket"			"0"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+				"fire rate bonus"				"0.8"
+				"clip size bonus"				"1.4"
+				"maxammo primary increased"		"1.4"
+				"damage penalty"				"0.70"
+				"hidden separator"				"1"
+			}
+			
+			"attributes"
+			{
+				"attribute_class"				"mod_use_custom_ammo_type"
+				"value"							"0"
+			}
+			
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_SMG_DM.Single"		
+				"sound_burst"				"Weapon_SMG_DM.SingleCrit"
+			}
+			
+
+			"image_inventory"		"backpack/weapons/w_models/w_smgDM"
+		}
+		
 	}
 	
 	
