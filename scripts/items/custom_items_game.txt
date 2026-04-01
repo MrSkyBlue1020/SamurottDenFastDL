@@ -896,10 +896,10 @@ Original weapon by bigmazi"
 			}
 			"attributes"
 			{
-				"tranq on hit"
+				"mark for death"
 				{
-				"attribute_class"	"mod_tranq_onhit"
-				"value"				"5.0"
+					"attribute_class" 	"mark_for_death"
+					"value" 			"8"
 				}
 				"silent killer"
 				{
@@ -2017,7 +2017,7 @@ Headshot outlines enemies nearby victim"
 		{
 			"name"					"sandman positive DISPLAY ONLY"
 			"description_format"	"value_is_additive"
-			"description_string"	"Alt-Fire: Launches a ball that slows and Marks-for-death opponents"
+			"description_string"	"Alt-Fire: Launches a ball that slows opponents"
 			"effect_type"			"positive"
 		}
 
