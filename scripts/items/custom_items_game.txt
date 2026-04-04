@@ -1209,7 +1209,7 @@ Weapon from: New Old Weapons Pack"
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"0.75"
+					"value"				"0.85"
 				}
 				"spread penalty"
 				{
