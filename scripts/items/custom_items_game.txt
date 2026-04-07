@@ -1951,7 +1951,7 @@ Made by MrSkyBlue"
 				"mod burstfire"
 				{
 					"attribute_class"	"mod_burstfire"
-					"value"	"3 0.15"	
+					"value"	"3 0.22"	
 				}
 				"fire rate penalty"
 				{
