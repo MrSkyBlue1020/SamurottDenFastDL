@@ -1962,7 +1962,73 @@ Made by MrSkyBlue"
 
 			"image_inventory"		"backpack/weapons/w_models/w_assaultrifle"
 		}
+		
+		"20012" // Stahlwart
+        {
+        	"name"						"The Stahlwart"
+        	"show_in_armory"			"1"
+        	"item_class"				"TF_Weapon_medigun"
+        	"item_logname"				"The Booster"
+        	"item_iconname"				"The Booster"
+        	"item_name"					"The Booster"
+        	"item_type_name"			"Heal Gun"
+        	"item_description"			"Übercharge lasts for 12 seconds and grants damage resistance. 
+Medigun beam shortened by 40%."
+        	"image_inventory"			"backpack\weapons\c_models\c_quick_medigun_large.vmt"
+        	"model_world"				"models\weapons\c_models\c_quick_medigun.mdl"
+        	"model_player"	            "models\weapons\c_models\c_quick_medigun.mdl"
+        	"attach_to_hands"	        "1"          
+        	"attributes"
+        	{		
+                "mod ubercharge cond"
+                {
+					"attribute_class"	"mod_ubercharge_cond"
+					"value"	            "26"
+				}   
+                "ubercharge rate bonus"
+                {
+					"attribute_class"	"mult_medigun_uberchargerate"
+					"value"	            "1.2"
+				} 
+                "generate rage on heal"
+				{
+					"attribute_class"	"generate_rage_on_heal"
+					"value"				"1"
+				}
+                "uber duration bonus"
+                {
+					"attribute_class"	"add_uber_time"
+					"value"	            "4"
+				} 
+                "mod set beam range"
+                {
+					"attribute_class"	"mod_set_beam_range"
+					"value"	            "0.6"
+				}
+        	}
+            "visuals"
+			{
+				"player_bodygroups"
+				{
+					"medic_backpack"			"1"
+				}
+            "used_by_classes"
+            {
+                "Medic"     "1"
+            }
+            "static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+            "item_quality"	"unique"
+            "item_slot"	"secondary"
+        }
+
 	}
+	
+	
+	
+	
 	
 	"attributes"
 	{
