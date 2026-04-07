@@ -1951,12 +1951,12 @@ Made by MrSkyBlue"
 				"mod burstfire"
 				{
 					"attribute_class"	"mod_burstfire"
-					"value"	"3 0.33"	
+					"value"	"3 0.15"	
 				}
 				"fire rate penalty"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value" 			"4.0"
+					"value" 			"3.8"
 				}
 			}
 			"visuals"
