@@ -1917,9 +1917,9 @@ Made by MrSkyBlue"
 	"20011" // Assault Rifle
 		{
 			"name"				"TF_WEAPON_ASSAULT_RIFLE"
-			"item_name"			"The Fortunate Son"
+			"item_name"			"The Republic Rifle"
 			"item_type_name"	"Assault Rifle"
-			"item_description"	"Last one alive lock the door!"
+			"item_description"	"Patrolling the Badlands makes you wish for a pub push"
 			"item_quality"		"vintage"
 			"propername"		"0"
 
@@ -1939,7 +1939,6 @@ Made by MrSkyBlue"
 				// Actual Stats
 				"min_viewmodel_offset"			"10 0 -10"
 
-				// Converts a Syringe Gun to an Assault Rifle
 				"hidden separator"				"1"
 				"damage bonus"					"1.8"
 				"weapon spread bonus"			"0.2"
