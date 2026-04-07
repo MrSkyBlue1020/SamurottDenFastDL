@@ -2014,21 +2014,18 @@ Medigun beam shortened by 40%."
 				}
 				"used_by_classes"
 				{
-                "Medic"     "1"
+					"Medic"     "1"
 				}
 				"static_attrs"
 				{
 				"min_viewmodel_offset"		"10 0 -9"
 				}
-				"item_quality"	"unique"
+				"item_quality"	"vintage"
 				"item_slot"	"secondary"
 			}
 		}
 
 	}
-	
-	
-	
 	
 	
 	"attributes"
