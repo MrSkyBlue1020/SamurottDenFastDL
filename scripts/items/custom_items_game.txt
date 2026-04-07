@@ -1574,7 +1574,7 @@ Weapon from: New Old Weapons Pack"
 			{
 				"welder firerate"						"0.125"									// This hinges on being a high firerate, low-output option. For the firerate, this helps it feel snappy, there's usually a LOT of downtime between individual hits.
 				"mult melee smack delay"				"0.00001"
-				"damage bonus HIDDEN"					"0.31"									// This does about 10 DMG, which honestly kills a bit slower than you might think. So, this isn't really a great option for self-defense, like, at all.
+				"damage bonus HIDDEN"					"0.233"									// This does about 10 DMG, which honestly kills a bit slower than you might think. So, this isn't really a great option for self-defense, like, at all.
 				"building support decrease"				"0.6"
 				"crit mod disabled"						"0"	
 
@@ -1998,7 +1998,7 @@ Made by MrSkyBlue"
         	"item_class"				"tf_weapon_medigun"
         	"item_name"					"The Stahlwart"
         	"item_type_name"			"#TF_Weapon_Medigun"
-        	"item_description"			"Übercharge lasts for 12 seconds and grants damage resistance."
+        	"item_description"			"Übercharge lasts for 10 seconds and grants damage resistance."
         	"image_inventory"			"backpack\weapons\c_models\c_quick_medigun_large.vmt"
         	"model_world"				"models\weapons\c_models\c_quick_medigun.mdl"
         	"model_player"	            "models\weapons\c_models\c_quick_medigun.mdl"
@@ -2027,17 +2027,17 @@ Made by MrSkyBlue"
                 "ubercharge rate bonus"
                 {
 					"attribute_class"	"mult_medigun_uberchargerate"
-					"value"	            "1.2"
+					"value"	            "1.50"
 				}
                 "generate rage on heal"
 				{
 					"attribute_class"	"generate_rage_on_heal"
-					"value"				"2"
+					"value"				"1"
 				}
                 "uber duration bonus"
                 {
 					"attribute_class"	"add_uber_time"
-					"value"	            "4"
+					"value"	            "2"
 				}
 				"overheal penalty"
                 {
