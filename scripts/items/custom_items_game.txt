@@ -36,18 +36,6 @@
 				}
 			}
 		}
-		"52" // The Huntsman
-		{
-			"attributes"
-			{
-				"hidden separator"					"1"
-				"mod sniper zoom while jumping"
-				{
-					"attribute_class"				"mod_sniper_zoom_while_jumping"
-					"value"							"1.0"
-				}
-			}
-		}
 		// ----------------------------------------------------------------
 		// LIVE WEAPONS
 		// ----------------------------------------------------------------
