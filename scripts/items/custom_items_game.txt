@@ -1941,7 +1941,7 @@ Made by MrSkyBlue"
 
 				// Converts a Syringe Gun to an Assault Rifle
 				"hidden separator"				"1"
-				"damage bonus"					"1.5"
+				"damage bonus"					"1.6"
 				"weapon spread bonus"			"0.2"
 				"clip size bonus"				"1.2"
 				"maxammo secondary increased"	"1.2"
@@ -1956,7 +1956,7 @@ Made by MrSkyBlue"
 				"fire rate penalty"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value" 			"1.5"
+					"value" 			"1.8"
 				}
 			}
 			"visuals"
