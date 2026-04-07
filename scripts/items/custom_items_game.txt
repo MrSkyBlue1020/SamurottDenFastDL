@@ -1963,7 +1963,7 @@ Made by MrSkyBlue"
 			"image_inventory"		"backpack/weapons/w_models/w_assaultrifle"
 		}
 		
-		"20012" // Stahlwart
+	"20012" // Stahlwart
         {
         	"name"						"The Stahlwart"
         	"item_class"				"tf_weapon_medigun"
@@ -1975,6 +1975,9 @@ Medigun beam shortened by 40%."
         	"model_world"				"models\weapons\c_models\c_quick_medigun.mdl"
         	"model_player"	            "models\weapons\c_models\c_quick_medigun.mdl"
         	"attach_to_hands"	        "1"
+			"item_quality"				"vintage"
+			"item_slot"					"secondary"
+			"show_in_armory"			"1"
 			
 			"static_attrs"
 			{
@@ -2007,7 +2010,12 @@ Medigun beam shortened by 40%."
                 {
 					"attribute_class"	"add_uber_time"
 					"value"	            "4"
-				} 
+				}
+				"overheal penalty"
+                {
+                    "attribute_class"    "mult_medigun_overheal_amount"
+                    "value"    "0.5" // haha 50% overheal for you
+                }
                 "mod set beam range"
                 {
 					"attribute_class"	"mod_set_beam_range"
@@ -2020,12 +2028,6 @@ Medigun beam shortened by 40%."
 				{
 					"medic_backpack"			"1"
 				}
-				"used_by_classes"
-				{
-					"Medic"     "1"
-				}
-				"item_quality"	"vintage"
-				"item_slot"	"secondary"
 			}
 		}
 		
@@ -2037,48 +2039,6 @@ Medigun beam shortened by 40%."
 	"attributes"
 	{
 		// Custom
-		"6000"
-		{
-			"name"					"special last vaccination"
-		}
-		"6001"
-		{
-			"name"					"last vaccination DISPLAY ONLY 1"
-			"description_format"	"value_is_additive"
-			"description_string"	"No disguise loss on backstabs"
-			"effect_type"		"positive"
-		}
-		"6002"
-		{
-			"name"					"last vaccination DISPLAY ONLY 2"
-			"description_format"	"value_is_additive"
-			"description_string"	"BACKSTAB: Silently injects lethal dose of poison
-FRONTSTAB: Shakes view and applies minor poison"
-			"effect_type"			"neutral"
-		}
-		"6003"
-		{
-			"name"					"last vaccination DISPLAY ONLY 3"
-			"description_format"	"value_is_additive"
-			"description_string"	"Deals no damage by itself"
-			"effect_type"			"negative"
-		}
-		"6004"
-		{
-			"name"					"special thermite cannon"
-			"description_format"	"value_is_additive"
-			"description_string"	"Launches explosive bombs that ignite enemies."
-			"effect_type"			"neutral"
-			"hidden"				"0"
-		}
-		"6005"
-		{
-			"name"					"special viewfinder"
-			"description_format"	"value_is_additive"
-			"description_string"	"On hit: outline victim
-Headshot outlines enemies nearby victim"
-			"effect_type"			"positive"
-		}
 		"6006"
 		{
 			"name"					"special lord of the house"
