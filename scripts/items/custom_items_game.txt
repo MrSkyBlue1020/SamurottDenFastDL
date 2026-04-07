@@ -1956,7 +1956,7 @@ Made by MrSkyBlue"
 				"fire rate penalty"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value" 			"3.8"
+					"value" 			"3.75"
 				}
 			}
 			"visuals"
