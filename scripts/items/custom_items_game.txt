@@ -1913,8 +1913,6 @@ Made by MrSkyBlue"
 
 			"image_inventory"		"backpack/weapons/w_models/w_smgDM"
 		}
-		
-	}
 	
 	"20011" // Assault Rifle
 		{
