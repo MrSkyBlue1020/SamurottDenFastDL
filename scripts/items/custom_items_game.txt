@@ -1475,6 +1475,11 @@ Weapon by: 'Quinnz'"
 					"attribute_class"	"bomblets_count_mod"
 					"value" 			"0"
 				}
+				"maxammo grenades1 increased"
+                {
+                    "attribute_class"    "mult_maxammo_grenades1"
+                    "value"    "3"
+                }
 			}
 			"visuals"
 			{
@@ -1894,51 +1899,10 @@ Made by MrSkyBlue"
 				"min_viewmodel_offset"			"10 0 -10"
 				"fire rate bonus"				"0.8"
 				"clip size bonus"				"1.4"
-				"maxammo primary increased"		"1.4"
+				"maxammo secondary increased"	"1.4"
 				"damage penalty"				"0.70"
 			}
 			
-			
-			"visuals"
-			{
-				"sound_single_shot"			"Weapon_SMG_DM.Single"		
-				"sound_burst"				"Weapon_SMG_DM.SingleCrit"
-			}
-			
-
-			"image_inventory"		"backpack/weapons/w_models/w_smgDM"
-		}
-		
-		"20011" // Combat SMG
-		{
-			"name"				"Combat_SMG_Engi"
-			"item_name"			"Combat SMG"
-			"item_type_name"	"#TF_Weapon_SMG"
-			"item_description"	"If they move, I kill 'em!"
-			"item_quality"		"vintage"
-			"propername"		"0"
-
-			"item_class"		"tf_weapon_smg"
-			"item_slot"			"primary"
-			"used_by_classes"
-			{	
-				"engineer"			"1"
-			}
-
-			"model_world"		"models/weapons/w_models/w_smg_dm.mdl"
-			"model_player"		"models/weapons/v_models/v_smg_dm.mdl"
-			"anim_slot"			"primary"
-			"bucket"			"0"
-			"attach_to_hands"	"2"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"			"10 0 -10"
-				"fire rate bonus"				"0.8"
-				"clip size bonus"				"1.4"
-				"maxammo primary increased"		"1.4"
-				"damage penalty"				"0.70"
-				"hidden separator"				"1"
-			}
 			
 			"visuals"
 			{
@@ -1952,7 +1916,59 @@ Made by MrSkyBlue"
 		
 	}
 	
-	
+	"20011" // Assault Rifle
+		{
+			"name"				"TF_WEAPON_ASSAULT_RIFLE"
+			"item_name"			"The Fortunate Son"
+			"item_type_name"	"Assault Rifle"
+			"item_description"	"Last one alive lock the door!"
+			"item_quality"		"vintage"
+			"propername"		"0"
+
+			"item_class"		"tf_weapon_smg"
+			"item_slot"			"secondary"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_assaultrifle.mdl"
+			"model_player"		"models/weapons/v_models/v_assault_rifle_dm.mdl"
+			"anim_slot"			"secondary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				// Actual Stats
+				"min_viewmodel_offset"			"10 0 -10"
+
+				// Converts a Syringe Gun to an Assault Rifle
+				"hidden separator"				"1"
+				"damage bonus"					"1.2"
+				"fire rate penalty"				"1.2"
+				"weapon spread bonus"			"0.2"
+				"clip size bonus"				"1.2"
+				"maxammo secondary increased"	"1.2"
+			}
+			"attributes"
+			{
+				"mod burstfire"
+				{
+					"attribute_class"	"mod_burstfire"
+					"value"	"3 0.33"	
+				}
+			}
+			"visuals"
+			{
+				"sound_reload"			"Weapon_AR.WorldReload"
+				"sound_empty"			"Weapon_AR.ClipEmpty"	
+				"sound_single_shot"		"Weapon_AR.Single"
+				"sound_burst"			"Weapon_AR.SingleCrit"
+				"tracer_effect"			"bullet_pistol_tracer01"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_assaultrifle"
+		}
+	}
 	
 	"attributes"
 	{
