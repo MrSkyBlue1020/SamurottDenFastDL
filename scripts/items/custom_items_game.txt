@@ -1795,23 +1795,52 @@ Made by MrSkyBlue"
 			}
 			"static_attrs"
 			{
-			"projectile speed increased"				"2.5"
-			"mod max primary clip override"				"-1"
-			"fire rate bonus"							"0.7"
-			"dmg falloff decreased"						"0.5"
-			"damage penalty"							"0.6"
-			"maxammo primary reduced"					"0.8"
-			"blast radius decreased" 					"0.5"
-			"dmg penalty vs buildings"					"0.8"
-			"weapon enemy knockback mod mult hidden"	"1.1"
+			"projectile speed increased"				"1.8"
+			"fire rate bonus"							"0.85"
 			}
 			"attributes"
 			{
+			"rocketjump attackrate bonus"
+				{
+					"attribute_class"	"rocketjump_attackrate_bonus"
+					"value"				"0.3"
+				}
+			
+			"rocket jump damage reduction"
+				{
+					"attribute_class" "rocket_jump_dmg_reduction"
+					"value" "0.85"
+				}
+			"dmg falloff decreased"						
+				{
+					"attribute_class"		"mult_dmg_falloff"
+					"value"					"0.5"
+				}
 			"mod max primary clip override"
 				{
 					"attribute_class"	"mod_max_primary_clip_override"
 					"value"				"-1"
-				}	
+				}
+			"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.65"
+				}
+			"maxammo primary reduced"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"0.8"
+				}
+			"blast radius decreased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"				"0.5"
+				}
+			"crit mod disabled"
+				{
+					"attribute_class" "mult_crit_chance"
+					"value" "0"
+				}
 			}
 			"visuals"
 			{
@@ -1969,8 +1998,7 @@ Made by MrSkyBlue"
         	"item_class"				"tf_weapon_medigun"
         	"item_name"					"The Stahlwart"
         	"item_type_name"			"#TF_Weapon_Medigun"
-        	"item_description"			"Übercharge lasts for 12 seconds and grants damage resistance. 
-Medigun beam shortened by 40%."
+        	"item_description"			"Übercharge lasts for 12 seconds and grants damage resistance."
         	"image_inventory"			"backpack\weapons\c_models\c_quick_medigun_large.vmt"
         	"model_world"				"models\weapons\c_models\c_quick_medigun.mdl"
         	"model_player"	            "models\weapons\c_models\c_quick_medigun.mdl"
@@ -2000,7 +2028,7 @@ Medigun beam shortened by 40%."
                 {
 					"attribute_class"	"mult_medigun_uberchargerate"
 					"value"	            "1.2"
-				} 
+				}
                 "generate rage on heal"
 				{
 					"attribute_class"	"generate_rage_on_heal"
@@ -2014,13 +2042,8 @@ Medigun beam shortened by 40%."
 				"overheal penalty"
                 {
                     "attribute_class"    "mult_medigun_overheal_amount"
-                    "value"    "0.5" // haha 50% overheal for you
+                    "value"    			"0.5"
                 }
-                "mod set beam range"
-                {
-					"attribute_class"	"mod_set_beam_range"
-					"value"	            "0.6"
-				}
         	}
             "visuals"
 			{
