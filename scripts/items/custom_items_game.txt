@@ -1839,7 +1839,9 @@ Made by MrSkyBlue"
 			"name"				"Combat_SMG_Sniper"
 			"item_name"			"Combat SMG"
 			"item_type_name"	"#TF_Weapon_SMG"
-			"item_description"	"Good? Bad? I'm the man with the gun."
+			"item_description"	"Good? Bad? I'm the man with the gun.
+			Model from Open Fortress
+			openfortress.fun"
 			"item_quality"		"vintage"
 			"propername"		"0"
 
@@ -1878,7 +1880,8 @@ Made by MrSkyBlue"
 			"name"				"Combat_SMG_Medic"
 			"item_name"			"Combat SMG"
 			"item_type_name"	"#TF_Weapon_SMG"
-			"item_description"	"If they move, I kill 'em!"
+			"item_description"	"Model from Open Fortress
+			openfortress.fun"
 			"item_quality"		"vintage"
 			"propername"		"0"
 
@@ -1919,7 +1922,9 @@ Made by MrSkyBlue"
 			"name"				"TF_WEAPON_ASSAULT_RIFLE"
 			"item_name"			"The Republic Rifle"
 			"item_type_name"	"Assault Rifle"
-			"item_description"	"Patrolling the Badlands makes you wish for a pub push"
+			"item_description"	"Patrolling the Badlands makes you wish for a pub push.
+			Model from Open Fortress
+			openfortress.fun"
 			"item_quality"		"vintage"
 			"propername"		"0"
 
