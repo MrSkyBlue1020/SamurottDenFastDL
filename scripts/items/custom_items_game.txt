@@ -2032,7 +2032,7 @@ Made by MrSkyBlue"
                 "generate rage on heal"
 				{
 					"attribute_class"	"generate_rage_on_heal"
-					"value"				"2"
+					"value"				"1"
 				}
                 "uber duration bonus"
                 {
