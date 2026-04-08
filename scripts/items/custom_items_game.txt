@@ -2042,7 +2042,7 @@ Made by MrSkyBlue"
 				"overheal penalty"
                 {
                     "attribute_class"    "mult_medigun_overheal_amount"
-                    "value"    			"0.5"
+                    "value"    			"0.75"
                 }
         	}
             "visuals"
