@@ -933,7 +933,8 @@ Original weapon by bigmazi"
 			"item_name"			"Thermite Cannon"
 			"item_type_name"	"Incendiary Launcher"
 			"item_description"	"Made by MrSkyBlue
-Original weapon by bigmazi"
+Original weapon by bigmazi
+WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C Devs."
 			"item_quality"		"vintage"
 
 			"item_class"	"tf_weapon_grenadelauncher"
@@ -1835,6 +1836,11 @@ Made by MrSkyBlue"
 				{
 					"attribute_class"	"mult_explosion_radius"
 					"value"				"0.5"
+				}
+			"dmg penalty vs buildings"
+				{
+					"attribute_class"	"mult_dmg_vs_buildings"
+					"value"				"0.75"
 				}
 			"crit mod disabled"
 				{
