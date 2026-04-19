@@ -2059,9 +2059,9 @@ Weapon from: New Old Weapons Pack"
 				}
 			}
 		}
-		
+	}
 //Add New Weapons Here		
-		
+
 	
 	
 	"attributes"
