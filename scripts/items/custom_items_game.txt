@@ -294,7 +294,6 @@
 					"attribute_class"	"mult_crit_chance"
 					"value" "0"
 				}
-				"hidden separator"		"1"
 				"can headshot"
 				{
 					"attribute_class"	"can_headshot"
@@ -309,7 +308,9 @@
 			"image_inventory"		"backpack/weapons/w_models/w_smg"
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"			"ui/item_light_gun_drop.wav"
-		
+			"item_description"	"Good? Bad? I'm the man with the gun.
+			Model from Open Fortress
+			openfortress.fun"
 		}
 	
 		"33" // Uberspritze
