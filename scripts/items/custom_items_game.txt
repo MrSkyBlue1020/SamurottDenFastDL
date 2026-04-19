@@ -4,6 +4,89 @@
 {
 	"items"
 	{
+		"7" // Wrench
+		{
+			"name"				"TF_WEAPON_WRENCH"
+			"item_name"			"#TF_Weapon_Wrench"
+			"item_type_name"	"#TF_Weapon_Wrench"
+			"item_description"	"#TF_Weapon_Wrench_Desc"
+			"item_quality"		"normal"
+
+			"item_class"	"tf_weapon_wrench"
+			"item_slot"		"melee"
+			"baseitem"		"1"
+			"used_by_classes"
+			{
+				"Engineer"	"1"
+			}
+			
+			"model_player"		"models/weapons/v_models/v_wrench_engineer.mdl"
+			"model_world"		"models/weapons/w_models/w_wrench.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"wrench explain"		"1"
+				"min_viewmodel_offset"	"10 -2 -9"
+			}
+			"attributes"
+			{
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"25"
+				}
+			}
+			"image_inventory"		"backpack/weapons/w_models/w_wrench"
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"			"ui/item_metal_weapon_drop.wav"
+		}
+		"16" // SMG
+		{
+				"name"				"TF_WEAPON_SMG"
+				"item_name"			"#TF_Weapon_SMG"
+				"item_type_name"	"#TF_Weapon_SMG"
+				"item_description"	"#TF_Weapon_SMG_Desc"
+				"item_quality"		"normal"
+
+				"item_class"	"tf_weapon_smg"
+				"item_slot"		"secondary"
+				"baseitem"		"1"
+				"used_by_classes"
+				{
+					"Sniper"	"1"
+				}
+
+				"model_player"		"models/weapons/v_models/v_smg_sniper.mdl"
+				"model_world"		"models/weapons/w_models/w_smg.mdl"
+				"attach_to_hands"	"2"
+				"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 0 -7"
+			}
+			"attributes"
+			{
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value" "0"
+				}
+				"can headshot"
+				{
+					"attribute_class"	"can_headshot"
+					"value"				"1"
+				}
+				"headshot is minicrit"
+				{
+					"attribute_class"	"headshot_is_minicrit"
+					"value"				"1"
+				}
+			}
+			"image_inventory"		"backpack/weapons/w_models/w_smg"
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"			"ui/item_light_gun_drop.wav"
+		
+		}
+	
 		"33" // Uberspritze
 		{
 			"attributes"
@@ -73,6 +156,16 @@
 				"sandman positive DISPLAY ONLY"
 				{
 					"attribute_class"	"dummy"
+					"value"				"1"
+				}
+				"deflect on swing"
+				{
+					"attribute_class"	"deflect_on_swing"
+					"value"				"1"
+				}
+				"deflect on smack hidden"
+				{
+					"attribute_class"	"deflect_on_smack"
 					"value"				"1"
 				}
 				"max health additive penalty"
@@ -196,6 +289,71 @@
 			}
 			"mouse_pressed_sound"		"#ui/item_medium_gun_drop.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"60"
+		{
+			"name" "The Cloak and Dagger"
+			"prefab" "valve"
+			"first_sale_date" "2010/09/29"
+			"item_class" "tf_weapon_invis"
+			"craft_class" "weapon"
+			"craft_material_type" "weapon"
+			"capabilities"
+			{
+				"nameable" "1"
+			}
+			"show_in_armory" "1"
+			"item_type_name" "#TF_Weapon_Watch"
+			"item_name" "#TF_Unique_Achievement_CloakWatch"
+			"item_slot" "pda2"
+			"anim_slot" "FORCE_NOT_USED"
+			"item_quality" "unique"
+			"propername" "1"
+			"min_ilevel" "5"
+			"max_ilevel" "5"
+			"image_inventory" "backpack/weapons/c_models/c_leather_watch/parts/c_leather_watch"
+			"image_inventory_size_w" "128"
+			"image_inventory_size_h" "82"
+			"model_player" "models/weapons/v_models/v_watch_leather_spy.mdl"
+                        "extra_wearable" "models/player/items/all_class/pcg_hat_spy.mdl"
+			"used_by_classes"
+			{
+				"spy" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "8 0 -6"
+			}
+			"attributes"
+			{
+				"kill eater score type"
+				{
+					"attribute_class" "kill_eater_score_type"
+					"value" "58"
+				}
+				"set cloak is movement based"
+				{
+					"attribute_class" "set_weapon_mode"
+					"value" "2"
+				}
+				"mult cloak meter regen rate"
+				{
+					"attribute_class" "mult_cloak_meter_regen_rate"
+					"value" "2.0"
+				}
+				"NoCloakWhenCloaked"
+				{
+					"attribute_class" "NoCloakWhenCloaked"
+					"value" "1"
+				}
+				"ReducedCloakFromAmmo"
+				{
+					"attribute_class" "ReducedCloakFromAmmo"
+					"value" "0.85"
+				}
+			}
+			"mouse_pressed_sound" "ui/item_watch_pickup.wav"
+			"drop_sound" "ui/item_watch_drop.wav"
 		}
 		"61"
 		{
@@ -428,7 +586,7 @@ before one of you gets hurt."
 				"swing speed bonus"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value"				"0.85"
+					"value"				"0.75"
 				}
 				"damage penalty"
 				{
@@ -438,7 +596,7 @@ before one of you gets hurt."
 				"Repair rate decreased"
 				{
 					"attribute_class"	"mult_repair_value"
-					"value"				"0.7"
+					"value"				"0.85"
 				}
 				"dmg penalty vs buildings"
 				{
@@ -619,7 +777,106 @@ before one of you gets hurt."
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		
+		"426"
+		{
+			"name" "The Eviction Notice"
+			"first_sale_date" "2011/04/14"
+			"item_class" "tf_weapon_fists"
+			"craft_class" "weapon"
+			"craft_material_type" "weapon"
+			"capabilities"
+			{
+				"nameable" "1"
+				"can_craft_count" "1"
+			}
+			"tags"
+			{
+				"can_deal_damage" "1"
+				"can_deal_critical_damage" "1"
+			}
+			"show_in_armory" "1"
+			"item_type_name" "#TF_Weapon_Gloves"
+			"item_name" "#TF_EvictionNotice"
+			"item_slot" "melee"
+			"item_logname" "eviction_notice"
+			"item_iconname" "eviction_notice"
+			"image_inventory" "backpack/workshop/weapons/c_models/c_eviction_notice/c_eviction_notice"
+			"image_inventory_size_w" "128"
+			"image_inventory_size_h" "82"
+			"inspect_panel_dist" "53"
+			"model_player" "models/workshop/weapons/c_models/c_eviction_notice/c_eviction_notice.mdl"
+            "extra_wearable" "models/workshop/player/items/heavy/dec24_battle_balaclava_style1/dec24_battle_balaclava_style1.mdl"
+			"attach_to_hands" "1"
+			"item_quality" "unique"
+			"min_ilevel" "10"
+			"max_ilevel" "10"
+			"propername" "1"
+			"used_by_classes"
+			{
+				"heavy" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 0 -8"
+			}
+			"attributes"
+			{
+				"provide on active"
+				{
+					"attribute_class" "provide_on_active"
+					"value" "1"
+				}
+				"mult_player_movespeed_active"
+				{
+					"attribute_class" "mult_player_movespeed_active"
+					"value" "1.2"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class" "mult_postfiredelay"
+					"value" "0.6"
+				}
+				"speed_boost_on_hit"
+				{
+					"attribute_class" "speed_boost_on_hit"
+					"value" "3"
+				}
+				"damage penalty"
+				{
+					"attribute_class" "mult_dmg"
+					"value" "0.55"
+				}
+				"dmg taken increased"
+				{
+					"attribute_class" "mult_dmgtaken"
+					"value" "1.2"
+				}
+			}
+			"visuals"
+			{
+                                "player_bodygroups"
+				{
+					"hands" "1"
+				}
+				"sound_melee_miss" "EvictionNotice.Swing"
+				"sound_melee_hit" "EvictionNotice.Impact"
+				"sound_melee_hit_world" "EvictionNotice.HitWorld"
+				"sound_melee_burst" "EvictionNotice.ImpactCrit"
+				"animation_replacement"
+				{
+					"ACT_VM_IDLE" "ACT_FISTS_VM_IDLE"
+					"ACT_VM_HITLEFT" "ACT_FISTS_VM_HITLEFT"
+					"ACT_VM_HITRIGHT" "ACT_FISTS_VM_HITRIGHT"
+					"ACT_VM_SWINGHARD" "ACT_FISTS_VM_SWINGHARD"
+					"ACT_VM_DRAW" "ACT_FISTS_VM_DRAW"
+					"ACT_MELEE_VM_INSPECT_START" "ACT_MELEE_ALT3_VM_INSPECT_START"
+					"ACT_MELEE_VM_INSPECT_IDLE" "ACT_MELEE_ALT3_VM_INSPECT_IDLE"
+					"ACT_MELEE_VM_INSPECT_END" "ACT_MELEE_ALT3_VM_INSPECT_END"
+				}
+			}
+			"mouse_pressed_sound" "ui/item_light_gun_pickup.wav"
+			"drop_sound" "ui/item_light_gun_drop.wav"
+		}
 		// ----------------------------------------------------------------
 		// Death & Taxes weapons
 		// ----------------------------------------------------------------
@@ -661,6 +918,11 @@ before one of you gets hurt."
 					"attribute_class"	"add_maxhealth"
 					"value"				"0"
 				}
+				"crit_dmg_falloff"
+				{
+					"attribute_class"	"crit_dmg_falloff"
+					"value"				"1"
+				}
 			}
 		}
 		"2006" // Dynamite Pack
@@ -671,6 +933,16 @@ before one of you gets hurt."
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value"				"1.5"
+				}
+				"maxammo grenades1 increased"
+                {
+                    "attribute_class"    "mult_maxammo_grenades1"
+                    "value"    "2"
+                }
+				"Blast radius increased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"				"1.2"
 				}
 			}
 		}
@@ -957,7 +1229,7 @@ WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C D
 				"fuse bonus"					"0.3"
 				"faster reload rate"			"0.4"
 				"maxammo primary increased"		"1.5"
-				"clip size penalty"				"0.75"
+				"clip size bonus"				"1.5"
 				"Projectile speed decreased"	"0.7"
 				"damage penalty"				"0.75"
 			}
@@ -1442,7 +1714,7 @@ Weapon by: 'Quinnz'"
 				"damage bonus hidden"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"0.8"
+					"value"				"0.95"
 				}
 				"crit mod disabled"
 				{
@@ -1974,15 +2246,10 @@ Weapon from: New Old Weapons Pack"
 			}
 			"attributes"
 			{
-				"mod burstfire"
-				{
-					"attribute_class"	"mod_burstfire"
-					"value"	"3 0.22"	
-				}
 				"fire rate penalty"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value" 			"3.75"
+					"value" 			"1.1"
 				}
 			}
 			"visuals"
@@ -2085,7 +2352,7 @@ Weapon from: New Old Weapons Pack"
 		{
 			"name"					"sandman positive DISPLAY ONLY"
 			"description_format"	"value_is_additive"
-			"description_string"	"Alt-Fire: Launches a ball that slows opponents"
+			"description_string"	"Alt-Fire: Launches a ball that slows opponents."
 			"effect_type"			"positive"
 		}
 
