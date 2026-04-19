@@ -11,10 +11,8 @@
 			"item_type_name"	"#TF_Weapon_Wrench"
 			"item_description"	"#TF_Weapon_Wrench_Desc"
 			"item_quality"		"normal"
-
 			"item_class"	"tf_weapon_wrench"
 			"item_slot"		"melee"
-			"baseitem"		"1"
 			"used_by_classes"
 			{
 				"Engineer"	"1"
@@ -50,7 +48,6 @@
 
 				"item_class"	"tf_weapon_smg"
 				"item_slot"		"secondary"
-				"baseitem"		"1"
 				"used_by_classes"
 				{
 					"Sniper"	"1"
