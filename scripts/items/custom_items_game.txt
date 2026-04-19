@@ -1004,10 +1004,6 @@ before one of you gets hurt."
 			}
 			"visuals"
 			{
-                                "player_bodygroups"
-				{
-					"hands" "1"
-				}
 				"sound_melee_miss" "EvictionNotice.Swing"
 				"sound_melee_hit" "EvictionNotice.Impact"
 				"sound_melee_hit_world" "EvictionNotice.HitWorld"
