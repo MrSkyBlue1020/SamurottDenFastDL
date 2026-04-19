@@ -1,0 +1,81 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "vgui\replay\thumbnails\models/weapons/c_models/c_rocketlauncher/dome_breaker_rocket_w_01"
+	
+	"$teamcolors" "1"	
+	
+		 "$phong" "1"
+		 "$phongexponent" "3.5"
+		 "$phongboost" "4"	
+	     "$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+         "$phongfresnelranges"	"[.2 4 .2]"
+	"$phongExponentTexture" "vgui\replay\thumbnails\models/weapons/c_models/c_rocketlauncher/specular_02"
+	$phongAlbedoTint 1
+	
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "1"				
+	"$rimlightboost" "6"
+
+
+//Jaraterfix?: //sheenfix:
+	"$halflambert" "1"
+
+"$glowcolor" "1"
+
+
+"$tempvar" "0"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"$sheenPassEnabled" "1"
+
+	"$sheenmap" 		"cubemaps/cubemap_sheen001"
+	"$sheenmapmask" 		"Effects/AnimatedSheen/animatedsheen0"
+	"$sheenmaptint" 		"[ 1 1 1 ]"
+	"$sheenmapmaskframe" 	"0"
+	"$sheenindex" 		"0"
+
+	"$yellow" "0"
+
+	"Proxies"
+	{
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
+		"invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+	
+	
+		"WeaponSkin" {
+		}
+	}
+}

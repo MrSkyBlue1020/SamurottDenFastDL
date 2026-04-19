@@ -1027,7 +1027,7 @@ WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C D
 			"item_class"				"tf2c_weapon_umbrella"
 			"item_slot"				"melee"
 
-			"item_quality"				"community"
+			"item_quality"				"Vintage"
 			"item_name"				"Lord of the House"
 			"item_type_name"			"#TF_Weapon_Cane"
 			"item_description"			"Proper leadership includes protection."
@@ -1062,7 +1062,7 @@ WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C D
 				"max health additive penalty"
 				{
 					"attribute_class"	"add_maxhealth"
-					"value"			"-50"
+					"value"			"-25"
 				}
 			}
 			"visuals"
@@ -1157,7 +1157,7 @@ WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C D
 			"item_class"				"tf_weapon_shotgun"
 			"item_slot"					"secondary"
 
-			"item_quality"				"community"
+			"item_quality"				"Vintage"
 			"item_name"					"Spitfire"
 			"item_type_name"			"#TF_Weapon_Shotgun"
 			"item_description"			"Fight fire with firepower.
@@ -1228,7 +1228,7 @@ Weapon from: New Old Weapons Pack"
 			"item_slot"					"primary"
 			"anim_slot"					"secondary"
 
-			"item_quality"				"community"
+			"item_quality"				"Vintage"
 			"item_name"					"Heavy Machine Gun"
 			"item_type_name"			"Machine Gun"
 			"item_description"			"Light on feet, heavy with firepower.
@@ -1264,7 +1264,7 @@ Weapon from: New Old Weapons Pack"
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"0.6"
+					"value"				"0.8"
 				}
 				"spread penalty"
 				{
@@ -1327,7 +1327,7 @@ Weapon from: New Old Weapons Pack"
 			"item_class"				"tf_weapon_pistol"
 			"item_slot"					"secondary"
 
-			"item_quality"				"community"
+			"item_quality"				"Vintage"
 			"item_name"					"Six-Shooter"
 			"item_type_name"			"#TF_Weapon_Revolver"
 			"item_description"			"Just one gun and six shots.
@@ -1402,7 +1402,7 @@ Weapon by: 'Quinnz'"
 			"item_logname"		"grenade"
 			"item_iconname"		"taunt_soldier"
 
-			"item_quality"		"community"
+			"item_quality"		"Vintage"
 			"image_inventory"	"backpack/weapons/w_models/w_grenade_frag/w_grenade_frag"
 			"model_player"		"models/weapons/v_models/v_grenade_frag_new.mdl"
 			"model_world"		"models/weapons/w_models/w_grenade_frag.mdl"
@@ -1442,7 +1442,7 @@ Weapon by: 'Quinnz'"
 				"damage bonus hidden"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"0.5"
+					"value"				"0.8"
 				}
 				"crit mod disabled"
 				{
@@ -1497,7 +1497,7 @@ Weapon by: 'Quinnz'"
 			"item_class"				"tf_weapon_smg"
 			"item_slot"					"secondary"
 
-			"item_quality"				"community"
+			"item_quality"				"Vintage"
 			"item_name"					"General's Garand"
 			"item_type_name"			"Semi-Automatic Rifle"
 			"item_description"			"Pay attention maggot! this rifle is what your ancestors used to win wars with!
@@ -1624,7 +1624,7 @@ Weapon from: New Old Weapons Pack"
 			"item_class"				"tf_weapon_scattergun"
 			"item_slot"					"primary"
 
-			"item_quality"				"community"
+			"item_quality"				"Vintage"
 			"item_name"					"Trench Runner"
 			"item_type_name"			"Lever Shotgun"
 			"item_description"			"You gotta walk, before you can run.
@@ -1698,7 +1698,7 @@ Weapon from: New Old Weapons Pack"
 			"item_slot"					"primary"
 			"anim_slot"					"secondary"
 
-			"item_quality"				"community"
+			"item_quality"				"Vintage"
 			"item_name"					"Double Scotch"
 			"item_type_name"			"#TF_Weapon_GrenadeLauncher"
 			"item_description"			"Let this be the hair o' the dog that bit ye.
@@ -1783,8 +1783,7 @@ Weapon from: New Old Weapons Pack"
 			"item_name"					"Shellraiser"
 			"item_slot"					"primary"
 			"item_type_name"			"Autocannon"
-			"item_description"			"Blast through anything that looks at you funny with this shoulder-mounted anti-personnel launcher!
-Made by MrSkyBlue"
+			"item_description"			"Blast through anything that looks at you funny with this shoulder-mounted anti-personnel launcher!"
 			"item_logname"				"bren_launcher"
 			"item_iconname"				"bren_launcher"
 			"image_inventory"			"backpack/bren_launcher/w_bren_launcher"
@@ -2062,7 +2061,46 @@ Made by MrSkyBlue"
 		}
 		
 //Add New Weapons Here		
-		
+		"20013" // Mutiny Incinerator
+		{
+			"name"				"TF_WEAPON_MUTINY_INCINERATOR"
+			"item_name"			"The Roaring Furnace"
+			"item_type_name"	"#TF_Weapon_Flamethrower"
+			"item_description"	"That's one hell of a flamethrower!"
+			"item_quality"		"Vintage"
+			"propername"		"1"
+
+			"item_class"		"tf_weapon_flamethrower"
+			"item_slot"			"primary"
+			"used_by_classes"
+			{
+				"pyro"			"1"
+			}
+
+			"model_world"		"models/weapons/w_models/w_mutiny_incinerator.mdl"
+			"model_player"		"models/weapons/v_models/v_mutiny_incinerator.mdl"
+			"anim_slot"			"primary"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+				"damage bonus"					"1.2"
+				"maxammo primary reduced"		"0.2"
+				"airblast disabled"				"1"
+				
+				"flame_gravity"					"0"
+				"flame_drag"					"8.500000"
+				"flame_up_speed"				"50"
+				"flame_speed"					"2423"
+				"flame_spread_degree"			"2.800000"
+				"flame_lifetime"				"0.600000"
+				"flame_random_life_time_offset"	"0.100000"
+				"flame_velocity_fade_start"		"0.300000"
+				"flame_velocity_fade_end"		"0.500000"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_mi"
+		}
 	}
 	
 	
