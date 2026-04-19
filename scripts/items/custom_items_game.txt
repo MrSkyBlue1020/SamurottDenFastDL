@@ -384,16 +384,6 @@
 					"attribute_class"	"dummy"
 					"value"				"1"
 				}
-				"deflect on swing"
-				{
-					"attribute_class"	"deflect_on_swing"
-					"value"				"1"
-				}
-				"deflect on smack hidden"
-				{
-					"attribute_class"	"deflect_on_smack"
-					"value"				"1"
-				}
 				"max health additive penalty"
 				{
 					"attribute_class"	"add_maxhealth"
