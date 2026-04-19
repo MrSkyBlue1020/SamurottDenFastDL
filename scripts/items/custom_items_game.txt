@@ -28,7 +28,7 @@
 			}
 			"attributes"
 			{
-				"max health additive penalty"
+				"max health additive bonus"
 				{
 					"attribute_class"	"add_maxhealth"
 					"value"				"25"
@@ -67,6 +67,7 @@
 					"attribute_class"	"mult_crit_chance"
 					"value" "0"
 				}
+				"hidden separator"		"1"
 				"can headshot"
 				{
 					"attribute_class"	"can_headshot"
@@ -311,8 +312,6 @@
 			"image_inventory" "backpack/weapons/c_models/c_leather_watch/parts/c_leather_watch"
 			"image_inventory_size_w" "128"
 			"image_inventory_size_h" "82"
-			"model_player" "models/weapons/v_models/v_watch_leather_spy.mdl"
-                        "extra_wearable" "models/player/items/all_class/pcg_hat_spy.mdl"
 			"used_by_classes"
 			{
 				"spy" "1"
@@ -802,7 +801,6 @@ before one of you gets hurt."
 			"image_inventory_size_h" "82"
 			"inspect_panel_dist" "53"
 			"model_player" "models/workshop/weapons/c_models/c_eviction_notice/c_eviction_notice.mdl"
-            "extra_wearable" "models/workshop/player/items/heavy/dec24_battle_balaclava_style1/dec24_battle_balaclava_style1.mdl"
 			"attach_to_hands" "1"
 			"item_quality" "unique"
 			"min_ilevel" "10"
