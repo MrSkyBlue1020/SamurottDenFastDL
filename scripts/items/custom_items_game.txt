@@ -2541,7 +2541,6 @@ Weapon from: New Old Weapons Pack"
 			
 			"image_inventory"		"backpack/weapons/w_models/w_mi"
 		}
-	}
 		
 		
 	}
