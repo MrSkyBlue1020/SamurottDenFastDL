@@ -2522,7 +2522,7 @@ Weapon from: New Old Weapons Pack"
 				"buildings upgrade cost bonus"
 				{
 					"attribute_class"	"add_buildings_upgrade_cost"
-					"value"				"0.625"
+					"value"				"0.5"
 				}
 				"buildings max level penalty"
 				{
