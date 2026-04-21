@@ -2482,7 +2482,7 @@ Weapon from: New Old Weapons Pack"
 				"engy sentry fire rate increased"
 				{
 					"attribute_class"	"mult_sentry_firerate"
-					"value"				"1.15"
+					"value"				"0.85"
 				}
 				"engy sentry knockback penalty"
 				{
