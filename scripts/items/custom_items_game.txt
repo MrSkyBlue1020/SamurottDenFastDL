@@ -2542,7 +2542,7 @@ Weapon from: New Old Weapons Pack"
 				"mult teleporter recharge rate"
 				{
 					"attribute_class"	"mult_teleporter_recharge_rate"
-					"value"				"1.2"
+					"value"				"0.8"
 				}
 			}
 			"tags"
