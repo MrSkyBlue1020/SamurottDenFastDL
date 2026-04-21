@@ -4,7 +4,6 @@
 {
 	"items"
 	{
-		
 		"0" // Bat
 		{
 			"name"				"TF_WEAPON_BAT"
@@ -495,6 +494,64 @@
 			"mouse_pressed_sound"		"#ui/item_medium_gun_drop.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
+		"60"
+		{
+			"name" "The Cloak and Dagger"
+			"prefab" "valve"
+			"first_sale_date" "2010/09/29"
+			"item_class" "tf_weapon_invis"
+			"show_in_armory" "1"
+			"item_type_name" "#TF_Weapon_Watch"
+			"item_name" "#TF_Unique_Achievement_CloakWatch"
+			"item_slot" "pda2"
+			"anim_slot" "FORCE_NOT_USED"
+			"item_quality" "unique"
+			"propername" "1"
+			"min_ilevel" "5"
+			"max_ilevel" "5"
+			"image_inventory" "backpack/weapons/c_models/c_leather_watch/parts/c_leather_watch"
+			"image_inventory_size_w" "128"
+			"image_inventory_size_h" "82"
+			"model_player" "models/weapons/v_models/v_watch_leather_spy.mdl"
+			"used_by_classes"
+			{
+				"spy" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "8 0 -6"
+			}
+			"attributes"
+			{
+				"kill eater score type"
+				{
+					"attribute_class" "kill_eater_score_type"
+					"value" "58"
+				}
+				"set cloak is movement based"
+				{
+					"attribute_class" "set_weapon_mode"
+					"value" "2"
+				}
+				"mult cloak meter regen rate"
+				{
+					"attribute_class" "mult_cloak_meter_regen_rate"
+					"value" "2.0"
+				}
+				"NoCloakWhenCloaked"
+				{
+					"attribute_class" "NoCloakWhenCloaked"
+					"value" "1"
+				}
+				"ReducedCloakFromAmmo"
+				{
+					"attribute_class" "ReducedCloakFromAmmo"
+					"value" "0.85"
+				}
+			}
+			"mouse_pressed_sound" "ui/item_watch_pickup.wav"
+			"drop_sound" "ui/item_watch_drop.wav"
+		}
 		"61"
 		{
 			"name"						"The Ambassador"
@@ -691,6 +748,146 @@ before one of you gets hurt."
 			}
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"215"
+		{
+			"item_name" "#TF_TheDegreaser"
+			"name" "The Degreaser"
+			"item_class" "tf_weapon_flamethrower"
+			"item_slot" "primary"
+			"particle_suffix" "degreaser"
+			"item_logname" "degreaser"
+			"item_iconname" "degreaser"
+			"show_in_armory" "1"
+			"image_inventory" "backpack/workshop/weapons/c_models/c_degreaser/c_degreaser"
+			"image_inventory_size_w" "128"
+			"image_inventory_size_h" "82"
+			"model_player" "models/workshop/weapons/c_models/c_degreaser/c_degreaser.mdl"
+			"attach_to_hands" "1"
+			"inspect_panel_dist" "91"
+			"item_quality" "unique"
+			"propername" "1"
+			"min_ilevel" "10"
+			"max_ilevel" "10"
+			"used_by_classes"
+			{
+				"pyro" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 0 -10"
+				"single wep deploy time decreased" "0.4"
+				"switch from wep deploy time decreased" "0.4"
+				"weapon burn dmg reduced" "0.34"
+				"airblast cost increased" "1.25"
+			}
+			"attributes"
+			{
+				"crit mod disabled"
+				{
+					"attribute_class" "mult_crit_chance"
+					"value" "0"
+				}
+				"damage bonus HIDDEN"
+				{
+					"attribute_class" "mult_dmg"
+					"value" "0.8"
+				}
+			}
+			"tags"
+			{
+				"can_be_festivized" "1"
+			}
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model" "models/workshop/weapons/c_models/c_degreaser/c_degreaser_pilotlight.mdl"
+					}
+				}
+			}
+		}
+		"224"
+		{
+			"name" "L\'Etranger"
+			"first_sale_date" "2010/09/29"
+			"item_class" "tf_weapon_revolver"
+			"craft_class" "weapon"
+			"craft_material_type" "weapon"
+			"capabilities"
+			{
+				"nameable" "1"
+			}
+			"tags"
+			{
+				"can_deal_damage" "1"
+				"can_deal_critical_damage" "1"
+				"can_deal_long_distance_damage" "1"
+				"can_be_festivized" "1"
+			}
+			"show_in_armory" "1"
+			"item_type_name" "#TF_Weapon_Revolver"
+			"item_name" "#TF_LEtranger"
+			"item_slot" "secondary"
+			"item_quality" "unique"
+			"propername" "0"
+			"item_logname" "letranger"
+			"item_iconname" "letranger"
+			"min_ilevel" "5"
+			"max_ilevel" "5"
+			"image_inventory" "backpack/workshop/weapons/c_models/c_letranger/c_letranger"
+			"image_inventory_size_w" "128"
+			"image_inventory_size_h" "82"
+			"inspect_panel_dist" "32"
+			"model_player" "models/workshop/weapons/c_models/c_letranger/c_letranger.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"spy" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 0 -6"
+			}
+			"mouse_pressed_sound" "ui/item_light_gun_pickup.wav"
+			"drop_sound" "ui/item_light_gun_drop.wav"
+			"attributes"
+			{
+				"add cloak on hit"
+				{
+					"attribute_class" "add_cloak_on_hit"
+					"value" "15"
+				}
+				"cloak consume rate decreased"
+				{
+					"attribute_class" "mult_cloak_meter_consume_rate"
+					"value" "0.55"
+				}
+				"damage penalty"
+				{
+					"attribute_class" "mult_dmg"
+					"value" "0.8"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class" "mult_crit_chance"
+					"value" "0"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot" "Weapon_Letranger.Single"
+				"sound_burst" "Weapon_Letranger.SingleCrit"
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model" "models/workshop/weapons/c_models/c_letranger/c_letranger_festivizer.mdl"
+					}
+				}
+			}
 		}
 		"329"
 		{
