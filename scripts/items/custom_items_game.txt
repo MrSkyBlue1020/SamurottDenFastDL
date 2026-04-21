@@ -1849,7 +1849,7 @@ Weapon by: 'Quinnz'"
 				"damage bonus hidden"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"0.95"
+					"value"				"0.6"
 				}
 				"crit mod disabled"
 				{
