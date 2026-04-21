@@ -2461,10 +2461,10 @@ Weapon from: New Old Weapons Pack"
 				}
 			}
 		}
-	"20013" // Precision Components
+	"20013" // Mass Manufacturer
 		{
 			"name"						"Overdrive_PDA"
-			"item_name"					"Precision Components"
+			"item_name"					"Mass Manufacturer"
 			"propername" "1"
 			"item_type_name"			"#TF_Weapon_ConstructionPDA"
 			"item_description"	"Your buildings work harder for cheaper, but are less durable, and cannot be upgraded above Level 2."
@@ -2538,6 +2538,11 @@ Weapon from: New Old Weapons Pack"
 				{
 					"attribute_class"	"mult_dispenser_radius"
 					"value"				"3"
+				}
+				"mult teleporter recharge rate"
+				{
+					"attribute_class"	"mult_teleporter_recharge_rate"
+					"value"				"1.2"
 				}
 			}
 			"tags"
@@ -2716,6 +2721,14 @@ Weapon from: New Old Weapons Pack"
 			"description_string"	"Stickybombs don't stick to surfaces"
 			"description_format"	"value_is_additive"
 			"effect_type"			"neutral"
+		}
+		"10017"
+		{
+			"name"					"mult teleporter recharge rate"
+			"attribute_class"		"mult_teleporter_recharge_rate"
+			"description_string"	"Teleporter recharge rate"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
 		}
 	}
 }
