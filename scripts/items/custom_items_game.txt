@@ -2552,6 +2552,7 @@ Weapon from: New Old Weapons Pack"
 			{
 				"min_viewmodel_offset"					"10 0 -10"				
 			}
+			"show_in_armory"			"1"
 
 			"image_inventory"		"backpack/weapons/w_models/w_toolbox"
 			"mouse_pressed_sound"	"ui/item_jumppad_pickup.wav"
