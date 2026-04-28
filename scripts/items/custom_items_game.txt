@@ -3695,14 +3695,14 @@ Weapon by: 'Quinnz'"
 		}
 	"20008"																			
 		{
-			"name"						"General's Garand"
+			"name"						"Soldier_Garand"
 			"item_class"				"tf_weapon_smg"
 			"item_slot"					"secondary"
 
 			"item_quality"				"Vintage"
 			"item_name"					"General's Garand"
 			"item_type_name"			"Semi-Automatic Rifle"
-			"item_description"			"Pay attention maggot! this rifle is what your ancestors used to win wars with!
+			"item_description"			"Atten-hut, maggot! This is your rifle! There are many like it, but this one is mine!
 
 Model by: 'Hau, Kibbleknight'
 Animations by: 'Raptor Dan'"
@@ -3718,15 +3718,15 @@ Animations by: 'Raptor Dan'"
 			}
 			"static_attrs"
 			{
-				"min_viewmodel_offset"				"10 0 -9"
+				"min_viewmodel_offset"					"10 0 -9"
 				"hidden separator"					"1"
 				"damage bonus"						"4.0"
-				"scattergun no reload single"		"1"
+				"scattergun no reload single"				"1"
 				"clip size penalty"					"0.32"
-				"maxammo secondary reduced"			"0.43"
+				"maxammo secondary reduced"				"0.43"
 				"fire rate penalty"					"4.5"
-				"longer damage falloff distance"	"3.0"
-                "weapon spread bonus"				"0.5"
+				"longer damage falloff distance"			"2.5"
+               			"weapon spread bonus"					"0.3"
 			}
 			"visuals"
 			{
