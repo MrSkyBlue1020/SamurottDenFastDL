@@ -1,5 +1,5 @@
 # SamurottDenFastDL
-Samurott Den TF2C FastDL Server
+SkyBlue's Lab (Formerly Samurott Den) TF2C FastDL Server
 
 Note to self: do
 git add .
