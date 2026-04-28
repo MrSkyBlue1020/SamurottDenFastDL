@@ -448,3 +448,29 @@
 	"volume"	".35"
 	"wave"		"weapons/draw_assaultrifle_boltforward.wav"
 }
+
+// ------------------------------------------------------------------------------------ //
+//PISTOL SPY
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Suppressed_Pistol.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"		"0.8"
+	"rndwave"
+	{
+		"wave"		")weapons/suppressed_pistol.wav"
+	}
+}
+
+"Weapon_Suppressed_Pistol.SingleCrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"		"0.8"
+	"rndwave"
+	{
+		"wave"		")weapons/suppressed_pistol_crit.wav"
+	}
+}

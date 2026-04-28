@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "backpack/colt_pistol/c_colt_pistol_large"
+	"$translucent"	"1"
+	"$vertexcolor"	"1"
+	"$ignorez"	"1"
+}
