@@ -2808,7 +2808,7 @@ Weapon from: New Old Weapons Pack"
 			"item_type_name"			"Ray Gun"
 			"item_slot"					"secondary"
 			"anim_slot"					"secondary"
-			"show_in_armory"			"0"
+			"show_in_armory"			"1"
 
 			"item_description"			"A revelation most shocking!
 Model by: 'Circle Pipe'"
@@ -2848,7 +2848,7 @@ Model by: 'Circle Pipe'"
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"0.5"
+					"value"				"0.4"
 				}
 			}
 			"visuals"
