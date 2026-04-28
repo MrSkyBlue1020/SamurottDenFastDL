@@ -453,24 +453,18 @@
 //PISTOL SPY
 // ------------------------------------------------------------------------------------ //
 
-"Weapon_Suppressed_Pistol.Single"
+"Weapon_SpyHunter.Shoot"
 {
-	"channel"		"CHAN_WEAPON"
+	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
-	"volume"		"0.8"
-	"rndwave"
-	{
-		"wave"		")weapons/suppressed_pistol.wav"
-	}
+	"volume"	"1.0"
+	"wave"		")weapons/spyhunter_fire.wav"
 }
 
-"Weapon_Suppressed_Pistol.SingleCrit"
+"Weapon_SpyHunter.ShootCrit"
 {
-	"channel"		"CHAN_WEAPON"
+	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
-	"volume"		"0.8"
-	"rndwave"
-	{
-		"wave"		")weapons/suppressed_pistol_crit.wav"
-	}
+	"volume"	"1.0"
+	"wave"		")weapons/spyhunter_fire_crit.wav"
 }
