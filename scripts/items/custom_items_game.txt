@@ -15,7 +15,6 @@
 
 			"item_class"	"tf_weapon_bat"
 			"item_slot"		"melee"
-			"baseitem"		"1"
 			"used_by_classes"
 			{
 				"Scout"	"1"
@@ -43,7 +42,6 @@
 
 			"item_class"	"tf_weapon_bottle"
 			"item_slot"		"melee"
-			"baseitem"		"1"
 			"used_by_classes"
 			{
 				"Demoman"		"1"
@@ -71,7 +69,6 @@
 
 			"item_class"	"tf_weapon_fireaxe"
 			"item_slot"		"melee"
-			"baseitem"		"1"
 			"used_by_classes"
 			{
 				"Pyro"	"1"
@@ -99,7 +96,6 @@
 
 			"item_class"	"tf_weapon_club"
 			"item_slot"		"melee"
-			"baseitem"		"1"
 			"used_by_classes"
 			{
 				"Sniper"		"1"
@@ -127,7 +123,6 @@
 
 			"item_class"	"tf_weapon_knife"
 			"item_slot"		"melee"
-			"baseitem"		"1"
 			"used_by_classes"
 			{
 				"Spy"	"1"
@@ -156,7 +151,6 @@
 
 			"item_class"	"tf_weapon_fists"
 			"item_slot"		"melee"
-			"baseitem"		"1"
 			"used_by_classes"
 			{
 				"Heavy"	"1"
@@ -185,7 +179,6 @@
 
 			"item_class"	"tf_weapon_shovel"
 			"item_slot"		"melee"
-			"baseitem"		"1"
 			"used_by_classes"
 			{
 				"Soldier"	"1"
@@ -247,7 +240,6 @@
 
 			"item_class"	"tf_weapon_bonesaw"
 			"item_slot"		"melee"
-			"baseitem"		"1"
 			"used_by_classes"
 			{
 				"Medic"	"1"
@@ -2469,7 +2461,7 @@ Weapon from: New Old Weapons Pack"
 				}
 			}
 		}
-		"20017" // Mass Manufacturer
+	"20017" // Mass Manufacturer
 		{
 			"name"						"Overdrive_PDA"
 			"item_name"					"Mass Manufacturer"
