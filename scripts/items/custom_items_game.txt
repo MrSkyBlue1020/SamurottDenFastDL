@@ -4,311 +4,6 @@
 {
 	"items"
 	{
-		"0" // Bat
-		{
-			"name"				"TF_WEAPON_BAT"
-			"item_name"			"#TF_Weapon_Bat"
-			"item_type_name"	"#TF_Weapon_Bat"
-			"item_description"	"#TF_Weapon_Bat_Desc"
-			"item_quality"		"normal"
-
-			"item_class"	"tf_weapon_bat"
-			"item_slot"		"melee"
-			"used_by_classes"
-			{
-				"Scout"	"1"
-			}
-
-			"model_player"			"models/weapons/v_models/v_bat_scout.mdl"
-			"model_world"			"models/weapons/w_models/w_bat.mdl"
-			"attach_to_hands"		"2"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"	"10 0 -10"
-			}
-
-			"image_inventory"		"backpack/weapons/w_models/w_bat"
-			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
-			"drop_sound"			"ui/item_metal_weapon_drop.wav"
-		}
-		"1" // Bottle
-		{
-			"name"				"TF_WEAPON_BOTTLE"
-			"item_name"			"#TF_Weapon_Bottle"
-			"item_type_name"	"#TF_Weapon_Bottle"
-			"item_description"	"#TF_Weapon_Bottle_Desc"
-			"item_quality"		"normal"
-
-			"item_class"	"tf_weapon_bottle"
-			"item_slot"		"melee"
-			"used_by_classes"
-			{
-				"Demoman"		"1"
-			}
-
-			"model_player"		"models/weapons/v_models/v_bottle_demoman.mdl"
-			"model_world"		"models/weapons/w_models/w_bottle.mdl"
-			"attach_to_hands"	"2"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"	"10 0 -14"
-			}
-
-			"image_inventory"		"backpack/weapons/w_models/w_bottle"
-			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
-			"drop_sound"			"ui/item_bottle_drop.wav"
-		}
-		"2" // Fire Axe
-		{
-			"name"				"TF_WEAPON_FIREAXE"
-			"item_name"			"#TF_Weapon_FireAxe"
-			"item_type_name"	"#TF_Weapon_FireAxe"
-			"item_description"	"#TF_Weapon_FireAxe_Desc"
-			"item_quality"		"normal"
-
-			"item_class"	"tf_weapon_fireaxe"
-			"item_slot"		"melee"
-			"used_by_classes"
-			{
-				"Pyro"	"1"
-			}
-
-			"model_player"		"models/weapons/v_models/v_fireaxe_pyro.mdl"
-			"model_world"		"models/weapons/w_models/w_fireaxe.mdl"
-			"attach_to_hands"	"2"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"	"10 0 -9"
-			}
-
-			"image_inventory"		"backpack/weapons/w_models/w_fireaxe"
-			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
-			"drop_sound"			"ui/item_metal_weapon_drop.wav"
-		}
-		"3" // Kukri
-		{
-			"name"				"TF_WEAPON_CLUB"
-			"item_name"			"#TF_Weapon_Kukri"
-			"item_type_name"	"#TF_Weapon_Kukri"
-			"item_description"	"#TF_Weapon_Kukri_Desc"
-			"item_quality"		"normal"
-
-			"item_class"	"tf_weapon_club"
-			"item_slot"		"melee"
-			"used_by_classes"
-			{
-				"Sniper"		"1"
-			}
-
-			"model_player"		"models/weapons/v_models/v_machete_sniper.mdl"
-			"model_world"		"models/weapons/w_models/w_machete.mdl"
-			"attach_to_hands"	"2"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"	"10 0 -6"
-			}
-
-			"image_inventory"		"backpack/weapons/w_models/w_machete"
-			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
-			"drop_sound"			"ui/item_metal_weapon_drop.wav"
-		}
-		"4" // Knife
-		{
-			"name"				"TF_WEAPON_KNIFE"
-			"item_name"			"#TF_Weapon_Knife"
-			"item_type_name"	"#TF_Weapon_Knife"
-			"item_description"	"#TF_Weapon_Knife_Desc"
-			"item_quality"		"normal"
-
-			"item_class"	"tf_weapon_knife"
-			"item_slot"		"melee"
-			"used_by_classes"
-			{
-				"Spy"	"1"
-			}
-
-			"model_player"		"models/weapons/v_models/v_knife_spy.mdl"
-			"model_world"		"models/weapons/w_models/w_knife.mdl"
-			"attach_to_hands"	"2"
-			"static_attrs"
-			{
-				"knife explain"			"1"
-				"min_viewmodel_offset"	"5 0 -4"
-			}
-
-			"image_inventory"		"backpack/weapons/w_models/w_knife"
-			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
-			"drop_sound"			"ui/item_knife_small_drop.wav"
-		}
-		"5" // Fists
-		{
-			"name"				"TF_WEAPON_FISTS"
-			"item_name"			"#TF_Weapon_Fists"
-			"item_type_name"	"#TF_Weapon_Fists"
-			"item_description"	"#TF_Weapon_Fists_Desc"
-			"item_quality"		"normal"
-
-			"item_class"	"tf_weapon_fists"
-			"item_slot"		"melee"
-			"used_by_classes"
-			{
-				"Heavy"	"1"
-			}
-
-
-			"model_player"		"models/weapons/v_models/v_fist_heavy.mdl"
-			"model_world"		""
-			"attach_to_hands"	"2"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"	"10 0 -7"
-			}
-
-			"image_inventory"		"backpack/weapons/v_models/v_fist_heavy"
-			"mouse_pressed_sound"	"ui/item_fists_pickup.wav"
-			"drop_sound"			"ui/item_fists_drop.wav"
-		}
-		"6" // Shovel
-		{
-			"name"				"TF_WEAPON_SHOVEL"
-			"item_name"			"#TF_Weapon_Shovel"
-			"item_type_name"	"#TF_Weapon_Shovel"
-			"item_description"	"#TF_Weapon_Shovel_Desc"
-			"item_quality"		"normal"
-
-			"item_class"	"tf_weapon_shovel"
-			"item_slot"		"melee"
-			"used_by_classes"
-			{
-				"Soldier"	"1"
-			}
-
-			"model_player"		"models/weapons/v_models/v_shovel_soldier.mdl"
-			"model_world"		"models/weapons/w_models/w_shovel.mdl"
-			"attach_to_hands"	"2"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"	"10 -6 -12"
-			}
-
-			"image_inventory"		"backpack/weapons/w_models/w_shovel"
-			"mouse_pressed_sound"	"ui/item_shovel_pickup.wav"
-			"drop_sound"			"ui/item_shovel_drop.wav"
-		}
-		"7" // Wrench
-		{
-			"name"				"TF_WEAPON_WRENCH"
-			"item_name"			"#TF_Weapon_Wrench"
-			"item_type_name"	"#TF_Weapon_Wrench"
-			"item_description"	"#TF_Weapon_Wrench_Desc"
-			"item_quality"		"normal"
-			"item_class"	"tf_weapon_wrench"
-			"item_slot"		"melee"
-			"used_by_classes"
-			{
-				"Engineer"	"1"
-			}
-			
-			"model_player"		"models/weapons/v_models/v_wrench_engineer.mdl"
-			"model_world"		"models/weapons/w_models/w_wrench.mdl"
-			"attach_to_hands"	"2"
-			"static_attrs"
-			{
-				"wrench explain"		"1"
-				"min_viewmodel_offset"	"10 -2 -9"
-			}
-			"attributes"
-			{
-				"max health additive bonus"
-				{
-					"attribute_class"	"add_maxhealth"
-					"value"				"25"
-				}
-			}
-			"image_inventory"		"backpack/weapons/w_models/w_wrench"
-			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
-			"drop_sound"			"ui/item_metal_weapon_drop.wav"
-		}
-		"8" // Bonesaw
-		{
-			"name"				"TF_WEAPON_BONESAW"
-			"item_name"			"#TF_Weapon_Bonesaw"
-			"item_type_name"	"#TF_Weapon_Bonesaw"
-			"item_description"	"#TF_Weapon_Bonesaw_Desc"
-			"item_quality"		"normal"
-
-			"item_class"	"tf_weapon_bonesaw"
-			"item_slot"		"melee"
-			"used_by_classes"
-			{
-				"Medic"	"1"
-			}
-
-			"model_player"		"models/weapons/v_models/v_bonesaw_medic.mdl"
-			"model_world"		"models/weapons/w_models/w_bonesaw.mdl"
-			"attach_to_hands"	"2"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"	"10 0 -12"
-			}
-			"attributes"
-			{
-				"medic regen bonus"
-				{
-					"attribute_class"	"medic_regen"
-					"value"				"6"
-				}
-			}
-			"image_inventory"		"backpack/weapons/w_models/w_bonesaw"
-			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
-			"drop_sound"			"ui/item_metal_weapon_drop.wav"
-		}
-		"16" // SMG
-		{
-			"name"				"TF_WEAPON_SMG"
-			"item_name"			"#TF_Weapon_SMG"
-			"item_type_name"	"#TF_Weapon_SMG"
-			"item_description"	"#TF_Weapon_SMG_Desc"
-			"item_quality"		"normal"
-
-			"item_class"	"tf_weapon_smg"
-			"item_slot"		"secondary"
-			"used_by_classes"
-			{
-				"Sniper"	"1"
-			}
-
-			"model_player"		"models/weapons/v_models/v_smg_sniper.mdl"
-			"model_world"		"models/weapons/w_models/w_smg.mdl"
-			"attach_to_hands"	"2"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"	"10 0 -7"
-			}
-			"attributes"
-			{
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-						"value" "0"
-				}
-					"can headshot"
-				{
-					"attribute_class"	"can_headshot"
-					"value"				"1"
-				}
-				"headshot is minicrit"
-				{
-					"attribute_class"	"headshot_is_minicrit"
-					"value"				"1"
-				}
-			}
-		
-			"image_inventory"		"backpack/weapons/w_models/w_smg"
-			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
-			"drop_sound"			"ui/item_light_gun_drop.wav"
-		}
-	
 		"33" // Uberspritze
 		{
 			"attributes"
@@ -338,6 +33,18 @@
 				{
 					"attribute_class"	"add_maxhealth"
 					"value"				"0"
+				}
+			}
+		}
+		"52" // The Huntsman
+		{
+			"attributes"
+			{
+				"hidden separator"					"1"
+				"mod sniper zoom while jumping"
+				{
+					"attribute_class"				"mod_sniper_zoom_while_jumping"
+					"value"							"1.0"
 				}
 			}
 		}
@@ -502,7 +209,7 @@
 			"mouse_pressed_sound"		"#ui/item_medium_gun_drop.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		"60"
+		"60" // CnD
 		{
 			"name" "The Cloak and Dagger"
 			"prefab" "valve"
@@ -560,7 +267,7 @@
 			"mouse_pressed_sound" "ui/item_watch_pickup.wav"
 			"drop_sound" "ui/item_watch_drop.wav"
 		}
-		"61"
+		"61" //Amby
 		{
 			"name"						"The Ambassador"
 			"item_class"				"tf_weapon_revolver"
@@ -757,86 +464,6 @@ before one of you gets hurt."
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		"224"
-		{
-			"name" "L\'Etranger"
-			"first_sale_date" "2010/09/29"
-			"item_class" "tf_weapon_revolver"
-			"craft_class" "weapon"
-			"craft_material_type" "weapon"
-			"capabilities"
-			{
-				"nameable" "1"
-			}
-			"tags"
-			{
-				"can_deal_damage" "1"
-				"can_deal_critical_damage" "1"
-				"can_deal_long_distance_damage" "1"
-				"can_be_festivized" "1"
-			}
-			"show_in_armory" "1"
-			"item_type_name" "#TF_Weapon_Revolver"
-			"item_name" "#TF_LEtranger"
-			"item_slot" "secondary"
-			"item_quality" "unique"
-			"propername" "0"
-			"item_logname" "letranger"
-			"item_iconname" "letranger"
-			"min_ilevel" "5"
-			"max_ilevel" "5"
-			"image_inventory" "backpack/workshop/weapons/c_models/c_letranger/c_letranger"
-			"image_inventory_size_w" "128"
-			"image_inventory_size_h" "82"
-			"inspect_panel_dist" "32"
-			"model_player" "models/workshop/weapons/c_models/c_letranger/c_letranger.mdl"
-			"attach_to_hands" "1"
-			"used_by_classes"
-			{
-				"spy" "1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset" "10 0 -6"
-			}
-			"mouse_pressed_sound" "ui/item_light_gun_pickup.wav"
-			"drop_sound" "ui/item_light_gun_drop.wav"
-			"attributes"
-			{
-				"add cloak on hit"
-				{
-					"attribute_class" "add_cloak_on_hit"
-					"value" "15"
-				}
-				"cloak consume rate decreased"
-				{
-					"attribute_class" "mult_cloak_meter_consume_rate"
-					"value" "0.55"
-				}
-				"damage penalty"
-				{
-					"attribute_class" "mult_dmg"
-					"value" "0.8"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class" "mult_crit_chance"
-					"value" "0"
-				}
-			}
-			"visuals"
-			{
-				"sound_single_shot" "Weapon_Letranger.Single"
-				"sound_burst" "Weapon_Letranger.SingleCrit"
-				"attached_models_festive"
-				{
-					"0"
-					{
-						"model" "models/workshop/weapons/c_models/c_letranger/c_letranger_festivizer.mdl"
-					}
-				}
-			}
-		}
 		"329"
 		{
 			"name"						"The Jag"
@@ -881,7 +508,7 @@ before one of you gets hurt."
 				"Repair rate decreased"
 				{
 					"attribute_class"	"mult_repair_value"
-					"value"				"0.80"
+					"value"				"0.7"
 				}
 				"dmg penalty vs buildings"
 				{
@@ -1062,7 +689,7 @@ before one of you gets hurt."
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-	"426" // Eviction Notice
+		"426" // Eviction Notice
 		{
 			"name" "The Eviction Notice"
 			"first_sale_date" "2011/04/14"
@@ -1242,7 +869,7 @@ before one of you gets hurt."
 		// ----------------------------------------------------------------
 		// Death & Taxes weapons
 		// ----------------------------------------------------------------
-	"2001" // Nail Gun
+		"2001" // Nail Gun
 		{
 			"attributes"
 			{
@@ -1259,7 +886,7 @@ before one of you gets hurt."
 				}
 			}
 		}
-	"2003" // Hunting Revolver
+		"2003" // Hunting Revolver
 		{
 			"attributes"
 			{
@@ -1280,14 +907,9 @@ before one of you gets hurt."
 					"attribute_class"	"add_maxhealth"
 					"value"				"0"
 				}
-				"crit_dmg_falloff"
-				{
-					"attribute_class"	"crit_dmg_falloff"
-					"value"				"1"
-				}
 			}
 		}
-	"2006" // Dynamite Pack
+		"2006" // Dynamite Pack
 		{
 			"attributes"
 			{
@@ -1296,20 +918,9 @@ before one of you gets hurt."
 					"attribute_class"	"mult_maxammo_primary"
 					"value"				"1.5"
 				}
-				"hidden separator"		"1"
-				"maxammo grenades1 increased"
-                {
-                    "attribute_class"    "mult_maxammo_grenades1"
-                    "value"    "2"
-                }
-				"Blast radius increased"
-				{
-					"attribute_class"	"mult_explosion_radius"
-					"value"				"1.2"
-				}
 			}
 		}
-	"2008" // Mine Layer
+		"2008" // Mine Layer
 		{
 			"attributes"
 			{
@@ -1320,7 +931,7 @@ before one of you gets hurt."
 				}
 			}
 		}
-	"2009" // Shock Therapy
+		"2009" // Shock Therapy
 		{
 			"attributes"
 			{
@@ -1378,7 +989,7 @@ before one of you gets hurt."
 		// ----------------------------------------------------------------
 		// Fight or Flight weapons
 		// ----------------------------------------------------------------
-	"2013" // Twin Barrel
+		"2013" // Twin Barrel
 		{
 			"attributes"
 			{
@@ -1421,7 +1032,7 @@ before one of you gets hurt."
 				}
 			}
 		}
-	"2016" // Harvester
+		"2016" // Harvester
 		{
 			"attributes"
 			{
@@ -1463,7 +1074,7 @@ before one of you gets hurt."
 				}
 			}
 		}
-	"2017" // Brick
+		"2017" // Brick
 		{
 			"attributes"
 			{
@@ -1478,7 +1089,7 @@ before one of you gets hurt."
 		// ----------------------------------------------------------------
 		// Double Down weapons
 		// ----------------------------------------------------------------
-	"2020" // Derby Cane
+		"2020" // Derby Cane
 		{
 			"attributes"
 			{
@@ -1494,12 +1105,13 @@ before one of you gets hurt."
 		}
 
 		// Custom weapons
-	"20000" // Sleep Serum
+		"20000" // Sleep Serum
 		{
-			"name"				"TF_WEAPON_LASTVACCINATION"
+			"name"				"Sleep Serum"
 			"item_name"			"Sleep Serum"
 			"item_type_name"	"Injection"
-			"item_description"	"Stats by MrSkyBlue"
+			"item_description"	"Made by MrSkyBlue
+Original weapon by bigmazi"
 
 			"item_quality"		"vintage"
 
@@ -1561,28 +1173,28 @@ before one of you gets hurt."
 			"drop_sound"			"ui/item_knife_small_drop.wav"
 		}
 		
-	"20001" // Thermite Cannon
+		"20001" // Incen Bomber
 		{
-			"name"						"TF_WEAPON_THERMITECANNON"
-			"item_name"					"Thermite Cannon"
-			"item_type_name"			"Incendiary Launcher"
-			"item_description"			"Stats by MrSkyBlue
-WARNING: Fuse Time Reduction and Damage Penalty are broken because of the TF2C Devs."
-			"item_quality"				"vintage"
-			"propername"				'1"
-			"item_class"				"tf_weapon_grenadelauncher"
-			"item_slot"					"primary"
+			"name"				"TF_WEAPON_THERMITECANNON"
+			"item_name"			"Thermite Cannon"
+			"item_type_name"	"Incendiary Launcher"
+			"item_description"	"Made by MrSkyBlue
+Original weapon by bigmazi"
+			"item_quality"		"vintage"
+
+			"item_class"	"tf_weapon_grenadelauncher"
+			"item_slot"		"primary"
 			"used_by_classes"
 			{
 				"Pyro"	"1"
 			}
 
-			"item_logname"				"incen_launcher"
+			"item_logname"				"thermite"
 			"item_iconname"				"thermite"
 
-			"model_player"				"models/weapons/cwp/thermblower/v_thermblower.mdl"
-			"model_world"				"models/weapons/cwp/thermblower/c_thermblower.mdl"
-			"attach_to_hands"			"2"
+			"model_player"		"models/weapons/cwp/thermblower/v_thermblower.mdl"
+			"model_world"		"models/weapons/cwp/thermblower/c_thermblower.mdl"
+			"attach_to_hands"	"2"
 			"static_attrs"
 			{
 				"min_viewmodel_offset" 			"10 0 -10"
@@ -1590,7 +1202,7 @@ WARNING: Fuse Time Reduction and Damage Penalty are broken because of the TF2C D
 				"fuse bonus"					"0.3"
 				"faster reload rate"			"0.4"
 				"maxammo primary increased"		"1.5"
-				"clip size bonus"				"1.5"
+				"clip size penalty"				"0.75"
 				"Projectile speed decreased"	"0.7"
 				"damage penalty"				"0.75"
 			}
@@ -1654,14 +1266,14 @@ WARNING: Fuse Time Reduction and Damage Penalty are broken because of the TF2C D
 			"drop_sound"			"ui/item_heavy_gun_drop.wav"
 		}
 
-	"20002"	// Lord of the House
+		"20002"	// Lord of the House
 		{
-			"name"						"TF_WEAPON_PIMP_CANE"
+			"name"					"TF_WEAPON_PIMP_CANE"
 			"item_class"				"tf2c_weapon_umbrella"
-			"item_slot"					"melee"
-			"propername"				"1"
-			"item_quality"				"Vintage"
-			"item_name"					"Lord of the House"
+			"item_slot"				"melee"
+
+			"item_quality"				"vintage"
+			"item_name"				"Lord of the House"
 			"item_type_name"			"#TF_Weapon_Cane"
 			"item_description"			"Proper leadership includes protection."
 			"item_logname"				"Lord of the House"
@@ -1713,7 +1325,7 @@ WARNING: Fuse Time Reduction and Damage Penalty are broken because of the TF2C D
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 
-	"20003"	// Viewfinder
+		"20003"	// Viewfinder
 		{
 			"name"				"Viewfinder"
 			"item_class"		"tf_weapon_sniperrifle"
@@ -1724,7 +1336,7 @@ WARNING: Fuse Time Reduction and Damage Penalty are broken because of the TF2C D
 			"anim_slot"			"primary"
 			"item_quality"		"vintage"
 			"image_inventory"	"backpack/w_viewfinder"
-			"propername"		"1"
+
 			"item_logname"		"tv_sniper"
 			"item_iconname"		"tv_sniper"
 			"model_player"		"models/weapons/c_models/c_viewfinder/c_viewfinder.mdl"
@@ -1784,13 +1396,13 @@ WARNING: Fuse Time Reduction and Damage Penalty are broken because of the TF2C D
 			"drop_sound" "ui/item_heavy_gun_drop.wav"
 		}
 
-	"20004"	// Spitfire
+		"20004"	// Spitfire
 		{
 			"name"						"Spitfire"
 			"item_class"				"tf_weapon_shotgun"
 			"item_slot"					"secondary"
-			"propername"				"1"
-			"item_quality"				"Vintage"
+
+			"item_quality"				"vintage"
 			"item_name"					"Spitfire"
 			"item_type_name"			"#TF_Weapon_Shotgun"
 			"item_description"			"Fight fire with firepower.
@@ -1831,7 +1443,7 @@ Weapon from: New Old Weapons Pack"
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"0.85"
+					"value"				"0.75"
 				}
 				"spread penalty"
 				{
@@ -1854,20 +1466,20 @@ Weapon from: New Old Weapons Pack"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 
-	"20005"
+		"20005"
 		{
-			"name"						"Heavy_HMG"
+			"name"						"Heavy Machine Gun"
 			"item_class"				"tf_weapon_minigun"
 			"item_slot"					"primary"
 			"anim_slot"					"secondary"
 
-			"item_quality"				"Vintage"
+			"item_quality"				"vintage"
 			"item_name"					"Heavy Machine Gun"
 			"item_type_name"			"Machine Gun"
 			"item_description"			"Light on feet, heavy with firepower.
 
 Weapon from: New Old Weapons Pack"
-			"item_logname"				"machinegun"
+			"item_logname"				"HeavyHMG"
 			"item_iconname"				"machinegun"
 			"image_inventory"			"backpack/weapons/w_models/w_machinegun"
 			"model_world"				"models/weapons/w_models/w_machinegun.mdl"
@@ -1897,7 +1509,7 @@ Weapon from: New Old Weapons Pack"
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"0.8"
+					"value"				"0.6"
 				}
 				"spread penalty"
 				{
@@ -1954,16 +1566,16 @@ Weapon from: New Old Weapons Pack"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 
-	"20006"	// Big Iron
+		"20006"	// Engineer Revolver
 		{
-			"name"						"Revolver_Engi"
+			"name"						"Engineer Revolver"
 			"item_class"				"tf_weapon_pistol"
 			"item_slot"					"secondary"
 
-			"item_quality"				"Vintage"
-			"item_name"					"Six-Shooter"
+			"item_quality"				"vintage"
+			"item_name"					"The Six-Shooter"
 			"item_type_name"			"#TF_Weapon_Revolver"
-			"item_description"			"Just one gun and six shots.
+			"item_description"			"Magnum Smooth.
 
 Weapon from: New Old Weapons Pack"
 			"item_logname"				"sixshooter"
@@ -2018,7 +1630,7 @@ Weapon from: New Old Weapons Pack"
 			"mouse_pressed_sound"		"#weapons/draw_six_shooter.wav"
 			"drop_sound"				"#ui/item_light_gun_drop.wav"
 		}
-	"20007"	// Frag Grenade
+		"20007"	// Frag Grenade
 		{
 			"name"				"Frag Grenade"
 			"item_class"		"tf_weapon_grenade_mirv"
@@ -2124,16 +1736,16 @@ Weapon by: 'Quinnz'"
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-	"20008"																			
+		"20008"																			
 		{
-			"name"						"Soldier_Garand"
+			"name"						"SoldierGarand"
 			"item_class"				"tf_weapon_smg"
 			"item_slot"					"secondary"
 
 			"item_quality"				"Vintage"
 			"item_name"					"General's Garand"
 			"item_type_name"			"Semi-Automatic Rifle"
-			"item_description"			"My rifle and myself know that what counts in this war is not the rounds we fire, the noise of our burst, nor the smoke we make. We know that it is the hits that count.
+			"item_description"			"Pay attention maggot! this rifle is what your ancestors used to win wars with!
 
 Model by: 'Hau, Kibbleknight'
 Animations by: 'Raptor Dan'"
@@ -2149,15 +1761,15 @@ Animations by: 'Raptor Dan'"
 			}
 			"static_attrs"
 			{
-				"min_viewmodel_offset"					"10 0 -9"
+				"min_viewmodel_offset"				"10 0 -9"
 				"hidden separator"					"1"
 				"damage bonus"						"4.0"
-				"scattergun no reload single"				"1"
+				"scattergun no reload single"		"1"
 				"clip size penalty"					"0.32"
-				"maxammo secondary reduced"				"0.43"
+				"maxammo secondary reduced"			"0.43"
 				"fire rate penalty"					"4.5"
-				"longer damage falloff distance"			"2.5"
-               			"weapon spread bonus"					"0.3"
+				"longer damage falloff distance"	"3.0"
+                "weapon spread bonus"				"0.5"
 			}
 			"visuals"
 			{
@@ -2180,7 +1792,7 @@ Animations by: 'Raptor Dan'"
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-	"20009"
+		"20009"
 		{
 			"name"						"Welder"
 			"item_class"				"tf_weapon_wrench"
@@ -2251,7 +1863,7 @@ Weapon from: New Old Weapons Pack"
 			"mouse_pressed_sound"		"#ui/item_welder_pickup.wav"
 			"drop_sound"				"#ui/item_light_gun_drop.wav"
 		}
-	"20010"
+		"20010"
 		{
 			"name"						"Trench Runner"
 			"item_class"				"tf_weapon_scattergun"
@@ -2324,7 +1936,7 @@ Weapon from: New Old Weapons Pack"
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-	"20011"
+		"20011"
 		{
 			"name"						"Double Scotch"
 			"item_class"				"tf_weapon_grenadelauncher"
@@ -2412,7 +2024,7 @@ Weapon from: New Old Weapons Pack"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 		
-	"20012"
+		"20012"
 		{
 			"name"						"TF_WEAPON_SHELLRAISER"
 			"item_class"				"tf_weapon_rocketlauncher"
@@ -2800,11 +2412,54 @@ Weapon from: New Old Weapons Pack"
 		}
 		
 	}
-//Add New Weapons Here		
-
+	
+	
+	
 	"attributes"
 	{
 		// Custom
+		"6000"
+		{
+			"name"					"special last vaccination"
+		}
+		"6001"
+		{
+			"name"					"last vaccination DISPLAY ONLY 1"
+			"description_format"	"value_is_additive"
+			"description_string"	"No disguise loss on backstabs"
+			"effect_type"		"positive"
+		}
+		"6002"
+		{
+			"name"					"last vaccination DISPLAY ONLY 2"
+			"description_format"	"value_is_additive"
+			"description_string"	"BACKSTAB: Silently injects lethal dose of poison
+FRONTSTAB: Shakes view and applies minor poison"
+			"effect_type"			"neutral"
+		}
+		"6003"
+		{
+			"name"					"last vaccination DISPLAY ONLY 3"
+			"description_format"	"value_is_additive"
+			"description_string"	"Deals no damage by itself"
+			"effect_type"			"negative"
+		}
+		"6004"
+		{
+			"name"					"special thermite cannon"
+			"description_format"	"value_is_additive"
+			"description_string"	"Launches explosive bombs that ignite enemies."
+			"effect_type"			"neutral"
+			"hidden"				"0"
+		}
+		"6005"
+		{
+			"name"					"special viewfinder"
+			"description_format"	"value_is_additive"
+			"description_string"	"On hit: outline victim
+Headshot outlines enemies nearby victim"
+			"effect_type"			"positive"
+		}
 		"6006"
 		{
 			"name"					"special lord of the house"
@@ -2823,7 +2478,7 @@ Weapon from: New Old Weapons Pack"
 		{
 			"name"					"sandman positive DISPLAY ONLY"
 			"description_format"	"value_is_additive"
-			"description_string"	"Alt-Fire: Launches a ball that slows opponents."
+			"description_string"	"Alt-Fire: Launches a ball that slows opponents"
 			"effect_type"			"positive"
 		}
 
@@ -2955,14 +2610,6 @@ Weapon from: New Old Weapons Pack"
 			"description_string"	"Stickybombs don't stick to surfaces"
 			"description_format"	"value_is_additive"
 			"effect_type"			"neutral"
-		}
-		"10017"
-		{
-			"name"					"mult teleporter recharge rate"
-			"attribute_class"		"mult_teleporter_recharge_rate"
-			"description_string"	"Teleporter recharge rate"
-			"description_format"	"value_is_percentage"
-			"effect_type"			"positive"
 		}
 	}
 }
