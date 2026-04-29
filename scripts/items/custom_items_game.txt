@@ -252,6 +252,14 @@
 			{
 				"min_viewmodel_offset"	"10 0 -12"
 			}
+			"attributes"
+			{
+				"health regen"
+				{
+					"attribute_class"	"add_health_regen"
+					"value"				"3"
+				}
+			}
 
 			"image_inventory"		"backpack/weapons/w_models/w_bonesaw"
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
@@ -1012,6 +1020,165 @@ before one of you gets hurt."
 			"mouse_pressed_sound" "ui/item_light_gun_pickup.wav"
 			"drop_sound" "ui/item_light_gun_drop.wav"
 		}
+		"224"
+		{
+			"name" "L\'Etranger"
+			"first_sale_date" "2010/09/29"
+			"item_class" "tf_weapon_revolver"
+			"craft_class" "weapon"
+			"craft_material_type" "weapon"
+			"tags"
+			{
+				"can_deal_damage" "1"
+				"can_deal_critical_damage" "1"
+				"can_deal_long_distance_damage" "1"
+				"can_be_festivized" "1"
+			}
+			"show_in_armory" "1"
+			"item_type_name" "#TF_Weapon_Revolver"
+			"item_name" "#TF_LEtranger"
+			"item_slot" "secondary"
+			"item_quality" "unique"
+			"propername" "0"
+			"item_logname" "letranger"
+			"item_iconname" "letranger"
+			"min_ilevel" "5"
+			"max_ilevel" "5"
+			"image_inventory" "backpack/workshop/weapons/c_models/c_letranger/c_letranger"
+			"image_inventory_size_w" "128"
+			"image_inventory_size_h" "82"
+			"inspect_panel_dist" "32"
+			"model_player" "models/workshop/weapons/c_models/c_letranger/c_letranger.mdl"
+                        "extra_wearable" "models\player\items\spy\grfs_spy.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"spy" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 0 -6"
+			}
+			"mouse_pressed_sound" "ui/item_light_gun_pickup.wav"
+			"drop_sound" "ui/item_light_gun_drop.wav"
+			"attributes"
+			{
+				"add cloak on hit"
+				{
+					"attribute_class" "add_cloak_on_hit"
+					"value" "15"
+				}
+				"cloak consume rate decreased"
+				{
+					"attribute_class" "mult_cloak_meter_consume_rate"
+					"value" "0.55"
+				}
+				"damage penalty"
+				{
+					"attribute_class" "mult_dmg"
+					"value" "0.8"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class" "mult_crit_chance"
+					"value" "0"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot" "Weapon_Letranger.Single"
+				"sound_burst" "Weapon_Letranger.SingleCrit"
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model" "models/workshop/weapons/c_models/c_letranger/c_letranger_festivizer.mdl"
+					}
+				}
+			}
+		}
+		"460"
+		{
+			"name" "The Enforcer"
+			"first_sale_date" "2011/05/15"
+			"item_class" "tf_weapon_revolver"
+			"craft_class" "weapon"
+			"craft_material_type" "weapon"
+			"capabilities"
+			{
+				"nameable" "1"
+				"can_craft_count" "1"
+			}
+			"tags"
+			{
+				"can_deal_damage" "1"
+				"can_deal_critical_damage" "1"
+				"can_deal_mvm_penetration_damage" "1"
+				"can_deal_long_distance_damage" "1"
+				"can_be_festivized" "1"
+			}
+			"show_in_armory" "1"
+			"item_type_name" "#TF_Weapon_Revolver"
+			"item_name" "#TF_Enforcer"
+			"item_slot" "secondary"
+			"item_quality" "unique"
+			"propername" "1"
+			"item_logname" "enforcer"
+			"item_iconname" "enforcer"
+			"min_ilevel" "5"
+			"max_ilevel" "5"
+			"image_inventory" "backpack/workshop/weapons/c_models/c_snub_nose/c_snub_nose"
+			"image_inventory_size_w" "128"
+			"image_inventory_size_h" "82"
+			"inspect_panel_dist" "32"
+			"model_player" "models/workshop/weapons/c_models/c_snub_nose/c_snub_nose.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"spy" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 0 -6"
+			}
+			"mouse_pressed_sound" "ui/item_light_gun_pickup.wav"
+			"drop_sound" "ui/item_light_gun_drop.wav"
+			"attributes"
+			{
+				"damage bonus while disguised"
+				{
+					"attribute_class" "mult_dmg_disguised"
+					"value" "1.67"
+				}
+				"dmg pierces resists absorbs"
+				{
+					"attribute_class" "mod_pierce_resists_absorbs"
+					"value" "1"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class" "mult_postfiredelay"
+					"value" "1.2"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class" "mult_crit_chance"
+					"value" "0"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot" "Weapon_Enforcer.Single"
+				"sound_burst" "Weapon_Enforcer.SingleCrit"
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model" "models/workshop/weapons/c_models/c_snub_nose/c_snub_nose_festivizer.mdl"
+					}
+				}
+			}
+		}
 		// ----------------------------------------------------------------
 		// Death & Taxes weapons
 		// ----------------------------------------------------------------
@@ -1266,7 +1433,7 @@ before one of you gets hurt."
 		}
 
 		// Custom weapons
-		"9100" // Last Vaccination
+		"20000" // Last Vaccination
 		{
 			"name"				"TF_WEAPON_LASTVACCINATION"
 			"item_name"			"Sleep Serum"
@@ -1334,7 +1501,7 @@ Original weapon by bigmazi"
 			"drop_sound"			"ui/item_knife_small_drop.wav"
 		}
 		
-		"9101" // Thermite Cannon
+		"20001" // Thermite Cannon
 		{
 			"name"				"TF_WEAPON_THERMITECANNON"
 			"item_name"			"Thermite Cannon"
@@ -1428,14 +1595,14 @@ WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C D
 			"drop_sound"			"ui/item_heavy_gun_drop.wav"
 		}
 
-		"9102"	// Lord of the House
+		"20002"	// Lord of the House
 		{
-			"name"					"TF_WEAPON_PIMP_CANE"
+			"name"						"TF_WEAPON_PIMP_CANE"
 			"item_class"				"tf2c_weapon_umbrella"
-			"item_slot"				"melee"
-
+			"item_slot"					"melee"
+			"propername"				"1"
 			"item_quality"				"Vintage"
-			"item_name"				"Lord of the House"
+			"item_name"					"Lord of the House"
 			"item_type_name"			"#TF_Weapon_Cane"
 			"item_description"			"Proper leadership includes protection."
 			"item_logname"				"Lord of the House"
@@ -1487,7 +1654,7 @@ WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C D
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 
-		"9103"	// Viewfinder
+		"20003"	// Viewfinder
 		{
 			"name"				"Viewfinder"
 			"item_class"		"tf_weapon_sniperrifle"
@@ -1498,7 +1665,7 @@ WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C D
 			"anim_slot"			"primary"
 			"item_quality"		"vintage"
 			"image_inventory"	"backpack/w_viewfinder"
-
+			"propername"		"1"
 			"item_logname"		"tv_sniper"
 			"item_iconname"		"tv_sniper"
 			"model_player"		"models/weapons/c_models/c_viewfinder/c_viewfinder.mdl"
@@ -1558,12 +1725,12 @@ WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C D
 			"drop_sound" "ui/item_heavy_gun_drop.wav"
 		}
 
-		"9105"	// Spitfire
+		"20004"	// Spitfire
 		{
 			"name"						"Spitfire"
 			"item_class"				"tf_weapon_shotgun"
 			"item_slot"					"secondary"
-
+			"propername"				"1"
 			"item_quality"				"Vintage"
 			"item_name"					"Spitfire"
 			"item_type_name"			"#TF_Weapon_Shotgun"
@@ -1628,7 +1795,7 @@ Weapon from: New Old Weapons Pack"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 
-		"9106"
+		"20005"
 		{
 			"name"						"Heavy Machine Gun"
 			"item_class"				"tf_weapon_minigun"
@@ -1728,7 +1895,7 @@ Weapon from: New Old Weapons Pack"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 
-		"9107"	// Engineer Revolver
+		"20006"	// Engineer Revolver
 		{
 			"name"						"Engineer Revolver"
 			"item_class"				"tf_weapon_pistol"
@@ -1737,7 +1904,7 @@ Weapon from: New Old Weapons Pack"
 			"item_quality"				"Vintage"
 			"item_name"					"Six-Shooter"
 			"item_type_name"			"#TF_Weapon_Revolver"
-			"item_description"			"Just one gun and six shots.
+			"item_description"			"Magnum smooth.
 
 Weapon from: New Old Weapons Pack"
 			"item_logname"				"sixshooter"
@@ -1792,7 +1959,7 @@ Weapon from: New Old Weapons Pack"
 			"mouse_pressed_sound"		"#weapons/draw_six_shooter.wav"
 			"drop_sound"				"#ui/item_light_gun_drop.wav"
 		}
-		"9108"	// Frag Grenade
+		"20007"	// Frag Grenade
 		{
 			"name"				"Frag Grenade"
 			"item_class"		"tf_weapon_grenade_mirv"
@@ -1898,7 +2065,7 @@ Weapon by: 'Quinnz'"
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		"9109"																			
+		"20008"																			
 		{
 			"name"						"General's Garand"
 			"item_class"				"tf_weapon_smg"
@@ -1954,7 +2121,7 @@ Animations by: 'Raptor Dan'"
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		"9110"
+		"20009"
 		{
 			"name"						"Welder"
 			"item_class"				"tf_weapon_wrench"
@@ -2025,7 +2192,7 @@ Weapon from: New Old Weapons Pack"
 			"mouse_pressed_sound"		"#ui/item_welder_pickup.wav"
 			"drop_sound"				"#ui/item_light_gun_drop.wav"
 		}
-		"9111"
+		"20010"
 		{
 			"name"						"Trench Runner"
 			"item_class"				"tf_weapon_scattergun"
@@ -2098,7 +2265,7 @@ Weapon from: New Old Weapons Pack"
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		"9112"
+		"20011"
 		{
 			"name"						"Double Scotch"
 			"item_class"				"tf_weapon_grenadelauncher"
@@ -2180,7 +2347,7 @@ Weapon from: New Old Weapons Pack"
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		"9113"
+		"20012"
 		{
 			"name"						"TF_WEAPON_SHELLRAISER"
 			"item_class"				"tf_weapon_rocketlauncher"
@@ -2263,7 +2430,7 @@ Weapon from: New Old Weapons Pack"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 	
-		"20009" // Combat SMG
+		"200013" // Combat SMG
 		{
 			"name"				"Combat_SMG_Sniper"
 			"item_name"			"Combat SMG"
@@ -2304,7 +2471,7 @@ Weapon from: New Old Weapons Pack"
 		}
 		
 		
-	"20010" // Combat SMG
+	"20014" // Combat SMG
 		{
 			"name"				"Combat_SMG_Medic"
 			"item_name"			"Combat SMG"
@@ -2346,7 +2513,7 @@ Weapon from: New Old Weapons Pack"
 			"image_inventory"		"backpack/weapons/w_models/w_smgDM"
 		}
 	
-	"20011" // Assault Rifle
+	"20015" // Assault Rifle
 		{
 			"name"				"TF_WEAPON_ASSAULT_RIFLE"
 			"item_name"			"The Republic Rifle"
@@ -2399,7 +2566,7 @@ Weapon from: New Old Weapons Pack"
 			"image_inventory"		"backpack/weapons/w_models/w_assaultrifle"
 		}
 		
-	"20012" // Stahlwart
+	"20016" // Stahlwart
         {
         	"name"						"The Stahlwart"
         	"item_class"				"tf_weapon_medigun"
