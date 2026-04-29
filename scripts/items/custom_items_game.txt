@@ -4,7 +4,311 @@
 {
 	"items"
 	{
-		"33" // Uberspritze
+	"0" // Bat
+		{
+			"name"				"TF_WEAPON_BAT"
+			"item_name"			"#TF_Weapon_Bat"
+			"item_type_name"	"#TF_Weapon_Bat"
+			"item_description"	"#TF_Weapon_Bat_Desc"
+			"item_quality"		"normal"
+
+			"item_class"	"tf_weapon_bat"
+			"item_slot"		"melee"
+			"used_by_classes"
+			{
+				"Scout"	"1"
+			}
+
+			"model_player"			"models/weapons/v_models/v_bat_scout.mdl"
+			"model_world"			"models/weapons/w_models/w_bat.mdl"
+			"attach_to_hands"		"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 0 -10"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_bat"
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"			"ui/item_metal_weapon_drop.wav"
+		}
+	"1" // Bottle
+		{
+			"name"				"TF_WEAPON_BOTTLE"
+			"item_name"			"#TF_Weapon_Bottle"
+			"item_type_name"	"#TF_Weapon_Bottle"
+			"item_description"	"#TF_Weapon_Bottle_Desc"
+			"item_quality"		"normal"
+
+			"item_class"	"tf_weapon_bottle"
+			"item_slot"		"melee"
+			"used_by_classes"
+			{
+				"Demoman"		"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_bottle_demoman.mdl"
+			"model_world"		"models/weapons/w_models/w_bottle.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 0 -14"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_bottle"
+			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
+			"drop_sound"			"ui/item_bottle_drop.wav"
+		}
+	"2" // Fire Axe
+		{
+			"name"				"TF_WEAPON_FIREAXE"
+			"item_name"			"#TF_Weapon_FireAxe"
+			"item_type_name"	"#TF_Weapon_FireAxe"
+			"item_description"	"#TF_Weapon_FireAxe_Desc"
+			"item_quality"		"normal"
+
+			"item_class"	"tf_weapon_fireaxe"
+			"item_slot"		"melee"
+			"used_by_classes"
+			{
+				"Pyro"	"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_fireaxe_pyro.mdl"
+			"model_world"		"models/weapons/w_models/w_fireaxe.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 0 -9"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_fireaxe"
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"			"ui/item_metal_weapon_drop.wav"
+		}
+	"3" // Kukri
+		{
+			"name"				"TF_WEAPON_CLUB"
+			"item_name"			"#TF_Weapon_Kukri"
+			"item_type_name"	"#TF_Weapon_Kukri"
+			"item_description"	"#TF_Weapon_Kukri_Desc"
+			"item_quality"		"normal"
+
+			"item_class"	"tf_weapon_club"
+			"item_slot"		"melee"
+			"used_by_classes"
+			{
+				"Sniper"		"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_machete_sniper.mdl"
+			"model_world"		"models/weapons/w_models/w_machete.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 0 -6"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_machete"
+			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
+			"drop_sound"			"ui/item_metal_weapon_drop.wav"
+		}
+	"4" // Knife
+		{
+			"name"				"TF_WEAPON_KNIFE"
+			"item_name"			"#TF_Weapon_Knife"
+			"item_type_name"	"#TF_Weapon_Knife"
+			"item_description"	"#TF_Weapon_Knife_Desc"
+			"item_quality"		"normal"
+
+			"item_class"	"tf_weapon_knife"
+			"item_slot"		"melee"
+			"used_by_classes"
+			{
+				"Spy"	"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_knife_spy.mdl"
+			"model_world"		"models/weapons/w_models/w_knife.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"knife explain"			"1"
+				"min_viewmodel_offset"	"5 0 -4"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_knife"
+			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
+			"drop_sound"			"ui/item_knife_small_drop.wav"
+		}
+	"5" // Fists
+		{
+			"name"				"TF_WEAPON_FISTS"
+			"item_name"			"#TF_Weapon_Fists"
+			"item_type_name"	"#TF_Weapon_Fists"
+			"item_description"	"#TF_Weapon_Fists_Desc"
+			"item_quality"		"normal"
+
+			"item_class"	"tf_weapon_fists"
+			"item_slot"		"melee"
+			"used_by_classes"
+			{
+				"Heavy"	"1"
+			}
+
+
+			"model_player"		"models/weapons/v_models/v_fist_heavy.mdl"
+			"model_world"		""
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 0 -7"
+			}
+
+			"image_inventory"		"backpack/weapons/v_models/v_fist_heavy"
+			"mouse_pressed_sound"	"ui/item_fists_pickup.wav"
+			"drop_sound"			"ui/item_fists_drop.wav"
+		}
+	"6" // Shovel
+		{
+			"name"				"TF_WEAPON_SHOVEL"
+			"item_name"			"#TF_Weapon_Shovel"
+			"item_type_name"	"#TF_Weapon_Shovel"
+			"item_description"	"#TF_Weapon_Shovel_Desc"
+			"item_quality"		"normal"
+
+			"item_class"	"tf_weapon_shovel"
+			"item_slot"		"melee"
+			"used_by_classes"
+			{
+				"Soldier"	"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_shovel_soldier.mdl"
+			"model_world"		"models/weapons/w_models/w_shovel.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 -6 -12"
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_shovel"
+			"mouse_pressed_sound"	"ui/item_shovel_pickup.wav"
+			"drop_sound"			"ui/item_shovel_drop.wav"
+		}
+	"7" // Wrench
+		{
+			"name"				"TF_WEAPON_WRENCH"
+			"item_name"			"#TF_Weapon_Wrench"
+			"item_type_name"	"#TF_Weapon_Wrench"
+			"item_description"	"#TF_Weapon_Wrench_Desc"
+			"item_quality"		"normal"
+			"item_class"	"tf_weapon_wrench"
+			"item_slot"		"melee"
+			"used_by_classes"
+			{
+				"Engineer"	"1"
+			}
+			
+			"model_player"		"models/weapons/v_models/v_wrench_engineer.mdl"
+			"model_world"		"models/weapons/w_models/w_wrench.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"wrench explain"		"1"
+				"min_viewmodel_offset"	"10 -2 -9"
+			}
+			"attributes"
+			{
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"25"
+				}
+			}
+			"image_inventory"		"backpack/weapons/w_models/w_wrench"
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"			"ui/item_metal_weapon_drop.wav"
+		}
+	"8" // Bonesaw
+		{
+			"name"				"TF_WEAPON_BONESAW"
+			"item_name"			"#TF_Weapon_Bonesaw"
+			"item_type_name"	"#TF_Weapon_Bonesaw"
+			"item_description"	"#TF_Weapon_Bonesaw_Desc"
+			"item_quality"		"normal"
+
+			"item_class"	"tf_weapon_bonesaw"
+			"item_slot"		"melee"
+			"used_by_classes"
+			{
+				"Medic"	"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_bonesaw_medic.mdl"
+			"model_world"		"models/weapons/w_models/w_bonesaw.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 0 -12"
+			}
+			"attributes"
+			{
+				"medic regen bonus"
+				{
+					"attribute_class"	"medic_regen"
+					"value"				"6"
+				}
+			}
+			"image_inventory"		"backpack/weapons/w_models/w_bonesaw"
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"			"ui/item_metal_weapon_drop.wav"
+		}
+		"16" // SMG
+		{
+			"name"				"TF_WEAPON_SMG"
+			"item_name"			"#TF_Weapon_SMG"
+			"item_type_name"	"#TF_Weapon_SMG"
+			"item_description"	"#TF_Weapon_SMG_Desc"
+			"item_quality"		"normal"
+
+			"item_class"	"tf_weapon_smg"
+			"item_slot"		"secondary"
+			"used_by_classes"
+			{
+				"Sniper"	"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_smg_sniper.mdl"
+			"model_world"		"models/weapons/w_models/w_smg.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 0 -7"
+			}
+			"attributes"
+			{
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+						"value" "0"
+				}
+					"can headshot"
+				{
+					"attribute_class"	"can_headshot"
+					"value"				"1"
+				}
+				"headshot is minicrit"
+				{
+					"attribute_class"	"headshot_is_minicrit"
+					"value"				"1"
+				}
+			}
+		
+			"image_inventory"		"backpack/weapons/w_models/w_smg"
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"			"ui/item_light_gun_drop.wav"
+		}
+	"33" // Uberspritze
 		{
 			"attributes"
 			{
@@ -917,6 +1221,17 @@ before one of you gets hurt."
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value"				"1.5"
+				}
+				"hidden separator"		"1"
+				"maxammo grenades1 increased"
+                {
+                    "attribute_class"    "mult_maxammo_grenades1"
+                    "value"    "2"
+                }
+				"Blast radius increased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"				"1.2"
 				}
 			}
 		}
