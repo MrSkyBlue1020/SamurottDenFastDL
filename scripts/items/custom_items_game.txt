@@ -1062,7 +1062,7 @@ before one of you gets hurt."
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		"426"
+	"426" // Eviction Notice
 		{
 			"name" "The Eviction Notice"
 			"first_sale_date" "2011/04/14"
@@ -1157,7 +1157,7 @@ before one of you gets hurt."
 			"mouse_pressed_sound" "ui/item_light_gun_pickup.wav"
 			"drop_sound" "ui/item_light_gun_drop.wav"
 		}
-		"460"
+	"460"
 		{
 			"name" "The Enforcer"
 			"first_sale_date" "2011/05/15"
@@ -1242,7 +1242,7 @@ before one of you gets hurt."
 		// ----------------------------------------------------------------
 		// Death & Taxes weapons
 		// ----------------------------------------------------------------
-		"2001" // Nail Gun
+	"2001" // Nail Gun
 		{
 			"attributes"
 			{
@@ -1259,7 +1259,7 @@ before one of you gets hurt."
 				}
 			}
 		}
-		"2003" // Hunting Revolver
+	"2003" // Hunting Revolver
 		{
 			"attributes"
 			{
@@ -1287,7 +1287,7 @@ before one of you gets hurt."
 				}
 			}
 		}
-		"2006" // Dynamite Pack
+	"2006" // Dynamite Pack
 		{
 			"attributes"
 			{
@@ -1296,6 +1296,7 @@ before one of you gets hurt."
 					"attribute_class"	"mult_maxammo_primary"
 					"value"				"1.5"
 				}
+				"hidden separator"		"1"
 				"maxammo grenades1 increased"
                 {
                     "attribute_class"    "mult_maxammo_grenades1"
@@ -1308,7 +1309,7 @@ before one of you gets hurt."
 				}
 			}
 		}
-		"2008" // Mine Layer
+	"2008" // Mine Layer
 		{
 			"attributes"
 			{
@@ -1319,7 +1320,7 @@ before one of you gets hurt."
 				}
 			}
 		}
-		"2009" // Shock Therapy
+	"2009" // Shock Therapy
 		{
 			"attributes"
 			{
@@ -1377,7 +1378,7 @@ before one of you gets hurt."
 		// ----------------------------------------------------------------
 		// Fight or Flight weapons
 		// ----------------------------------------------------------------
-		"2013" // Twin Barrel
+	"2013" // Twin Barrel
 		{
 			"attributes"
 			{
@@ -1420,7 +1421,7 @@ before one of you gets hurt."
 				}
 			}
 		}
-		"2016" // Harvester
+	"2016" // Harvester
 		{
 			"attributes"
 			{
@@ -1493,7 +1494,7 @@ before one of you gets hurt."
 		}
 
 		// Custom weapons
-	"20000" // Last Vaccination
+	"20000" // Sleep Serum
 		{
 			"name"				"TF_WEAPON_LASTVACCINATION"
 			"item_name"			"Sleep Serum"
@@ -1562,26 +1563,26 @@ before one of you gets hurt."
 		
 	"20001" // Thermite Cannon
 		{
-			"name"				"TF_WEAPON_THERMITECANNON"
-			"item_name"			"Thermite Cannon"
-			"item_type_name"	"Incendiary Launcher"
-			"item_description"	"Stats by MrSkyBlue
-WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C Devs."
-			"item_quality"		"vintage"
-
-			"item_class"	"tf_weapon_grenadelauncher"
-			"item_slot"		"primary"
+			"name"						"TF_WEAPON_THERMITECANNON"
+			"item_name"					"Thermite Cannon"
+			"item_type_name"			"Incendiary Launcher"
+			"item_description"			"Stats by MrSkyBlue
+WARNING: Fuse Time Reduction and Damage Penalty are broken because of the TF2C Devs."
+			"item_quality"				"vintage"
+			"propername"				'1"
+			"item_class"				"tf_weapon_grenadelauncher"
+			"item_slot"					"primary"
 			"used_by_classes"
 			{
 				"Pyro"	"1"
 			}
 
-			"item_logname"				"thermite"
+			"item_logname"				"incen_launcher"
 			"item_iconname"				"thermite"
 
-			"model_player"		"models/weapons/cwp/thermblower/v_thermblower.mdl"
-			"model_world"		"models/weapons/cwp/thermblower/c_thermblower.mdl"
-			"attach_to_hands"	"2"
+			"model_player"				"models/weapons/cwp/thermblower/v_thermblower.mdl"
+			"model_world"				"models/weapons/cwp/thermblower/c_thermblower.mdl"
+			"attach_to_hands"			"2"
 			"static_attrs"
 			{
 				"min_viewmodel_offset" 			"10 0 -10"
@@ -1655,12 +1656,12 @@ WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C D
 
 	"20002"	// Lord of the House
 		{
-			"name"					"TF_WEAPON_PIMP_CANE"
+			"name"						"TF_WEAPON_PIMP_CANE"
 			"item_class"				"tf2c_weapon_umbrella"
-			"item_slot"				"melee"
-
+			"item_slot"					"melee"
+			"propername"				"1"
 			"item_quality"				"Vintage"
-			"item_name"				"Lord of the House"
+			"item_name"					"Lord of the House"
 			"item_type_name"			"#TF_Weapon_Cane"
 			"item_description"			"Proper leadership includes protection."
 			"item_logname"				"Lord of the House"
@@ -1723,7 +1724,7 @@ WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C D
 			"anim_slot"			"primary"
 			"item_quality"		"vintage"
 			"image_inventory"	"backpack/w_viewfinder"
-
+			"propername"		"1"
 			"item_logname"		"tv_sniper"
 			"item_iconname"		"tv_sniper"
 			"model_player"		"models/weapons/c_models/c_viewfinder/c_viewfinder.mdl"
@@ -1788,7 +1789,7 @@ WARNING: Fuse Time Reduction and Damage Penalty are fucked because of the TF2C D
 			"name"						"Spitfire"
 			"item_class"				"tf_weapon_shotgun"
 			"item_slot"					"secondary"
-
+			"propername"				"1"
 			"item_quality"				"Vintage"
 			"item_name"					"Spitfire"
 			"item_type_name"			"#TF_Weapon_Shotgun"
