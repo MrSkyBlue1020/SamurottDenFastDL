@@ -2330,11 +2330,6 @@ Weapon from: New Old Weapons Pack"
 					"attribute_class"	"mult_dmg"
 					"value"				"0.925"
 				}
-				"damage bonus vs buildings"
-				{
-					"attribute_class"	"mult_dmg_vs_buildings"
-					"value"				"1.15"
-				}
 				"custom projectile model"
 				{
 					"attribute_class"	"custom_projectile_model"
@@ -2902,5 +2897,6 @@ Weapon from: New Old Weapons Pack"
 			"description_format"	"value_is_percentage"
 			"effect_type"			"positive"
 		}
+
 	}
 }
