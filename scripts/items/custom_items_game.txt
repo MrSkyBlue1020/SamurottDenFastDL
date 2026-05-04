@@ -1049,7 +1049,6 @@ before one of you gets hurt."
 			"image_inventory_size_h" "82"
 			"inspect_panel_dist" "32"
 			"model_player" "models/workshop/weapons/c_models/c_letranger/c_letranger.mdl"
-                        "extra_wearable" "models\player\items\spy\grfs_spy.mdl"
 			"attach_to_hands" "1"
 			"used_by_classes"
 			{
